@@ -1,6 +1,6 @@
 .hero {
     min-height: 100vh;
-    background: url("../../img/webp/frankfurt-business-district-skyline-at-sunset-SJE5UWF-scaled.webp");
+    background: url("../../img/webp/hero-bg.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,6 +23,27 @@
             border-radius 0.3s,
             opacity 0.3s;
         pointer-events: none;
+
+        @media screen and (max-width: 767px) {
+            backdrop-filter: blur(3px);
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+
+        @media screen and (max-width: 1439px) {
+            margin-right: 80px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin: 0;
+            text-align: center;
+            align-items: center;
+        }
     }
 
     &__inner {
@@ -38,12 +59,10 @@
     }
 
     &__title {
-        margin-bottom: 45px;
+        margin-bottom: 5px;
         letter-spacing: 2px;
-
-        @media screen and (max-width: 767px) {
-            margin-bottom: 32px;
-        }
+        max-width: 660px;
+        text-transform: uppercase;
     }
 
     &__desc {
