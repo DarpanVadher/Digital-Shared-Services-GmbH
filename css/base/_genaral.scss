@@ -1,0 +1,228 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+img,
+video {
+    height: auto;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    font-family: "Manrope", sans-serif;
+
+    &.is-open-menu {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1224px;
+    width: 100%;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.ptb-90 {
+    padding: 90px 0;
+}
+
+@media screen and (max-width: 1599px) {
+    .ptb-90 {
+        padding: 70px 0;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .ptb-90 {
+        padding: 55px 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .ptb-90 {
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ptb-90 {
+        padding: 45px 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .ptb-90 {
+        padding: 35px 0;
+    }
+}
+
+.pb-90 {
+    padding-bottom: 90px;
+}
+
+@media screen and (max-width: 1599px) {
+    .pb-90 {
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .pb-90 {
+        padding-bottom: 55px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .pb-90 {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pb-90 {
+        padding-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .pb-90 {
+        padding-bottom: 35px;
+    }
+}
+
+.btn {
+    border: 3px solid var(--color-white);
+    display: inline-flex;
+    font-size: 17px;
+    padding: 15px 20px;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+
+    @media screen and (max-width: 1199px) {
+        padding: 10px 15px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: var(--color-white);
+        transition: width 0.3s ease-in-out;
+        z-index: -1;
+    }
+
+    span {
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    svg {
+        transition: all 0.3s ease-in-out;
+        height: 20px;
+        width: 20px;
+    }
+
+    &:hover {
+        color: var(--color-black);
+
+        &::after {
+            width: 100%;
+        }
+
+        span {
+            color: var(--color-black);
+        }
+    }
+
+    &--green {
+        border-color: var(--color-primary);
+        color: var(--color-primary);
+
+        &::after {
+            background-color: var(--color-primary);
+        }
+
+        &:hover {
+            color: var(--color-white);
+
+            span {
+                color: var(--color-white);
+            }
+        }
+    }
+}
