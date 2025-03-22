@@ -1,0 +1,110 @@
+.footer {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+
+    &__info {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        max-width: 240px;
+
+        @media screen and (max-width: 991px) {
+            max-width: 100%;
+        }
+
+        &-title {
+            margin-bottom: 16px;
+        }
+
+        &-address {
+            margin-bottom: 16px;
+            color: var(--color-gray-light-2);
+        }
+
+        img {
+            filter: brightness(20);
+        }
+    }
+
+    &__bottom {
+        padding-top: 32px;
+        color: var(--color-gray-light-2);
+    }
+
+    &__top {
+        padding: 64px 0;
+
+        @media screen and (max-width: 991px) {
+            padding: 40px 0;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding: 32px 0;
+        }
+
+        &-inner {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding-bottom: 60px;
+            border-bottom: 1px solid var(--color-gray-light);
+
+            @media screen and (max-width: 991px) {
+                flex-direction: column;
+                padding-bottom: 40px;
+            }
+
+            @media screen and (max-width: 767px) {
+                padding-bottom: 32px;
+            }
+
+            nav {
+                display: flex;
+                align-items: flex-start;
+                gap: 32px;
+
+                @media screen and (max-width: 767px) {
+                    flex-direction: column;
+                    gap: 10px;
+                    margin-bottom: 24px;
+                }
+            }
+
+            ul {
+                min-width: 200px;
+                display: grid;
+                gap: 16px;
+
+                @media screen and (max-width: 767px) {
+                    gap: 10px;
+                }
+
+                li {
+                    color: var(--color-gray-light-2);
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: var(--color-white);
+                    }
+                }
+                .active {
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
+    &__inner {
+        &-title {
+            margin-bottom: 24px;
+
+            @media screen and (max-width: 991px) {
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
