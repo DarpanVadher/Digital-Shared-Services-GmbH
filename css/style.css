@@ -103,6 +103,25 @@
     font-size: 40px;
   }
 }
+.font-75 {
+  font-size: 75px;
+  line-height: 1.3;
+}
+@media screen and (max-width: 1199px) {
+  .font-75 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .font-75 {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .font-75 {
+    font-size: 32px;
+  }
+}
 .font-50 {
   font-size: 50px;
   line-height: 1.5;
@@ -120,6 +139,25 @@
 @media screen and (max-width: 767px) {
   .font-50 {
     font-size: 30px;
+  }
+}
+.font-36 {
+  font-size: 36px;
+  line-height: 1.3;
+}
+@media screen and (max-width: 1199px) {
+  .font-36 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .font-36 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .font-36 {
+    font-size: 22px;
   }
 }
 .font-34 {
@@ -651,7 +689,7 @@ body.is-open-menu {
 
 .hero {
   min-height: 100vh;
-  background: url("../../img/webp/frankfurt-business-district-skyline-at-sunset-SJE5UWF-scaled.webp");
+  background: url("../../img/webp/hero-bg.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -672,6 +710,30 @@ body.is-open-menu {
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
   pointer-events: none;
 }
+@media screen and (max-width: 767px) {
+  .hero-overlay {
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+  }
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+@media screen and (max-width: 1439px) {
+  .hero__content {
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__content {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+  }
+}
 .hero__inner {
   position: relative;
   color: var(--color-white);
@@ -684,13 +746,10 @@ body.is-open-menu {
   text-align: left;
 }
 .hero__title {
-  margin-bottom: 45px;
+  margin-bottom: 5px;
   letter-spacing: 2px;
-}
-@media screen and (max-width: 767px) {
-  .hero__title {
-    margin-bottom: 32px;
-  }
+  max-width: 660px;
+  text-transform: uppercase;
 }
 .hero__desc {
   max-width: 510px;
@@ -934,17 +993,10 @@ body.is-open-menu {
 }
 .expertise__title {
   font-weight: 400;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
 }
-@media screen and (max-width: 991px) {
-  .expertise__title {
-    margin-bottom: 24px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .expertise__title {
-    margin-bottom: 20px;
-  }
+.expertise__title-subtitle {
+  margin-bottom: 30px;
 }
 .expertise__list {
   display: grid;
