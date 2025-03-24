@@ -3,6 +3,7 @@
   --color-white: #fff;
   --color-primary: #32506a;
   --color-primary-light: #b8d5f1;
+  --color-primary-bg: #eff7ff7b;
   --color-gray-light: #707070;
   --color-gray-light-2: #a2a2a2;
   --color-title: #393e46;
@@ -323,6 +324,7 @@ body {
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 body.is-open-menu {
   overflow: hidden;
@@ -775,6 +777,9 @@ body.is-open-menu {
   }
 }
 
+.marketing {
+  background-color: var(--color-primary-bg);
+}
 .marketing__subtitle {
   color: var(--color-gray-light);
 }
@@ -922,19 +927,22 @@ body.is-open-menu {
   }
 }
 
-.references__title {
+.sec-references {
+  background-color: var(--color-primary-bg);
+}
+.sec-references .references__title {
   margin-bottom: 24px;
   color: var(--color-primary);
 }
 @media screen and (max-width: 767px) {
-  .references__title {
+  .sec-references .references__title {
     margin-bottom: 16px;
   }
 }
-.references__desc {
+.sec-references .references__desc {
   color: var(--color-gray-light);
 }
-.references__list {
+.sec-references .references__list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
@@ -943,48 +951,49 @@ body.is-open-menu {
   padding-top: 32px;
 }
 @media screen and (max-width: 1199px) {
-  .references__list {
+  .sec-references .references__list {
     max-width: 100%;
   }
 }
 @media screen and (max-width: 991px) {
-  .references__list {
+  .sec-references .references__list {
     padding-top: 24px;
     grid-template-columns: repeat(4, 1fr);
   }
 }
 @media screen and (max-width: 767px) {
-  .references__list {
+  .sec-references .references__list {
     grid-template-columns: repeat(2, 1fr);
     padding-top: 20px;
     gap: 16px;
   }
 }
-.references__item {
+.sec-references .references__item {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
-.references__item img {
+.sec-references .references__item img {
   max-height: 123px;
   max-width: 160px;
   -o-object-fit: contain;
      object-fit: contain;
   filter: grayscale(1);
+  mix-blend-mode: multiply;
 }
 @media screen and (max-width: 1199px) {
-  .references__item img {
+  .sec-references .references__item img {
     max-width: 120px;
   }
 }
-.references__item img.lg {
+.sec-references .references__item img.lg {
   max-width: 130px;
 }
-.references__item img.sm {
+.sec-references .references__item img.sm {
   max-width: 125px;
 }
-.references__item img.xs {
+.sec-references .references__item img.xs {
   max-width: 98px;
 }
 
