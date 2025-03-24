@@ -79,6 +79,7 @@ body {
     /* 4. Improve text rendering */
     -webkit-font-smoothing: antialiased;
     font-family: "Manrope", sans-serif;
+    overflow-x: hidden;
 
     &.is-open-menu {
         overflow: hidden;
