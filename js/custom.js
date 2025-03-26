@@ -1,6 +1,10 @@
 AOS.init({
-  once: true, // Animation will happen only once on scroll
+  once: true, // Animation happens only once
+  disable: function () {
+    return window.innerWidth < 1200;
+  },
 });
+
 // ************************************************************************
 // START : Header Scroll
 // ************************************************************************
@@ -26,4 +30,31 @@ document.querySelector(".hamburger").addEventListener("click", () => {
   document.querySelector(".header nav").classList.toggle("is-active");
   document.querySelector(".header").classList.toggle("is-active");
   document.body.classList.toggle("is-open-menu");
+});
+
+// ************************************************************************
+// START : Parallax
+// ************************************************************************
+
+document.addEventListener("DOMContentLoaded", function () {
+  let hero = document.querySelector(".hero");
+  let heroContent = document.querySelector(".hero__content");
+
+  // Fade-in Effect on Load
+  setTimeout(() => {
+    heroContent.style.opacity = "1";
+    heroContent.style.transform = "translateY(0)";
+  }, 500);
+
+  // Parallax Scroll Effect
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.scrollY;
+
+    // Background moves at a slower pace than scroll for parallax effect
+    hero.style.backgroundPosition = `center ${scrollTop * 0.3}px`;
+
+    // Opacity & Scale Effect
+    let opacity = 1 - scrollTop * 0.001;
+    hero.style.opacity = opacity > 0.3 ? opacity : 0.3;
+  });
 });

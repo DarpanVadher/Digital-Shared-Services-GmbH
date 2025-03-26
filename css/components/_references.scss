@@ -1,5 +1,7 @@
 .sec-references {
     background-color: var(--color-primary-bg);
+    background-image: repeating-conic-gradient(from 30deg, #cfcaff0b 0% 60deg, #efb98c0e 0% 120deg);
+    background-size: 10px 17px;
 
     .references {
         &__title {
