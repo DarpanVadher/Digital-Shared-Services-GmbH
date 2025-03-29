@@ -1,8 +1,7 @@
 AOS.init({
-  once: true, // Animation happens only once
-  disable: function () {
-    return window.innerWidth < 1200;
-  },
+  // disable: function () {
+  // return window.innerWidth < 767;
+  // },
 });
 
 // ************************************************************************

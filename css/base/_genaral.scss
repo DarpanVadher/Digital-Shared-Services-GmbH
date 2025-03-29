@@ -95,6 +95,50 @@ section {
     width: 100%;
     padding: 0 12px;
     margin: 0 auto;
+    overflow: hidden;
+}
+
+.object-fit-cover {
+    object-fit: cover !important;
+}
+
+.bg-plus {
+    background: none;
+    background-color: transparent;
+    background:
+        conic-gradient(at 10% 50%, #0000 75%, rgba(208, 208, 255, 0.15) 0),
+        conic-gradient(at 10% 50%, #0000 75%, rgba(208, 208, 255, 0.15) 0) calc(1 * 10px) calc(3 * 10px),
+        conic-gradient(at 10% 50%, #0000 75%, rgba(208, 208, 255, 0.15) 0) calc(2 * 10px) calc(1 * 10px),
+        conic-gradient(at 10% 50%, #0000 75%, rgba(208, 208, 255, 0.15) 0) calc(3 * 10px) calc(4 * 10px),
+        conic-gradient(at 10% 50%, #0000 75%, rgba(208, 208, 255, 0.15) 0) calc(4 * 10px) calc(2 * 10px),
+        conic-gradient(at 50% 10%, #0000 75%, rgba(208, 208, 255, 0.15) 0) 0 calc(4 * 10px),
+        conic-gradient(at 50% 10%, #0000 75%, rgba(208, 208, 255, 0.15) 0) calc(1 * 10px) calc(2 * 10px),
+        conic-gradient(at 50% 10%, #0000 75%, rgba(208, 208, 255, 0.15) 0) calc(2 * 10px) 0,
+        conic-gradient(at 50% 10%, #0000 75%, rgba(208, 208, 255, 0.15) 0) calc(3 * 10px) calc(3 * 10px),
+        conic-gradient(at 50% 10%, #0000 75%, rgba(208, 208, 255, 0.15) 0) calc(4 * 10px) calc(1 * 10px),
+        #ffffff !important;
+    background-size: 50px 50px !important;
+}
+
+.bg-square {
+    background:
+        radial-gradient(35.36% 35.36% at 100% 25%, #0000 66%, rgba(50, 82, 107, 0.1) 68% 70%, #0000 72%) 20px 20px /
+            calc(2 * 20px) calc(2 * 20px),
+        radial-gradient(35.36% 35.36% at 0 75%, #0000 66%, rgba(50, 82, 107, 0.1) 68% 70%, #0000 72%) 20px 20px /
+            calc(2 * 20px) calc(2 * 20px),
+        radial-gradient(35.36% 35.36% at 100% 25%, #0000 66%, rgba(50, 82, 107, 0.1) 68% 70%, #0000 72%) 0 0 /
+            calc(2 * 20px) calc(2 * 20px),
+        radial-gradient(35.36% 35.36% at 0 75%, #0000 66%, rgba(50, 82, 107, 0.1) 68% 70%, #0000 72%) 0 0 /
+            calc(2 * 20px) calc(2 * 20px),
+        repeating-conic-gradient(#ffffff 0 25%, #0000 0 50%) 0 0 / calc(2 * 20px) calc(2 * 20px),
+        radial-gradient(#0000 66%, rgba(50, 82, 107, 0.1) 68% 70%, #0000 72%) 0 calc(20px / 2) / 20px 20px #ffffff !important;
+}
+
+.bg-wave {
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 15px),
+        repeating-linear-gradient(rgba(50, 82, 107, 0.05), rgba(50, 82, 107, 0.05)) !important;
+    background-color: #ffffff !important;
+    background-size: initial !important;
 }
 
 .ptb-90 {
