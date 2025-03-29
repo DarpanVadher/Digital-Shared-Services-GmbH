@@ -98,6 +98,13 @@ section {
     overflow: hidden;
 }
 
+.container-normal {
+    max-width: 1224px;
+    width: 100%;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
 .object-fit-cover {
     object-fit: cover !important;
 }

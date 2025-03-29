@@ -342,6 +342,13 @@ section {
   overflow: hidden;
 }
 
+.container-normal {
+  max-width: 1224px;
+  width: 100%;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
 .object-fit-cover {
   -o-object-fit: cover !important;
      object-fit: cover !important;
@@ -950,6 +957,9 @@ section {
   z-index: 1;
 }
 
+.services {
+  overflow: hidden;
+}
 .services__title {
   color: var(--color-gray-light);
   margin-bottom: 16px;
@@ -1024,9 +1034,12 @@ section {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.services__list--secondary .services__item:nth-child(even)::before {
+  right: initial;
+  left: -40px;
+}
 .services__list--secondary-p-0 .services__item {
   padding: 0;
-  overflow: hidden;
   gap: 0;
 }
 .services__list--secondary-p-0 .services__item-content {
@@ -1044,12 +1057,38 @@ section {
 }
 .services__list--secondary-p-0 .services__item img {
   height: 100%;
+  border-radius: 24px 0 0 24px;
+}
+.services__list--secondary-p-0 .services__item:nth-child(even) img {
+  border-radius: 0 24px 24px 0;
+}
+.services__list--secondary-p-0 .services__item:nth-child(even)::before {
+  right: initial;
+  left: -40px;
 }
 .services__item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 64px;
+  position: relative;
+}
+.services__item::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 100px;
+  height: 100px;
+  background-image: url(../../img/test/bottom-line.svg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 991px) {
+  .services__item::before {
+    display: none;
+  }
 }
 @media screen and (min-width: 767px) {
   .services__item:nth-child(odd) img {
@@ -1350,7 +1389,6 @@ section {
   right: 0;
   top: 0;
   height: 100%;
-  width: 50vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
