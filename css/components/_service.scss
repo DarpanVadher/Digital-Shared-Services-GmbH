@@ -30,6 +30,10 @@
             grid-gap: 40px;
         }
 
+        @media screen and (max-width: 767px) {
+            grid-gap: 16px;
+        }
+
         &::after {
             content: "";
             position: absolute;
@@ -46,6 +50,52 @@
                 display: none;
             }
         }
+
+        &--secondary {
+            .services__item {
+                background-color: #f4f6ff;
+                border-radius: 24px;
+                padding: 32px;
+
+                @media screen and (max-width: 1199px) {
+                    padding: 24px;
+                    border-radius: 20px;
+                }
+
+                @media screen and (max-width: 767px) {
+                    padding: 16px;
+                    border-radius: 15px;
+                }
+
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+
+        &--secondary-p-0 {
+            .services__item {
+                padding: 0;
+                overflow: hidden;
+                gap: 0;
+
+                &-content {
+                    padding: 32px;
+
+                    @media screen and (max-width: 991px) {
+                        padding: 24px;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        padding: 16px;
+                    }
+                }
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
     }
 
     &__item {
@@ -54,8 +104,8 @@
         align-items: center;
         gap: 64px;
 
-        &:nth-child(even) {
-            @media screen and (min-width: 992px) {
+        &:nth-child(odd) {
+            @media screen and (min-width: 767px) {
                 img {
                     order: -1;
                 }
@@ -67,11 +117,11 @@
         }
 
         @media screen and (max-width: 991px) {
-            grid-template-columns: 1fr;
             gap: 32px;
         }
 
         @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
             gap: 16px;
         }
 
@@ -79,8 +129,14 @@
             width: 100%;
             border-radius: 4px;
             box-sizing: 0px 3px 20px 0px rgba(48.99999999999993, 48.99999999999993, 48.99999999999993, 0.17);
+            height: 370px;
+            object-fit: cover;
 
             @media screen and (max-width: 991px) {
+                height: auto;
+            }
+
+            @media screen and (max-width: 767px) {
                 order: -1;
             }
         }

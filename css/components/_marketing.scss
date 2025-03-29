@@ -1,10 +1,31 @@
 .marketing {
-    background-image: radial-gradient(#dad6ff3d 1px, transparent 1px);
+    background-image: radial-gradient(#dad6ffb3 1px, transparent 1px);
     background-size: 10px 10px;
     background-color: var(--color-primary-bg);
 
     &__subtitle {
         color: var(--color-gray-light);
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 500px;
+        grid-gap: 32px;
+        align-items: center;
+
+        @media screen and (max-width: 1199px) {
+            grid-template-columns: 1fr 400px;
+            gap: 24px;
+        }
+
+        @media screen and (max-width: 991px) {
+            grid-template-columns: 1fr 280px;
+        }
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
     }
 
     &__title {
@@ -32,8 +53,7 @@
             content: "";
             position: absolute;
             bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 0;
             width: 275px;
             height: 3px;
             background-color: var(--color-primary);
@@ -43,7 +63,6 @@
     &__content {
         max-width: 900px;
         margin: 0 auto;
-        text-align: center;
         color: var(--color-gray-light);
         line-height: 28.5px;
     }

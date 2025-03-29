@@ -1,4 +1,6 @@
 .sec-hero {
+    overflow: hidden;
+
     @media screen and (min-width: 1366px) {
         // position: sticky;
         top: 0;
@@ -16,6 +18,15 @@
         transition:
             transform 0.1s ease-out,
             opacity 0.3s ease-out;
+
+        &__inner--left {
+            padding-right: 140px;
+            justify-content: flex-end;
+
+            @media screen and (max-width: 1439px) {
+                padding: 0;
+            }
+        }
 
         &-overlay {
             position: absolute;
