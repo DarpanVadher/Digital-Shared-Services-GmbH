@@ -201,5 +201,11 @@
                 }
             }
         }
+
+        &.no-before {
+            &::before {
+                display: none !important;
+            }
+        }
     }
 }

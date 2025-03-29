@@ -1150,6 +1150,9 @@ section {
     margin-top: 8px;
   }
 }
+.services__item.no-before::before {
+  display: none !important;
+}
 
 .sec-references {
   background-color: var(--color-primary-bg);
