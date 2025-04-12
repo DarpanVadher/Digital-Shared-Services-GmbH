@@ -1,0 +1,116 @@
+.intro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/webp/contact-us.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        bottom: 0;
+        right: 0;
+        background-image: linear-gradient(135deg, #ffffff00 64%, var(--color-white) 64%);
+        z-index: 2;
+        height: 80px;
+        width: 100%;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__social {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: grid;
+        grid-gap: 40px;
+        z-index: 2;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__link {
+        position: absolute;
+        bottom: 26px;
+        right: 0;
+        text-transform: uppercase;
+        color: var(--color-primary);
+        z-index: 3;
+        font-weight: 700;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 18px;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+        svg {
+            transform: scale(0.8);
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            svg {
+                transform: scale(0.8) translateY(4px);
+            }
+        }
+    }
+
+    &__inner {
+        min-height: 600px;
+        padding: 100px 0;
+        color: var(--color-white);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        @media screen and (max-width: 767px) {
+            padding: 50px 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 400px;
+        }
+    }
+
+    &__title {
+        letter-spacing: 1px;
+
+        span {
+            color: var(--color-primary-light);
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000066;
+        background-image: url("../../img/svg/mainscreen-bgparts.svg");
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 1;
+        transition:
+            background 0.3s,
+            border-radius 0.3s,
+            opacity 0.3s;
+        pointer-events: none;
+
+        @media screen and (max-width: 767px) {
+            backdrop-filter: blur(3px);
+        }
+    }
+}

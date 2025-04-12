@@ -81,4 +81,17 @@
             }
         }
     }
+
+    &--secondary {
+        background: none !important;
+
+        .expertise__title {
+            margin-bottom: 32px;
+            color: var(--color-primary);
+        }
+
+        .expertise__list {
+            gap: 40px;
+        }
+    }
 }
