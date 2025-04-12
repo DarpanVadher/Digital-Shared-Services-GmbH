@@ -1,0 +1,36 @@
+.text-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+    color: var(--color-gray-light);
+    align-items: center;
+
+    @media screen and (max-width: 1199px) {
+        gap: 32px;
+    }
+
+    @media screen and (max-width: 991px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        color: var(--color-primary);
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    p + p {
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+
+    img {
+        object-position: center center;
+        height: 100%;
+        object-fit: contain;
+    }
+}

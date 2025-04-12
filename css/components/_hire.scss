@@ -1,0 +1,68 @@
+.hire {
+    padding: 90px 0;
+    color: var(--color-white);
+    background-image: linear-gradient(120deg, #32506a 50%, #32506ad7 50%);
+
+    @media screen and (max-width: 991px) {
+        padding: 45px 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 35px 0;
+        background-image: linear-gradient(130.5deg, #32506a 50%, rgba(50, 80, 106, 0.8431372549) 50%);
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        display: grid;
+        gap: 20px;
+
+        @media screen and (max-width: 767px) {
+            gap: 16px;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .btn {
+            padding: 10px 20px;
+            height: auto;
+            border-width: 2px;
+            gap: 16px;
+            transition: all 0.3s ease;
+
+            &::after {
+                display: none;
+            }
+
+            &:focus,
+            &:hover {
+                color: var(--color-white);
+                background-color: var(--color-primary);
+                border-color: var(--color-primary);
+
+                span {
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+}
