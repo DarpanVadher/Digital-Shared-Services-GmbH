@@ -258,7 +258,7 @@ html {
   margin: 0;
 }
 
-/* 5. Improve media defaults */
+/* 3. Improve media defaults */
 img,
 picture,
 video,
@@ -273,7 +273,7 @@ video {
   height: auto;
 }
 
-/* 6. Inherit fonts for form controls */
+/* 4. Inherit fonts for form controls */
 input,
 button,
 textarea,
@@ -281,7 +281,7 @@ select {
   font: inherit;
 }
 
-/* 7. Avoid text overflows */
+/* 5. Avoid text overflows */
 p,
 h1,
 h2,
@@ -292,7 +292,7 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* 8. Improve line wrapping */
+/* 6. Improve line wrapping */
 p {
   text-wrap: pretty;
 }
@@ -393,7 +393,6 @@ section {
 .ptb-90 {
   padding: 90px 0;
 }
-
 @media screen and (max-width: 1599px) {
   .ptb-90 {
     padding: 70px 0;
@@ -419,10 +418,10 @@ section {
     padding: 35px 0;
   }
 }
+
 .pb-90 {
   padding-bottom: 90px;
 }
-
 @media screen and (max-width: 1599px) {
   .pb-90 {
     padding-bottom: 70px;
@@ -448,6 +447,7 @@ section {
     padding-bottom: 35px;
   }
 }
+
 .btn {
   border: 3px solid var(--color-white);
   display: inline-flex;
@@ -557,6 +557,7 @@ section {
     background-color: var(--color-white);
     z-index: 9999;
     opacity: 0;
+    overflow: auto;
     visibility: hidden;
     pointer-events: none;
     border-top: 1px solid var(--color-primary);
@@ -609,9 +610,198 @@ section {
     border-radius: 10px;
   }
 }
+.header .header-inner ul li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .header .header-inner ul li {
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.header .header-inner ul li svg {
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .header .header-inner ul li svg path {
+    fill: var(--color-primary);
+  }
+}
+.header .header-inner ul li .header-subnav-wrapper {
+  position: absolute;
+  width: 280px;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .header .header-inner ul li .header-subnav-wrapper {
+    width: 100%;
+    position: static;
+    display: none;
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+}
+.header .header-inner ul li .header-subnav-wrapper.right-0 {
+  right: 0;
+  left: initial;
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav {
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-white);
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  color: var(--color-primary);
+  border-radius: 4px;
+}
+@media screen and (max-width: 767px) {
+  .header .header-inner ul li .header-subnav-wrapper .header-subnav {
+    border: 0;
+    padding: 0;
+    margin-top: 10px;
+    padding: 0;
+    gap: 0;
+  }
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav li {
+  position: relative;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+@media screen and (min-width: 768px) {
+  .header .header-inner ul li .header-subnav-wrapper .header-subnav li:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+  }
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav li:not(:has(.header-inner-btn)) {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .header .header-inner ul li .header-subnav-wrapper .header-subnav li .header-inner-btn {
+    margin-right: 10px;
+  }
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav li .header-inner-btn svg {
+  margin: 0;
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav li .header-inner-btn svg path {
+  fill: var(--color-primary);
+}
+@media screen and (min-width: 768px) {
+  .header .header-inner ul li .header-subnav-wrapper .header-subnav li:hover svg {
+    transform: scaleY(-1);
+  }
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav li:hover .header-subnav-inner-wrapper {
+  padding-right: 20px;
+  pointer-events: all;
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (max-width: 767px) {
+  .header .header-inner ul li .header-subnav-wrapper .header-subnav li:hover .header-subnav-inner-wrapper {
+    padding: 0;
+  }
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav li .header-subnav-inner-wrapper {
+  position: absolute;
+  right: 100%;
+  top: -16px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .header .header-inner ul li .header-subnav-wrapper .header-subnav li .header-subnav-inner-wrapper {
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    position: static;
+    width: 100%;
+    padding: 0;
+  }
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav li .header-subnav-inner-wrapper ul {
+  display: grid;
+  top: 0;
+  gap: 0;
+  right: 100%;
+  width: 280px;
+  padding: 16px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  border: 1px solid var(--color-primary);
+}
+@media screen and (max-width: 767px) {
+  .header .header-inner ul li .header-subnav-wrapper .header-subnav li .header-subnav-inner-wrapper ul {
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+    box-shadow: inset 0 0 100px 10px #f2f8ff;
+  }
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav li .header-subnav-inner-wrapper ul li {
+  display: block;
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav li .header-subnav-inner-wrapper ul li a {
+  color: var(--color-primary);
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav li .header-subnav-inner-wrapper ul li a:hover {
+  color: var(--color-primary);
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav a {
+  padding: 8px 12px 10px;
+  display: block;
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav a::after {
+  display: none;
+}
+.header .header-inner ul li .header-subnav-wrapper .header-subnav a:hover {
+  color: var(--color-primary);
+}
+@media screen and (min-width: 768px) {
+  .header .header-inner ul li:hover .header-btn svg {
+    transform: scaleY(-1);
+  }
+}
+.header .header-inner ul li:hover .header-subnav-wrapper {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+  padding-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .header .header-inner ul li:hover .header-subnav-wrapper {
+    padding: 0;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
 .header .header-inner ul a {
   position: relative;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .header .header-inner ul a {
+    display: block;
+  }
 }
 .header .header-inner ul a::after {
   content: "";
@@ -626,6 +816,8 @@ section {
 @media screen and (max-width: 767px) {
   .header .header-inner ul a::after {
     background-color: var(--color-primary);
+    height: 1px;
+    bottom: 0;
   }
 }
 .header .header-inner ul a:hover::after, .header .header-inner ul a.active::after {
@@ -660,6 +852,47 @@ section {
 }
 .header.is-scroll .header-inner ul a::after {
   background-color: var(--color-primary);
+}
+.header.is-scroll .header-inner ul li svg path {
+  fill: var(--color-primary);
+}
+.header .header-inner-btn,
+.header .header-btn {
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .header .header-inner-btn,
+  .header .header-btn {
+    padding: 5px;
+    background-color: var(--color-primary-light);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+}
+.header .header-inner-btn svg,
+.header .header-btn svg {
+  margin-bottom: -4px;
+  height: 20px;
+  width: 20px;
+  fill: var(--color-white);
+}
+@media screen and (max-width: 767px) {
+  .header .header-inner-btn svg,
+  .header .header-btn svg {
+    margin: 0;
+  }
+}
+.header .header-inner-btn svg path,
+.header .header-btn svg path {
+  fill: var(--color-white);
 }
 
 .hamburger {
@@ -847,6 +1080,13 @@ section {
   position: relative;
   z-index: 1;
   text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .sec-hero .hero__inner {
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+  }
 }
 .sec-hero .hero__title {
   margin-bottom: 5px;

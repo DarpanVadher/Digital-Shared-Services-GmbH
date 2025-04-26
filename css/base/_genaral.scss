@@ -1,4 +1,7 @@
+// ############################################################################
 /* 1. Use a more-intuitive box-sizing model */
+// ############################################################################
+
 *,
 *::before,
 *::after {
@@ -9,12 +12,18 @@ html {
     scroll-behavior: smooth;
 }
 
+// ############################################################################
 /* 2. Remove default margin */
+// ############################################################################
+
 * {
     margin: 0;
 }
 
-/* 5. Improve media defaults */
+// ############################################################################
+/* 3. Improve media defaults */
+// ############################################################################
+
 img,
 picture,
 video,
@@ -29,7 +38,10 @@ video {
     height: auto;
 }
 
-/* 6. Inherit fonts for form controls */
+// ############################################################################
+/* 4. Inherit fonts for form controls */
+// ############################################################################
+
 input,
 button,
 textarea,
@@ -37,7 +49,10 @@ select {
     font: inherit;
 }
 
-/* 7. Avoid text overflows */
+// ############################################################################
+/* 5. Avoid text overflows */
+// ############################################################################
+
 p,
 h1,
 h2,
@@ -48,7 +63,10 @@ h6 {
     overflow-wrap: break-word;
 }
 
-/* 8. Improve line wrapping */
+// ############################################################################
+/* 6. Improve line wrapping */
+// ############################################################################
+
 p {
     text-wrap: pretty;
 }
@@ -166,72 +184,13 @@ section {
     background-size: initial !important;
 }
 
+// Usage
 .ptb-90 {
-    padding: 90px 0;
-}
-
-@media screen and (max-width: 1599px) {
-    .ptb-90 {
-        padding: 70px 0;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .ptb-90 {
-        padding: 55px 0;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .ptb-90 {
-        padding: 50px 0;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .ptb-90 {
-        padding: 45px 0;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .ptb-90 {
-        padding: 35px 0;
-    }
+    @include responsive-padding(padding, (90px 0, 70px 0, 55px 0, 50px 0, 45px 0, 35px 0));
 }
 
 .pb-90 {
-    padding-bottom: 90px;
-}
-
-@media screen and (max-width: 1599px) {
-    .pb-90 {
-        padding-bottom: 70px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .pb-90 {
-        padding-bottom: 55px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .pb-90 {
-        padding-bottom: 50px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .pb-90 {
-        padding-bottom: 45px;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .pb-90 {
-        padding-bottom: 35px;
-    }
+    @include responsive-padding(padding-bottom, (90px, 70px, 55px, 50px, 45px, 35px));
 }
 
 .btn {

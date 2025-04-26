@@ -75,16 +75,94 @@
             <li role="listitem">
               <a href="index.html">Home</a>
             </li>
-            <li role="listitem"><a href="services.html">Services</a></li>
+            <li role="listitem">
+              <a href="services.html">Services</a>
+              <button class="header-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.9999 13.9394L17.4696 8.46973L18.5303 9.53039L11.9999 16.0607L5.46961 9.53039L6.53027 8.46973L11.9999 13.9394Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+
+              <div class="header-subnav-wrapper">
+                <ul class="header-subnav">
+                  <li><a href="#">Digital Marketing Strategy</a></li>
+                  <li>
+                    <a href="#">Digital Marketing Services</a>
+                    <button class="header-inner-btn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="800px"
+                        height="800px"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.9999 13.9394L17.4696 8.46973L18.5303 9.53039L11.9999 16.0607L5.46961 9.53039L6.53027 8.46973L11.9999 13.9394Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </button>
+
+                    <div class="header-subnav-inner-wrapper">
+                      <ul>
+                        <li><a href="#">Überblick</a></li>
+                        <li><a href="#">Performance Marketing</a></li>
+                        <li><a href="#">Social Media Marketing</a></li>
+                        <li><a href="#">Video Marketing</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">Digital Employer Branding</a></li>
+                </ul>
+              </div>
+            </li>
+
             <li role="listitem">
               <a href="about-us.html" class="active" aria-current="page"
                 >Über uns</a
               >
             </li>
-            <li role="listitem"><a href="#">Karriere</a></li>
             <li role="listitem">
-              <a href="contact-us.html"> Kontakt </a>
+              <a href="#">Karriere</a>
+              <button class="header-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.9999 13.9394L17.4696 8.46973L18.5303 9.53039L11.9999 16.0607L5.46961 9.53039L6.53027 8.46973L11.9999 13.9394Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="header-subnav-wrapper right-0">
+                <ul class="header-subnav">
+                  <li><a href="#">Das Team</a></li>
+                  <li>
+                    <a href="#">Offene Stellen</a>
+                  </li>
+                </ul>
+              </div>
             </li>
+            <li role="listitem"><a href="contact-us.html">Kontakt</a></li>
           </ul>
         </nav>
 
@@ -225,19 +303,29 @@
         </div>
       </section>
 
-      <section class="sec-text-img pb-90">
+      <section class="sec-text-img pb-90" data-aos="fade-up">
         <div class="container">
           <div class="text-img">
-            <div class="text-img__text">
-              <h3 class="font-34 font-regular text-img__title">Expertise</h3>
-              <p>
+            <div
+              class="text-img__text"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <h3
+                class="font-34 font-regular text-img__title"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
+                Expertise
+              </h3>
+              <p data-aos="fade-up" data-aos-delay="300">
                 Die Anforderungen an Unternehmen steigen zunehmend an, wodurch
                 Marketingmaßnahmen immer aufwändiger und ausfallender gestaltet
                 werden. Aufgrund dieses Wettbewerbs werden Ziele immer höher
                 gesetzt. Mit Hilfe eines Marketing-Audits untersuchen wir Ihren
                 Ist-Stand und überprüfen Ihre Performance-Abläufe.
               </p>
-              <p>
+              <p data-aos="fade-up" data-aos-delay="400">
                 Ihren digitalen Auftritt, Ihre digitale Position, den Stand
                 Ihrer Webseite, Ihre Auffindbarkeit, sowie Ihre digitalen
                 Maßnahmen untersuchen wir für Sie anhand einer fundierten
@@ -255,6 +343,8 @@
               width="100%"
               height="100%"
               loading="lazy"
+              data-aos="zoom-in"
+              data-aos-delay="500"
             />
           </div>
         </div>
@@ -263,7 +353,11 @@
       <section class="sec-team pb-90">
         <div class="container">
           <div class="team">
-            <div class="team__item text-center">
+            <div
+              class="team__item text-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <img
                 src="img/webp/dummy-user.webp"
                 alt="team"
@@ -328,7 +422,11 @@
                 </li>
               </ul>
             </div>
-            <div class="team__item text-center">
+            <div
+              class="team__item text-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <img
                 src="img/webp/dummy-user.webp"
                 alt="team"
@@ -393,7 +491,11 @@
                 </li>
               </ul>
             </div>
-            <div class="team__item text-center">
+            <div
+              class="team__item text-center"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <img
                 src="img/webp/dummy-user.webp"
                 alt="team"
@@ -458,7 +560,11 @@
                 </li>
               </ul>
             </div>
-            <div class="team__item text-center">
+            <div
+              class="team__item text-center"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <img
                 src="img/webp/dummy-user.webp"
                 alt="team"
@@ -523,7 +629,11 @@
                 </li>
               </ul>
             </div>
-            <div class="team__item text-center">
+            <div
+              class="team__item text-center"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <img
                 src="img/webp/dummy-user.webp"
                 alt="team"
@@ -588,7 +698,11 @@
                 </li>
               </ul>
             </div>
-            <div class="team__item text-center">
+            <div
+              class="team__item text-center"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
               <img
                 src="img/webp/dummy-user.webp"
                 alt="team"
@@ -653,7 +767,11 @@
                 </li>
               </ul>
             </div>
-            <div class="team__item text-center">
+            <div
+              class="team__item text-center"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
               <img
                 src="img/webp/dummy-user.webp"
                 alt="team"
@@ -718,7 +836,11 @@
                 </li>
               </ul>
             </div>
-            <div class="team__item text-center">
+            <div
+              class="team__item text-center"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
               <img
                 src="img/webp/dummy-user.webp"
                 alt="team"
@@ -792,11 +914,17 @@
           <div class="value">
             <h3
               class="font-34 font-regular text-capitalize text-center value__title"
+              data-aos="fade-up"
+              data-aos-duration="300"
             >
               Unsere Werte
             </h3>
 
-            <p class="font-regular text-center value__desc">
+            <p
+              class="font-regular text-center value__desc"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
               Wir selbst legen einen hohen Wert auf unsere Unternehmenskultur,
               in welcher das Team und der Arbeitsplatz ein Rückzugsort zur
               eigenen, fachlichen und persönlichen Weiterentwicklung ist.
@@ -806,7 +934,11 @@
             </p>
 
             <div class="value__list">
-              <div class="value__item">
+              <div
+                class="value__item"
+                data-aos="fade-up"
+                data-aos-duration="300"
+              >
                 <img
                   src="img/svg/heart.svg"
                   alt="heart"
@@ -823,7 +955,11 @@
                   ein.
                 </p>
               </div>
-              <div class="value__item">
+              <div
+                class="value__item"
+                data-aos="fade-up"
+                data-aos-duration="600"
+              >
                 <img
                   src="img/svg/self_improvement.svg"
                   alt="self_improvement"
@@ -840,7 +976,11 @@
                   will.
                 </p>
               </div>
-              <div class="value__item">
+              <div
+                class="value__item"
+                data-aos="fade-up"
+                data-aos-duration="900"
+              >
                 <img
                   src="img/svg/filter_hdr.svg"
                   alt="filter_hdr"
@@ -865,9 +1005,19 @@
       <section class="sec-text-img pb-90">
         <div class="container">
           <div class="text-img">
-            <div class="text-img__text">
-              <h3 class="font-34 font-regular text-img__title">Unser Office</h3>
-              <p>
+            <div
+              class="text-img__text"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <h3
+                class="font-34 font-regular text-img__title"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                Unser Office
+              </h3>
+              <p data-aos="fade-up" data-aos-delay="300">
                 Unser Office befindet sich im Gutenberg Digital Hub, welches am
                 wunderschönen Zollhafen in Mainz liegt. Das Hub ist ein
                 CoWorking Space und gilt im Rhein-Main-Gebiet als der Kern der
@@ -878,6 +1028,8 @@
               </p>
             </div>
             <img
+              data-aos="fade-left"
+              data-aos-delay="100"
               src="img/webp/bearbeitet.webp"
               alt="expertise"
               width="100%"
