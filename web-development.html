@@ -19,7 +19,7 @@
     />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
 
-    <title>Contact Us | Digital Shared Service Center</title>
+    <title>Digital Shared Service Center</title>
 
     <!-- START : Meta Tags -->
     <meta property="og:locale" content="en_US" />
@@ -76,7 +76,9 @@
               <a href="index.html">Home</a>
             </li>
             <li role="listitem">
-              <a href="services.html">Services</a>
+              <a href="services.html" class="active" aria-current="page"
+                >Services</a
+              >
               <!-- <button class="header-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -168,9 +170,7 @@
               </div>
             </li>
             <li role="listitem">
-              <a href="contact-us.html" class="active" aria-current="page"
-                >Kontakt</a
-              >
+              <a href="contact-us.html">Kontakt</a>
             </li>
           </ul>
         </nav>
@@ -185,7 +185,18 @@
 
     <main>
       <section class="sec-intro pb-90">
-        <div class="intro">
+        <div
+          class="intro"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.1),
+                rgba(0, 0, 0, 0.1)
+              ),
+              url('img/webp/digital-marketing.webp');
+            background-size: cover;
+            background-position: center;
+          "
+        >
           <div class="intro__bg"></div>
           <div class="container">
             <div class="intro__inner">
@@ -194,17 +205,17 @@
                 data-aos="fade-up"
                 data-aos-duration="300"
               >
-                Kontakt <br /><span>Formular</span>
+                WEB<br />
+                DEVELOPMENT
               </h1>
 
               <a
-                href="#form"
+                href="#dms"
                 class="intro__link"
                 data-aos="fade-up"
                 data-aos-duration="600"
-                aria-label="Zum Kontaktformular scrollen"
               >
-                Kontakt
+                Warum Digital Marketing?
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16.167"
@@ -222,13 +233,13 @@
             </div>
           </div>
 
-          <ul class="intro__social" aria-label="Social Media Links">
+          <ul class="intro__social" aria-label="Social media links">
             <li data-aos="fade-left" data-aos-duration="600">
               <a
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Besuchen Sie unsere Instagram-Seite"
+                aria-label="Visit our Instagram page"
               >
                 <img
                   src="./img/svg/instagram.svg"
@@ -244,7 +255,7 @@
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Besuchen Sie unsere LinkedIn-Seite"
+                aria-label="Visit our LinkedIn page"
               >
                 <img
                   src="./img/svg/linkedin.svg"
@@ -259,98 +270,417 @@
         </div>
       </section>
 
-      <section class="sec-form pb-90">
-        <div class="container">
-          <div class="form" id="form">
+      <section
+        class="sec-expertise sec-expertise--secondary pb-90"
+        aria-labelledby="expertise-title"
+        role="region"
+        id="dms"
+      >
+        <div class="expertise">
+          <div class="container">
             <h2
-              class="text-center font-36 font-regular form__title"
+              id="expertise-title"
+              class="font-34 text-center font-regular text-uppercase expertise__title"
               data-aos="fade-up"
-              data-aos-duration="900"
+              data-aos-duration="300"
             >
-              Kontakt
+              Performance Marketing
             </h2>
 
-            <form action="" method="post" novalidate>
-              <div data-aos="fade-up" data-aos-duration="300">
-                <label for="name" class="sr-only">Ihr Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Ihr Name"
-                  required
-                />
-              </div>
-
-              <div data-aos="fade-up" data-aos-duration="300">
-                <label for="email" class="sr-only">Ihre E-Mail Adresse</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Ihre E-Mail Adresse"
-                  required
-                />
-              </div>
-
-              <div data-aos="fade-up" data-aos-duration="300">
-                <label for="phone" class="sr-only">Ihre Telefonnummer</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="Ihre Telefonnummer"
-                  pattern="[0-9+\s\-()]*"
-                />
-              </div>
-
-              <div data-aos="fade-up" data-aos-duration="300">
-                <label for="message" class="sr-only">Ihre Nachricht</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Ihre Nachricht"
-                  rows="5"
-                  required
-                ></textarea>
+            <div class="expertise__list">
+              <div
+                class="expertise__item expertise__item--large"
+                role="listitem"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
+                <p>
+                  Mit uns erhalten Sie nicht nur eine ganzheitliche Strategie,
+                  sondern auch eine lösungsorientierte und vollständige
+                  Umsetzung. Wir konzipieren und verwalten individuell für Sie
+                  aufgesetzte Kampagnen, um Ihrem Unternehmen zu größerem Erfolg
+                  zu verhelfen und gesteckte Ziele zu erreichen. Dies kann im
+                  Bereich des Performance Marketing zum Beispiel
+                </p>
               </div>
 
               <div
-                class="form__check"
+                class="expertise__item expertise__item--large"
+                role="listitem"
                 data-aos="fade-up"
-                data-aos-duration="300"
+                data-aos-duration="800"
               >
-                <input type="checkbox" name="terms" id="terms" required />
-                <label for="terms">
-                  Ich stimme der
-                  <a href="terms.html" target="_blank">Datenschutzerklärung</a>
-                  zu.
-                </label>
+                <p>
+                  durch geschaltete Anzeigen in Suchmaschinen oder Social Media
+                  erfolgen. Unsere Expert*innen im Bereich des Performance
+                  Marketings lassen Ihre Marke, Ihre Produkte und Ihre
+                  Kundschaft dabei nie aus den Augen und sorgen somit für ein
+                  umfassendes und stetiges Wachstum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-exp pb-90" data-aos="fade-up">
+        <div class="exp ptb-90">
+          <div class="container">
+            <div class="exp__inner">
+              <div class="exp__content" data-aos="fade-right">
+                <h2
+                  class="font-36 font-regular exp__title"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  Worin liegt der Vorteil?
+                </h2>
+
+                <p data-aos="fade-up" data-aos-delay="200">
+                  Im digitalen Zeitalter sind Unternehmen für Erfolg und
+                  Wachstum auf einen starken und präsenten Online-Auftritt
+                  angewiesen. Eine hübsche Webseite oder langsames organisches
+                  Wachstum reicht dabei aber meist nicht mehr aus. Performance
+                  Marketing ermöglicht durch zahlenbasiertes und planbares
+                  Vorgehen die Steigerung der Bekanntheit und Verkaufsrate Ihres
+                  Unternehmens. Dies gelingt über die durchdachte Abstimmung und
+                  Vernetzung verschiedener Plattformen und Maßnahmen
+                  untereinander.
+                </p>
+
+                <ul class="exp__list" role="list">
+                  <li data-aos="fade-up" data-aos-delay="300">
+                    <img
+                      src="img/svg/chat.svg"
+                      alt="Symbol für digitale Kommunikation"
+                      width="30"
+                      height="30"
+                    />
+                    Rund um die Uhr
+                  </li>
+                  <li data-aos="fade-up" data-aos-delay="400">
+                    <img
+                      src="img/svg/heart.svg"
+                      alt="Herz-Symbol für Leidenschaft"
+                      width="30"
+                      height="30"
+                    />
+                    Zielgerichtet
+                  </li>
+                  <li data-aos="fade-up" data-aos-delay="500">
+                    <img
+                      src="img/svg/compass.svg"
+                      alt="Kompass-Symbol für Orientierung"
+                      width="30"
+                      height="30"
+                    />
+                    Detaillierte Analyse
+                  </li>
+                  <li data-aos="fade-up" data-aos-delay="600">
+                    <img
+                      src="img/svg/crown.svg"
+                      alt="Krone-Symbol für Exzellenz"
+                      width="30"
+                      height="30"
+                    />
+                    Plattformübergreifend
+                  </li>
+                </ul>
               </div>
 
-              <div class="form__btn" data-aos="fade-up" data-aos-duration="300">
-                <button type="submit">Nachricht Abschicken</button>
+              <div
+                class="exp__image-wrapper"
+                data-aos="fade-left"
+                data-aos-delay="300"
+              >
+                <img
+                  src="img/webp/web-dev.webp"
+                  alt="web development"
+                  width="500"
+                  height="300"
+                  class="img-fluid exp__image"
+                  loading="lazy"
+                />
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>
 
       <section
-        class="responsive-map"
+        class="sec-detail pb-90"
         data-aos="fade-up"
-        data-aos-duration="300"
+        data-aos-duration="500"
       >
-        <iframe
-          width="600"
-          height="450"
-          style="border: 0"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://maps.google.com/maps?&q=53.600814,10.0667712&z=15&output=embed"
-        >
-        </iframe>
+        <div class="detail" data-aos="fade-up" data-aos-duration="500">
+          <div class="container" data-aos="fade-up" data-aos-duration="500">
+            <h2
+              class="detail__title font-30 text-uppercase font-regular mb-30"
+              data-aos="fade-up"
+              data-aos-duration="400"
+            >
+              Our services in performance marketing
+            </h2>
+
+            <div class="detail__inner">
+              <div
+                class="detail__item"
+                data-aos="fade-up"
+                data-aos-duration="400"
+              >
+                <div
+                  class="detail__item-text"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                >
+                  <h3 class="font-24 font-regular mb-20">
+                    Performance Marketing
+                  </h3>
+                  <p>
+                    Um die Daten Ihrer Webseite umfangreich zu messen und Sie
+                    auf dem Laufenden zu halten, verwenden wir das Analyse-Tool
+                    Google Analytics. Ziel dieser Analyse ist es, einen genauen
+                    Eindruck über den Stand ihrer Webseite, ihres Shops oder
+                    Ihres Blogs zu erhalten. So können wir genauestens
+                    nachvollziehen, wie frequentiert Ihre Seite besucht wird,
+                    woher die Besucher*innen stammen und welche Merkmale Ihnen
+                    zuzuweisen sind. Aufgrund dieser Daten ist es uns möglich,
+                    ständige Anpassungen durchzuführen, mit welchen wir Ihre
+                    Reichweite und schließlich Ihren Profit erhöhen können.
+                  </p>
+                </div>
+                <div
+                  class="detail__item-image"
+                  data-aos="zoom-in"
+                  data-aos-duration="500"
+                >
+                  <img
+                    src="img/svg/marketing.svg"
+                    alt="marketing"
+                    loading="lazy"
+                    width="100"
+                    height="100"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="detail__item"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
+                <div
+                  class="detail__item-text"
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                >
+                  <h3 class="font-24 font-regular mb-20">
+                    Suchmaschinenoptimierung (SEO)
+                  </h3>
+                  <p>
+                    Damit die richtige Zielgruppe auf Ihre Webseite aufmerksam
+                    gemacht wird, ist die Suchmaschinenoptimierung (SEO) ein
+                    essentielles Werkzeug. Sie bietet ein enormes Potenzial in
+                    der Leadgewinnung für Ihre Webseite: Ihre Webseite wird
+                    dadurch auf Suchmaschinenseiten weiter oben im Ranking
+                    gelistet. So werden mehr organische Suchergebnisse
+                    generiert, die Bekanntheit und dadurch auch der Umsatz
+                    steigen.
+                  </p>
+                </div>
+                <div
+                  class="detail__item-image"
+                  data-aos="zoom-in"
+                  data-aos-duration="600"
+                >
+                  <img
+                    src="img/svg/marketing.svg"
+                    alt="marketing"
+                    loading="lazy"
+                    width="100"
+                    height="100"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="detail__item"
+                data-aos="fade-up"
+                data-aos-duration="600"
+              >
+                <div
+                  class="detail__item-text"
+                  data-aos="fade-right"
+                  data-aos-duration="700"
+                >
+                  <h3 class="font-24 font-regular mb-20">
+                    Suchmaschinenwerbung (SEA)
+                  </h3>
+                  <p>
+                    Die Anzahl an Webseiten und Online-Inhalten steigt stetig
+                    an. Die Wahrscheinlichkeit von Ihrem Publikum über
+                    Suchmaschinen gefunden zu werden, wird dabei immer
+                    unwahrscheinlicher. Während organische
+                    Suchmaschinenoptimierung schwierig zu kontrollieren ist,
+                    offeriert die Suchmaschinenwerbung einen schnellen und
+                    effektiven Weg, um oben in der Suchleiste zu erscheinen und
+                    mehr Kunden auf ihre Seite zu locken. Wegen häufiger
+                    Anpassungen von Google und des Marktes sollten Sie dabei
+                    stets Ihre Kampagnen aktualisieren. Als zertifizierter
+                    Google Partner stehen wir Ihnen mit Rat und Tat zur Seite,
+                    damit Sie immer up-to-date bleiben.
+                  </p>
+                </div>
+                <div
+                  class="detail__item-image"
+                  data-aos="zoom-in"
+                  data-aos-duration="700"
+                >
+                  <img
+                    src="img/svg/marketing.svg"
+                    alt="marketing"
+                    loading="lazy"
+                    width="100"
+                    height="100"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="detail__item"
+                data-aos="fade-up"
+                data-aos-duration="600"
+              >
+                <div
+                  class="detail__item-text"
+                  data-aos="fade-right"
+                  data-aos-duration="700"
+                >
+                  <h3 class="font-24 font-regular mb-20">
+                    Suchmaschinenwerbung (SEA)
+                  </h3>
+                  <p>
+                    Die Anzahl an Webseiten und Online-Inhalten steigt stetig
+                    an. Die Wahrscheinlichkeit von Ihrem Publikum über
+                    Suchmaschinen gefunden zu werden, wird dabei immer
+                    unwahrscheinlicher. Während organische
+                    Suchmaschinenoptimierung schwierig zu kontrollieren ist,
+                    offeriert die Suchmaschinenwerbung einen schnellen und
+                    effektiven Weg, um oben in der Suchleiste zu erscheinen und
+                    mehr Kunden auf ihre Seite zu locken. Wegen häufiger
+                    Anpassungen von Google und des Marktes sollten Sie dabei
+                    stets Ihre Kampagnen aktualisieren. Als zertifizierter
+                    Google Partner stehen wir Ihnen mit Rat und Tat zur Seite,
+                    damit Sie immer up-to-date bleiben.
+                  </p>
+                </div>
+                <div
+                  class="detail__item-image"
+                  data-aos="zoom-in"
+                  data-aos-duration="700"
+                >
+                  <img
+                    src="img/svg/marketing.svg"
+                    alt="marketing"
+                    loading="lazy"
+                    width="100"
+                    height="100"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="sec-vision pb-90"
+        data-aos="fade-up"
+        data-aos-duration="500"
+      >
+        <div class="vision" data-aos="fade-up" data-aos-duration="500">
+          <div class="container" data-aos="fade-up" data-aos-duration="500">
+            <div
+              class="vision__inner"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div
+                class="vision__image"
+                data-aos="fade-right"
+                data-aos-duration="400"
+              >
+                <div
+                  class="vision__image-inner"
+                  data-aos="zoom-in"
+                  data-aos-duration="400"
+                >
+                  <img
+                    src="img/webp/web-dev-discuss.webp"
+                    alt="vison"
+                    width="647"
+                    height="480"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div
+                class="vision__content ptb-90"
+                data-aos="fade-left"
+                data-aos-duration="500"
+              >
+                <h3
+                  class="font-34 text-uppercase font-regular vision__title"
+                  data-aos="fade-up"
+                  data-aos-duration="300"
+                >
+                  MEHR PERFORMANCE FÜR IHR UNTERNEHMEN
+                </h3>
+
+                <div
+                  class="vision__subtitle font-24"
+                  data-aos="fade-up"
+                  data-aos-duration="400"
+                >
+                  Überzeugen Sie sich selbst
+                </div>
+
+                <p class="mb-30" data-aos="fade-up" data-aos-duration="500">
+                  Unser Portfolio im Bereich des Performance Marketing ist
+                  umfassend: Machen Sie sich selbst ein Bild, indem Sie sich
+                  unsere Referenzen ansehen oder ganz einfach direkt mit uns
+                  über Ihre Ziele sprechenß
+                </p>
+
+                <div data-aos="fade-up" data-aos-duration="600">
+                  <a
+                    href="#"
+                    class="btn text-uppercase"
+                    data-aos="zoom-in"
+                    data-aos-duration="700"
+                  >
+                    <span> Besuchen Sie uns auf LinkedIn </span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="sec-hire">
@@ -430,12 +760,16 @@
                   <li role="listitem">
                     <a href="index.html">Home</a>
                   </li>
-                  <li role="listitem"><a href="services.html">Services</a></li>
+                  <li role="listitem">
+                    <a href="contact-us.html" class="active" role="listitem"
+                      >Services</a
+                    >
+                  </li>
                   <li role="listitem"><a href="about-us.html">Über uns</a></li>
                   <li role="listitem"><a href="#">Career</a></li>
                 </ul>
                 <ul class="footer__nav-list" role="list">
-                  <li class="active" role="listitem">
+                  <li>
                     <a href="contact-us.html">Kontakt</a>
                   </li>
                   <li role="listitem">

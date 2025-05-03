@@ -19,7 +19,7 @@
     />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
 
-    <title>Contact Us | Digital Shared Service Center</title>
+    <title>impressum | Digital Shared Service Center</title>
 
     <!-- START : Meta Tags -->
     <meta property="og:locale" content="en_US" />
@@ -167,11 +167,7 @@
                 </ul>
               </div>
             </li>
-            <li role="listitem">
-              <a href="contact-us.html" class="active" aria-current="page"
-                >Kontakt</a
-              >
-            </li>
+            <li role="listitem"><a href="contact-us.html">Kontakt</a></li>
           </ul>
         </nav>
 
@@ -185,26 +181,37 @@
 
     <main>
       <section class="sec-intro pb-90">
-        <div class="intro">
-          <div class="intro__bg"></div>
+        <div
+          class="intro"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.1),
+                rgba(0, 0, 0, 0.1)
+              ),
+              url('img/webp/imprint.webp');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <!-- <div class="intro__bg"></div> -->
           <div class="container">
             <div class="intro__inner">
               <h1
-                class="font-85 font-light text-uppercase intro__title"
+                class="font-85 font-light text-uppercase intro__title aos-init aos-animate"
                 data-aos="fade-up"
                 data-aos-duration="300"
               >
-                Kontakt <br /><span>Formular</span>
+                Digital Shared <br />
+                <span>Service GmbH</span>
               </h1>
 
               <a
-                href="#form"
-                class="intro__link"
+                href="#policy"
+                class="intro__link aos-init aos-animate"
                 data-aos="fade-up"
                 data-aos-duration="600"
-                aria-label="Zum Kontaktformular scrollen"
               >
-                Kontakt
+                echter Abdruck
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16.167"
@@ -213,22 +220,26 @@
                   focusable="false"
                 >
                   <g fill="none" stroke="#32506a" stroke-width="2">
-                    <path d="m.707.707 7.377 7.377L15.461.707" />
-                    <path d="m.707 6.707 7.377 7.377 7.377-7.377" />
-                    <path d="m.707 12.707 7.377 7.377 7.377-7.377" />
+                    <path d="m.707.707 7.377 7.377L15.461.707"></path>
+                    <path d="m.707 6.707 7.377 7.377 7.377-7.377"></path>
+                    <path d="m.707 12.707 7.377 7.377 7.377-7.377"></path>
                   </g>
                 </svg>
               </a>
             </div>
           </div>
 
-          <ul class="intro__social" aria-label="Social Media Links">
-            <li data-aos="fade-left" data-aos-duration="600">
+          <ul class="intro__social" aria-label="Social media links">
+            <li
+              data-aos="fade-left"
+              data-aos-duration="600"
+              class="aos-init aos-animate"
+            >
               <a
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Besuchen Sie unsere Instagram-Seite"
+                aria-label="Visit our Instagram page"
               >
                 <img
                   src="./img/svg/instagram.svg"
@@ -239,12 +250,16 @@
                 />
               </a>
             </li>
-            <li data-aos="fade-left" data-aos-duration="900">
+            <li
+              data-aos="fade-left"
+              data-aos-duration="900"
+              class="aos-init aos-animate"
+            >
               <a
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Besuchen Sie unsere LinkedIn-Seite"
+                aria-label="Visit our LinkedIn page"
               >
                 <img
                   src="./img/svg/linkedin.svg"
@@ -259,159 +274,53 @@
         </div>
       </section>
 
-      <section class="sec-form pb-90">
+      <section class="privacy-policy pb-90" id="policy">
         <div class="container">
-          <div class="form" id="form">
-            <h2
-              class="text-center font-36 font-regular form__title"
-              data-aos="fade-up"
-              data-aos-duration="900"
+          <h1 class="font-24">Anschrift / Kontakt</h1>
+          <p>
+            Inter Shared Service GmbH<br />
+            Radeberger Str. 45<br />
+            01099 Dresden
+          </p>
+
+          <p>
+            Telefon: <a href="tel:+4935130907914">+49 351 30907914</a> <br />
+            Email:
+            <a href="mailto:kontakt@inter-shared-service.de"
+              >kontakt@inter-shared-service.de</a
             >
-              Kontakt
-            </h2>
+            <br />
+            Internet:
+            <a href="www.inter-shared-service.de"
+              >www.inter-shared-service.de</a
+            >
+          </p>
+          <h2 class="font-24">Vertretungsberechtigte Person</h2>
+          <p>Olaf Beyer</p>
 
-            <form action="" method="post" novalidate>
-              <div data-aos="fade-up" data-aos-duration="300">
-                <label for="name" class="sr-only">Ihr Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Ihr Name"
-                  required
-                />
-              </div>
+          <h2>Registernummer</h2>
+          <p>HRB 44992</p>
 
-              <div data-aos="fade-up" data-aos-duration="300">
-                <label for="email" class="sr-only">Ihre E-Mail Adresse</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Ihre E-Mail Adresse"
-                  required
-                />
-              </div>
+          <h2 class="font-24">Umsatzsteuer-Identifikationsnummer</h2>
+          <p>DE140365832</p>
 
-              <div data-aos="fade-up" data-aos-duration="300">
-                <label for="phone" class="sr-only">Ihre Telefonnummer</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="Ihre Telefonnummer"
-                  pattern="[0-9+\s\-()]*"
-                />
-              </div>
+          <h2 class="font-24">Zuständige Aufsichtsbehörden</h2>
 
-              <div data-aos="fade-up" data-aos-duration="300">
-                <label for="message" class="sr-only">Ihre Nachricht</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Ihre Nachricht"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
+          <p>
+            <a href="https://www.sbk-sachsen.de/index.html"
+              >Steuerberaterkammer des Freistaates Sachsen
+            </a>
+          </p>
+          <p>
+            <a href="https://www.wpk.de/">Wirtschaftsprüferkammer</a> –
+            Körperschaft des öffentlichen Rechts
+          </p>
 
-              <div
-                class="form__check"
-                data-aos="fade-up"
-                data-aos-duration="300"
-              >
-                <input type="checkbox" name="terms" id="terms" required />
-                <label for="terms">
-                  Ich stimme der
-                  <a href="terms.html" target="_blank">Datenschutzerklärung</a>
-                  zu.
-                </label>
-              </div>
-
-              <div class="form__btn" data-aos="fade-up" data-aos-duration="300">
-                <button type="submit">Nachricht Abschicken</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="responsive-map"
-        data-aos="fade-up"
-        data-aos-duration="300"
-      >
-        <iframe
-          width="600"
-          height="450"
-          style="border: 0"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://maps.google.com/maps?&q=53.600814,10.0667712&z=15&output=embed"
-        >
-        </iframe>
-      </section>
-
-      <section class="sec-hire">
-        <div class="hire">
-          <div class="container">
-            <div class="hire__inner">
-              <div>
-                <h3
-                  class="text-uppercase font-34 font-regular hire__title"
-                  data-aos="fade-up"
-                  data-aos-duration="300"
-                >
-                  HIER FINDEN SIE UNS
-                </h3>
-
-                <ul class="hire__list">
-                  <li data-aos="fade-up" data-aos-duration="300">
-                    Digital shared service center Marketing GmbH
-                  </li>
-                  <li data-aos="fade-up" data-aos-duration="600">
-                    <p>
-                      Taunusstraße 59-61 <br />Mainz 55118 <br />Rheinland-Pfalz
-                    </p>
-                  </li>
-                  <li data-aos="fade-up" data-aos-duration="900">
-                    Deutschland
-                  </li>
-                </ul>
-              </div>
-              <div class="text-right hire__right">
-                <h4
-                  class="text-uppercase font-34 font-regular hire__title"
-                  data-aos="fade-up"
-                  data-aos-duration="300"
-                >
-                  NEHMEN SIE HIER <br />KONTAKT AUF
-                </h4>
-
-                <div data-aos="fade-up" data-aos-duration="1000">
-                  <a
-                    href="#"
-                    class="btn"
-                    aria-label="Mehr über unser Team erfahren"
-                  >
-                    <span> Kontakt aufnehmen</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      focusable="false"
-                    >
-                      <path
-                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h2>Konzeption und Realisierung</h2>
+          <p>
+            <a href="https://realkonzept.de/">realkonzept</a> – strategische
+            markenkommunikation
+          </p>
         </div>
       </section>
     </main>
@@ -431,17 +340,19 @@
                     <a href="index.html">Home</a>
                   </li>
                   <li role="listitem"><a href="services.html">Services</a></li>
-                  <li role="listitem"><a href="about-us.html">Über uns</a></li>
+                  <li role="listitem">
+                    <a href="about-us.html">Über uns</a>
+                  </li>
                   <li role="listitem"><a href="#">Career</a></li>
                 </ul>
                 <ul class="footer__nav-list" role="list">
-                  <li class="active" role="listitem">
+                  <li role="listitem">
                     <a href="contact-us.html">Kontakt</a>
                   </li>
                   <li role="listitem">
                     <a href="privacy-policy.html">Datenschutzerklärung</a>
                   </li>
-                  <li role="listitem">
+                  <li role="listitem" class="active">
                     <a href="impressum.html">Impressum</a>
                   </li>
                 </ul>
@@ -486,96 +397,6 @@
         </div>
       </div>
     </footer>
-
-    <section class="cookie-card-wrapper">
-      <div class="cookie-card">
-        <div class="title font-24">
-          <div class="title-text">🍪 Datenschutz-präferenz</div>
-
-          <button class="close">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32px"
-              height="32px"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <g id="Menu / Close_SM">
-                <path
-                  id="Vector"
-                  d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16"
-                  stroke="#000000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </g>
-            </svg>
-          </button>
-        </div>
-
-        <div class="description-wrapper">
-          <p class="description">
-            Wir benötigen Ihre Einwilligung, bevor Sie unsere Website weiter
-            besuchen können. Wenn Sie unter 16 Jahre alt sind und Ihre
-            Einwilligung zu optionalen Services geben möchten, müssen Sie Ihre
-            Erziehungsberechtigten um Erlaubnis bitten. Wir verwenden Cookies
-            und andere Technologien auf unserer Website. Einige von ihnen sind
-            essenziell, während andere uns helfen, diese Website und Ihre
-            Erfahrung zu verbessern. Personenbezogene Daten können verarbeitet
-            werden (z. B. IP-Adressen), z. B. für personalisierte Anzeigen und
-            Inhalte oder die Messung von Anzeigen und Inhalten. Weitere
-            Informationen über die Verwendung Ihrer Daten finden Sie in unserer
-            Datenschutzerklärung. Es besteht keine Verpflichtung, in die
-            Verarbeitung Ihrer Daten einzuwilligen, um dieses Angebot zu nutzen.
-            Sie können Ihre Auswahl jederzeit unter Einstellungen widerrufen
-            oder anpassen. Bitte beachten Sie, dass aufgrund individueller
-            Einstellungen möglicherweise nicht alle Funktionen der Website
-            verfügbar sind.
-            <a href="privacy-policy.html">policies</a>.
-          </p>
-          <br />
-          <hr />
-          <p class="description">
-            Einige Services verarbeiten personenbezogene Daten in den USA. Mit
-            Ihrer Einwilligung zur Nutzung dieser Services willigen Sie auch in
-            die Verarbeitung Ihrer Daten in den USA gemäß Art. 49 (1) lit. a
-            GDPR ein. Der EuGH stuft die USA als ein Land mit unzureichendem
-            Datenschutz nach EU-Standards ein. Es besteht beispielsweise die
-            Gefahr, dass US-Behörden personenbezogene Daten in
-            Überwachungsprogrammen verarbeiten, ohne dass für Europäerinnen und
-            Europäer eine Klagemöglichkeit besteht.
-          </p>
-
-          <div class="checkbox-wrapper">
-            <div class="checkbox-item">
-              <input
-                type="checkbox"
-                name="Essenziell"
-                id="essenziell"
-                checked
-                disabled
-              />
-              <label for="essenziell">Essenziell</label>
-            </div>
-            <div class="checkbox-item">
-              <input type="checkbox" name="all" id="all" />
-              <label for="all">Externe Medien</label>
-            </div>
-          </div>
-
-          <ul class="btn-list">
-            <li><button>Einwilligung speichern</button></li>
-            <li><button>Nur essenzielle Cookies akzeptieren</button></li>
-            <li><button>Individuelle Datenschutz-Präferenzen</button></li>
-          </ul>
-        </div>
-        <div class="actions">
-          <div></div>
-          <button class="accept">Accept All</button>
-        </div>
-      </div>
-    </section>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/custom.js"></script>
