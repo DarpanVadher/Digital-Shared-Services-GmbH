@@ -1,10 +1,17 @@
-AOS.init({
-  // disable: function () {
-  // return window.innerWidth < 767;
-  // },
-  easing: "ease-in-out",
-});
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    duration: 300,
+    easing: "ease-in-out",
+    once: false,
+    mirror: true,
+    offset: 0, // Change offset to trigger animations sooner/later
+  });
 
+  // Refresh AOS when dynamic content loads
+  window.addEventListener("load", function () {
+    AOS.refresh();
+  });
+});
 // ************************************************************************
 // START : Header Scroll
 // ************************************************************************
@@ -175,5 +182,47 @@ document.addEventListener("DOMContentLoaded", function () {
           svg.style.transform = "rotate(0deg)";
         });
     }
+  });
+});
+
+// ************************************************************************
+
+function setCookie(name, value, days) {
+  const d = new Date();
+  d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
+  const expires = "expires=" + d.toUTCString();
+  document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+function getCookie(name) {
+  const cookieArr = document.cookie.split(";");
+  for (let i = 0; i < cookieArr.length; i++) {
+    const cookiePair = cookieArr[i].trim().split("=");
+    if (cookiePair[0] === name) {
+      return cookiePair[1];
+    }
+  }
+  return null;
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  const cookieCard = document.querySelector(".cookie-card-wrapper");
+  const acceptBtn = document.querySelector(".accept");
+  const closeBtn = document.querySelector(".close");
+
+  // Hide modal if consent cookie exists
+  if (getCookie("cookie_consent") === "accepted") {
+    cookieCard.style.display = "none";
+  }
+
+  // Save cookie and hide modal
+  acceptBtn.addEventListener("click", () => {
+    setCookie("cookie_consent", "accepted", 365);
+    cookieCard.style.display = "none";
+  });
+
+  // Just hide modal (no cookie)
+  closeBtn.addEventListener("click", () => {
+    cookieCard.style.display = "none";
   });
 });
