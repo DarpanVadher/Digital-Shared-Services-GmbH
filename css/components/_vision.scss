@@ -97,12 +97,15 @@
                 width: 100%;
                 z-index: 3;
             }
-        }
 
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+            img {
+                object-fit: cover;
+                position: relative;
+                display: block;
+                height: calc(100% + 2px) !important;
+                width: calc(100% + 2px) !important;
+                margin: -1px;
+            }
         }
     }
 }
