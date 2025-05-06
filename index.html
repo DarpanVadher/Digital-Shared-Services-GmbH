@@ -54,6 +54,8 @@
   </head>
 
   <body>
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+
     <header class="header" role="banner">
       <div class="header-inner" data-aos="fade-down" data-aos-duration="500">
         <a
@@ -170,7 +172,12 @@
           </ul>
         </nav>
 
-        <button class="hamburger">
+        <button
+          class="hamburger"
+          aria-label="Hauptmenü"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
           </div>
@@ -178,26 +185,35 @@
       </div>
     </header>
 
-    <main>
+    <main class="main-content">
+      <!-- START : Hero -->
       <section
         class="sec-hero"
-        aria-labelledby="hero-title"
+        aria-labelledby="hero-title hero-desc"
         role="region"
         data-aos="fade-up"
         data-aos-duration="200"
       >
         <div class="hero">
-          <div class="hero-overlay" aria-hidden="true"></div>
+          <!-- Added role="presentation" since this is purely decorative -->
+          <div
+            class="hero-overlay"
+            aria-hidden="true"
+            role="presentation"
+          ></div>
+
           <div class="hero__inner hero__inner--left">
             <div class="hero__content">
               <h1
                 id="hero-title"
                 class="font-36 font-regular hero__title"
                 data-aos="fade-up"
+                tabindex="-1"
               >
                 Sie sind nur einen Schritt von mehr Sichtbarkeit
               </h1>
               <p
+                id="hero-desc"
                 class="font-24 hero__desc"
                 data-aos="fade-up"
                 data-aos-duration="300"
@@ -206,91 +222,122 @@
               </p>
             </div>
 
-            <ul class="hero__social" aria-label="Social media links">
-              <li data-aos="fade-left" data-aos-duration="600">
-                <a
-                  href="https://www.instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram page"
-                >
-                  <img
-                    src="./img/svg/instagram.svg"
-                    alt="Instagram logo"
-                    height="32"
-                    width="32"
-                    loading="lazy"
-                  />
-                </a>
-              </li>
-              <li data-aos="fade-left" data-aos-duration="900">
-                <a
-                  href="https://www.linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn page"
-                >
-                  <img
-                    src="./img/svg/linkedin.svg"
-                    alt="LinkedIn logo"
-                    height="32"
-                    width="32"
-                    loading="lazy"
-                  />
-                </a>
-              </li>
-            </ul>
+            <!-- Social links list - improved semantics -->
+            <nav aria-label="Social Media">
+              <ul class="hero__social" role="list">
+                <li data-aos="fade-left" data-aos-duration="600">
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="Instagram (öffnet in neuem Tab)"
+                  >
+                    <img
+                      src="./img/svg/instagram.svg"
+                      alt=""
+                      height="32"
+                      width="32"
+                      loading="lazy"
+                      decoding="async"
+                      aria-hidden="true"
+                    />
+                    <span class="sr-only">Instagram</span>
+                  </a>
+                </li>
+                <li data-aos="fade-left" data-aos-duration="900">
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="LinkedIn (öffnet in neuem Tab)"
+                  >
+                    <img
+                      src="./img/svg/linkedin.svg"
+                      alt=""
+                      height="32"
+                      width="32"
+                      loading="lazy"
+                      decoding="async"
+                      aria-hidden="true"
+                    />
+                    <span class="sr-only">LinkedIn</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </section>
+      <!-- END : Hero -->
 
+      <!-- START : Marketing -->
       <section
         class="sec-marketing"
-        aria-labelledby="marketing-title"
+        aria-labelledby="marketing-title marketing-desc"
         role="region"
       >
         <div class="marketing bg-square ptb-90">
           <div class="container">
             <div class="marketing__inner">
-              <div>
+              <div class="marketing__text-content">
+                <!-- Added wrapper for better structure -->
                 <div
                   class="font-24 marketing__subtitle"
                   data-aos="fade-up"
-                  data-aos="fade-left"
+                  aria-label="Unternehmen"
                 >
                   Digital Shared Services GmbH
                 </div>
+
                 <h2
-                  data-aos="fade-up"
-                  data-aos-duration="600"
                   id="marketing-title"
                   class="font-30 marketing__title text-uppercase"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  tabindex="-1"
                 >
-                  Digitales Marketing und Vertriebsunterstützung Wie gehen wir
+                  Digitales Marketing und Vertriebsunterstützung: Wie gehen wir
                   vor?
                 </h2>
+
                 <div
+                  id="marketing-desc"
                   class="marketing__content"
                   data-aos="fade-up"
                   data-aos-duration="800"
                 >
                   <p>
-                    Sie sind nur einen Schritt von mehr Sichtbarkeit /
-                    Reichweite im Internet und einer Umsatzsteigerung entfernt!
+                    Sie sind nur einen Schritt von mehr Sichtbarkeit, Reichweite
+                    im Internet und einer Umsatzsteigerung entfernt!
                   </p>
                 </div>
               </div>
-              <img
-                src="img/test/undraw_social-dashboard_81sv-2.svg"
-                alt="digital marketing"
+
+              <!-- Improved image with detailed alt text -->
+              <figure
+                class="marketing__image"
                 data-aos="fade-left"
                 data-aos-duration="800"
-              />
+              >
+                <img
+                  src="img/test/undraw_social-dashboard_81sv-2.svg"
+                  alt="Illustration: Digitale Marketingstrategien mit Analytics-Dashboard"
+                  width="580"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption class="sr-only">
+                  Visualisierung unserer digitalen Marketingdienstleistungen
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
       </section>
+      <!-- END : Marketing -->
 
+      <!-- START : Services -->
       <section
         class="sec-services ptb-90"
         aria-labelledby="services-title"
@@ -302,18 +349,19 @@
             class="font-30 font-regular services__title"
             data-aos="fade-up"
             data-aos-duration="300"
+            tabindex="-1"
           >
-            Schritt für Schritt
+            Schritt für Schritt zu Ihrem Erfolg
           </h2>
 
-          <div class="services__list services__list--secondary">
-            <!-- Services Item Start -->
-            <div class="services__item">
+          <div class="services__list services__list--secondary" role="list">
+            <div class="services__item" role="listitem">
               <div class="services__item-content">
                 <h3
                   class="font-34 font-regular services__item-title"
                   data-aos="fade-up"
                   data-aos-duration="200"
+                  id="service-goals"
                 >
                   Ihre Ziele
                 </h3>
@@ -321,6 +369,7 @@
                   class="services__item-text"
                   data-aos="fade-up"
                   data-aos-duration="400"
+                  aria-labelledby="service-goals"
                 >
                   <p>
                     Wir erklären Ihnen, was möglich ist und erfragen Ihre
@@ -329,9 +378,9 @@
                 </div>
                 <div data-aos="fade-up" data-aos-duration="600">
                   <a
-                    href="#"
+                    href="/services#goals"
                     class="btn btn--green"
-                    aria-label="Mehr erfahren über Digital Marketing Strategy"
+                    aria-label="Mehr erfahren über Zieldefinition im Marketing"
                   >
                     <span>Mehr erfahren</span>
                     <svg
@@ -340,7 +389,9 @@
                       fill="currentColor"
                       aria-hidden="true"
                       focusable="false"
+                      class="icon-arrow"
                     >
+                      <title class="sr-only">Pfeil-Icon</title>
                       <path
                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
                       />
@@ -348,25 +399,30 @@
                   </a>
                 </div>
               </div>
-
-              <img
-                src="img/test/goals.svg"
-                alt="Grafik zu Ihre Ziele"
-                width="524"
-                height="325"
-                loading="lazy"
-                data-aos="fade-left"
-                data-aos-duration="400"
-              />
+              <figure class="services__image-wrapper">
+                <img
+                  src="img/test/goals.svg"
+                  alt="Illustration: Zieldefinition und Planungsphase"
+                  width="524"
+                  height="325"
+                  loading="lazy"
+                  decoding="async"
+                  data-aos="fade-left"
+                  data-aos-duration="400"
+                />
+                <figcaption class="sr-only">
+                  Visualisierung der Zieldefinition
+                </figcaption>
+              </figure>
             </div>
-            <!-- Services Item End -->
-            <!-- Services Item Start -->
-            <div class="services__item">
+
+            <div class="services__item" role="listitem">
               <div class="services__item-content">
                 <h3
                   class="font-34 font-regular services__item-title"
                   data-aos="fade-up"
                   data-aos-duration="200"
+                  id="service-implementation"
                 >
                   Umsetzung
                 </h3>
@@ -374,17 +430,18 @@
                   class="services__item-text"
                   data-aos="fade-up"
                   data-aos-duration="200"
+                  aria-labelledby="service-implementation"
                 >
                   <p>
-                    Mit der Umsetzung der vereinbarten Maßnahmen, steigern Sie
+                    Mit der Umsetzung der vereinbarten Maßnahmen steigern Sie
                     den Bekanntheitsgrad Ihres Unternehmens im Internet.
                   </p>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="600">
                   <a
-                    href="#"
+                    href="/services#implementation"
                     class="btn btn--green"
-                    aria-label="Mehr erfahren über Digital Marketing Strategy"
+                    aria-label="Mehr erfahren über Marketing-Umsetzung"
                   >
                     <span>Mehr erfahren</span>
                     <svg
@@ -393,7 +450,9 @@
                       fill="currentColor"
                       aria-hidden="true"
                       focusable="false"
+                      class="icon-arrow"
                     >
+                      <title class="sr-only">Pfeil-Icon</title>
                       <path
                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
                       />
@@ -401,25 +460,30 @@
                   </a>
                 </div>
               </div>
-
-              <img
-                src="img/test/product.svg"
-                alt="Grafik zu Umsetzung"
-                width="524"
-                height="325"
-                loading="lazy"
-                data-aos="fade-right"
-                data-aos-duration="400"
-              />
+              <figure class="services__image-wrapper">
+                <img
+                  src="img/test/product.svg"
+                  alt="Illustration: Marketingmaßnahmen im Einsatz"
+                  width="524"
+                  height="325"
+                  loading="lazy"
+                  decoding="async"
+                  data-aos="fade-right"
+                  data-aos-duration="400"
+                />
+                <figcaption class="sr-only">
+                  Visualisierung der Umsetzungsphase
+                </figcaption>
+              </figure>
             </div>
-            <!-- Services Item End -->
-            <!-- Services Item Start -->
-            <div class="services__item">
+
+            <div class="services__item" role="listitem">
               <div class="services__item-content">
                 <h3
                   class="font-34 font-regular services__item-title"
                   data-aos="fade-up"
                   data-aos-duration="200"
+                  id="service-sales"
                 >
                   Vertriebsunterstützung
                 </h3>
@@ -427,6 +491,7 @@
                   class="services__item-text"
                   data-aos="fade-up"
                   data-aos-duration="400"
+                  aria-labelledby="service-sales"
                 >
                   <p>
                     Zur Umsatzsteigerung unterstützen wir Sie mit ausgewählten
@@ -435,9 +500,9 @@
                 </div>
                 <div data-aos="fade-up" data-aos-duration="600">
                   <a
-                    href="#"
+                    href="/services#sales-support"
                     class="btn btn--green"
-                    aria-label="Mehr erfahren über Digital Marketing Strategy"
+                    aria-label="Mehr erfahren über Vertriebsunterstützung"
                   >
                     <span>Mehr erfahren</span>
                     <svg
@@ -446,7 +511,9 @@
                       fill="currentColor"
                       aria-hidden="true"
                       focusable="false"
+                      class="icon-arrow"
                     >
+                      <title class="sr-only">Pfeil-Icon</title>
                       <path
                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
                       />
@@ -454,25 +521,31 @@
                   </a>
                 </div>
               </div>
-
-              <img
-                src="img/test/business-chat.svg"
-                alt="Grafik zu Vertriebsunterstutzung"
-                width="524"
-                height="325"
-                loading="lazy"
-                data-aos="fade-left"
-                data-aos-duration="400"
-              />
+              <figure class="services__image-wrapper">
+                <img
+                  src="img/test/business-chat.svg"
+                  alt="Illustration: Vertriebsberatung und Kundenkommunikation"
+                  width="524"
+                  height="325"
+                  loading="lazy"
+                  decoding="async"
+                  data-aos="fade-left"
+                  data-aos-duration="400"
+                />
+                <figcaption class="sr-only">
+                  Visualisierung der Vertriebsunterstützung
+                </figcaption>
+              </figure>
             </div>
-            <!-- Services Item End -->
           </div>
         </div>
       </section>
+      <!-- End : Services -->
 
+      <!-- Start : References -->
       <section
         class="sec-references ptb-90"
-        aria-labelledby="references-title"
+        aria-labelledby="references-title references-desc"
         role="region"
       >
         <div class="references">
@@ -482,10 +555,12 @@
               class="text-center font-regular font-3 references__title"
               data-aos="fade-up"
               data-aos-duration="300"
+              tabindex="-1"
             >
               Unsere Referenzen
             </h2>
             <p
+              id="references-desc"
               class="text-center references__desc"
               data-aos="fade-up"
               data-aos-duration="400"
@@ -501,14 +576,17 @@
                 data-aos="fade-up"
                 data-aos-duration="100"
               >
-                <img
-                  src="img/webp/frankie.webp"
-                  alt="Logo des Unternehmens Frankie"
-                  width="300"
-                  height="300"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <figure class="reference-logo">
+                  <img
+                    src="img/webp/frankie.webp"
+                    alt="Frankie"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption class="sr-only">Kunde: Frankie</figcaption>
+                </figure>
               </div>
               <div
                 class="references__item"
@@ -516,14 +594,17 @@
                 data-aos="fade-up"
                 data-aos-duration="200"
               >
-                <img
-                  src="img/webp/vivelacar.webp"
-                  alt="Logo des Unternehmens Vivelacar"
-                  width="300"
-                  height="300"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <figure class="reference-logo">
+                  <img
+                    src="img/webp/vivelacar.webp"
+                    alt="Vivelacar"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption class="sr-only">Kunde: Vivelacar</figcaption>
+                </figure>
               </div>
               <div
                 class="references__item"
@@ -531,14 +612,17 @@
                 data-aos="fade-up"
                 data-aos-duration="300"
               >
-                <img
-                  src="img/webp/bildschirmfoto.webp"
-                  alt="Logo des Unternehmens Bildschirmfoto"
-                  width="300"
-                  height="300"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <figure class="reference-logo">
+                  <img
+                    src="img/webp/bildschirmfoto.webp"
+                    alt="Bildschirmfoto"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption class="sr-only">Kunde: Bildschirmfoto</figcaption>
+                </figure>
               </div>
               <div
                 class="references__item"
@@ -546,14 +630,17 @@
                 data-aos="fade-up"
                 data-aos-duration="400"
               >
-                <img
-                  src="img/webp/HI.webp"
-                  alt="Logo des Unternehmens HI"
-                  width="300"
-                  height="300"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <figure class="reference-logo">
+                  <img
+                    src="img/webp/HI.webp"
+                    alt="HI"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption class="sr-only">Kunde: HI</figcaption>
+                </figure>
               </div>
               <div
                 class="references__item"
@@ -561,15 +648,18 @@
                 data-aos="fade-up"
                 data-aos-duration="500"
               >
-                <img
-                  class="sm"
-                  src="img/webp/pfuller.webp"
-                  alt="Logo des Unternehmens Pfuller"
-                  width="300"
-                  height="300"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <figure class="reference-logo">
+                  <img
+                    class="sm"
+                    src="img/webp/pfuller.webp"
+                    alt="Pfuller"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption class="sr-only">Kunde: Pfuller</figcaption>
+                </figure>
               </div>
               <div
                 class="references__item"
@@ -577,14 +667,17 @@
                 data-aos="fade-up"
                 data-aos-duration="600"
               >
-                <img
-                  src="img/webp/caritas.webp"
-                  alt="Logo des Unternehmens Caritas"
-                  width="300"
-                  height="300"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <figure class="reference-logo">
+                  <img
+                    src="img/webp/caritas.webp"
+                    alt="Caritas"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption class="sr-only">Kunde: Caritas</figcaption>
+                </figure>
               </div>
               <div
                 class="references__item"
@@ -592,14 +685,17 @@
                 data-aos="fade-up"
                 data-aos-duration="700"
               >
-                <img
-                  src="img/webp/dbrowa.webp"
-                  alt="Logo des Unternehmens DBrowa"
-                  width="300"
-                  height="300"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <figure class="reference-logo">
+                  <img
+                    src="img/webp/dbrowa.webp"
+                    alt="DBrowa"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption class="sr-only">Kunde: DBrowa</figcaption>
+                </figure>
               </div>
               <div
                 class="references__item"
@@ -607,14 +703,17 @@
                 data-aos="fade-up"
                 data-aos-duration="800"
               >
-                <img
-                  src="img/webp/ownlyou.webp"
-                  alt="Logo des Unternehmens Ownlyou"
-                  width="300"
-                  height="300"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <figure class="reference-logo">
+                  <img
+                    src="img/webp/ownlyou.webp"
+                    alt="Ownlyou"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption class="sr-only">Kunde: Ownlyou</figcaption>
+                </figure>
               </div>
               <div
                 class="references__item"
@@ -622,15 +721,18 @@
                 data-aos="fade-up"
                 data-aos-duration="900"
               >
-                <img
-                  class="lg"
-                  src="img/webp/bardusch.webp"
-                  alt="Logo des Unternehmens Bardusch"
-                  width="300"
-                  height="300"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <figure class="reference-logo">
+                  <img
+                    class="lg"
+                    src="img/webp/bardusch.webp"
+                    alt="Bardusch"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption class="sr-only">Kunde: Bardusch</figcaption>
+                </figure>
               </div>
               <div
                 class="references__item"
@@ -638,52 +740,66 @@
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                <img
-                  class="xs"
-                  src="img/webp/pihub.webp"
-                  alt="Logo des Unternehmens Pihub"
-                  width="300"
-                  height="300"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <figure class="reference-logo">
+                  <img
+                    class="xs"
+                    src="img/webp/pihub.webp"
+                    alt="Pihub"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption class="sr-only">Kunde: Pihub</figcaption>
+                </figure>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- Ende : Referenzen -->
 
-      <section class="sec-cta" aria-labelledby="cta-title" role="region">
+      <!-- START : CTA -->
+      <section
+        class="sec-cta"
+        aria-labelledby="cta-title cta-desc"
+        role="region"
+      >
         <div class="cta ptb-90">
           <div class="container ptb-90">
-            <h2
-              id="cta-title"
-              class="font-24 text-center cta__title"
+            <div
+              class="cta__content"
               data-aos="fade-up"
               data-aos-duration="300"
             >
-              Mit unserem jungen High-Performance Team begleiten wir Sie durch
-              die Herausforderungen des digitalen Zeitalters. Als Full-Service
-              Marketing Agentur liefern wir Ihnen innovative und kraftvolle
-              Ideen, um Ihr Unternehmen zukunftsorientiert nach vorne zu
-              bringen.
-            </h2>
-
-            <div data-aos="fade-up" data-aos-duration="500">
-              <a
-                href="about-us.html"
-                class="btn"
-                aria-label="Mehr über unser Team erfahren"
+              <h2
+                id="cta-title"
+                class="font-24 text-center cta__title"
+                tabindex="-1"
               >
+                Mit unserem jungen High-Performance Team begleiten wir Sie durch
+                die Herausforderungen des digitalen Zeitalters. Als Full-Service
+                Marketing Agentur liefern wir Ihnen innovative und kraftvolle
+                Ideen, um Ihr Unternehmen zukunftsorientiert nach vorne zu
+                bringen.
+              </h2>
+            </div>
+
+            <div class="cta__action" data-aos="fade-up" data-aos-duration="500">
+              <a href="about-us.html" class="btn btn--primary">
                 <span>Mehr zu uns</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  fill="currentColor"
+                  width="16"
+                  height="16"
                   aria-hidden="true"
                   focusable="false"
+                  class="cta__icon"
                 >
+                  <title class="sr-only">Pfeil rechts</title>
                   <path
+                    fill="currentColor"
                     d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
                   />
                 </svg>
@@ -692,39 +808,47 @@
           </div>
         </div>
       </section>
+      <!-- END : CTA -->
 
+      <!-- START : Expertise -->
       <section
         class="sec-expertise bg-wave ptb-90"
-        aria-labelledby="expertise-title"
+        aria-labelledby="expertise-title expertise-subtitle"
         role="region"
       >
         <div class="expertise">
           <div class="container">
-            <h2
-              id="expertise-title"
-              class="font-34 text-center font-regular text-uppercase expertise__title"
+            <header
+              class="expertise__header"
               data-aos="fade-up"
               data-aos-duration="300"
             >
-              Warum Wir?
-            </h2>
+              <h2
+                id="expertise-title"
+                class="font-34 text-center font-regular text-uppercase expertise__title"
+                tabindex="-1"
+              >
+                Warum Wir?
+              </h2>
+              <p
+                id="expertise-subtitle"
+                class="font-24 text-center font-regular expertise__title-subtitle"
+                data-aos="fade-up"
+                data-aos-duration="400"
+              >
+                Effizienz & Umsetzungsstärke
+              </p>
+            </header>
 
-            <h4
-              class="font-24 text-center font-regular expertise__title-subtitle"
-              data-aos="fade-up"
-              data-aos-duration="400"
-            >
-              Effizienz & Umsetzungsstärke
-            </h4>
-
-            <div class="expertise__list">
+            <div class="expertise__list" role="list">
+              <!-- Large Text Items -->
               <div
                 class="expertise__item expertise__item--large"
                 role="listitem"
                 data-aos="fade-up"
                 data-aos-duration="500"
               >
-                <p>
+                <p class="expertise__intro">
                   Wir sind Unternehmer, wie Sie und haben mehrere
                   Geschäftsfelder. Genau wie Sie waren wir einmal an dem Punkt
                   uns mit den erweiterten Vertriebsmöglichkeiten der digitalen
@@ -738,7 +862,7 @@
                 data-aos="fade-up"
                 data-aos-duration="800"
               >
-                <p>
+                <p class="expertise__intro">
                   Wir haben den Weg des Einsatzes digitaler Werkzeuge
                   perfektioniert und unseren Umsatz gesteigert. Die Formel zu
                   Ihrer eigenen bereits vorhanden Kundenansprache: Einsatz
@@ -747,24 +871,29 @@
                 </p>
               </div>
 
+              <!-- Expertise Items -->
               <div
                 class="expertise__item"
                 role="listitem"
                 data-aos="fade-up"
                 data-aos-duration="300"
               >
-                <img
-                  src="img/test/developer_board.svg"
-                  alt="Icon Digital Recruiting Service"
-                  width="50"
-                  height="50"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <h6 class="font-18 expertise__item-title">
+                <div class="expertise__icon">
+                  <img
+                    src="img/test/developer_board.svg"
+                    alt=""
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                  />
+                  <span class="sr-only">Digital Recruiting Service</span>
+                </div>
+                <h3 class="font-18 expertise__item-title">
                   Digital Recruiting Service
-                </h6>
-                <p>
+                </h3>
+                <p class="expertise__item-desc">
                   Profitieren Sie von unserer Erfahrung im Bereich der digitalen
                   Mitarbeitergewinnung.
                 </p>
@@ -776,18 +905,22 @@
                 data-aos="fade-up"
                 data-aos-duration="600"
               >
-                <img
-                  src="img/test/tactic.svg"
-                  alt="Icon Digital Brand Strategy"
-                  width="50"
-                  height="50"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <h6 class="font-18 expertise__item-title">
+                <div class="expertise__icon">
+                  <img
+                    src="img/test/tactic.svg"
+                    alt=""
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                  />
+                  <span class="sr-only">Digital Brand Strategy</span>
+                </div>
+                <h3 class="font-18 expertise__item-title">
                   Digital Brand Strategy
-                </h6>
-                <p>
+                </h3>
+                <p class="expertise__item-desc">
                   Erhalten Sie von uns erfolgsgeprüfte und effektive Strategien
                   für die Digitalisierung Ihres Unternehmens.
                 </p>
@@ -799,19 +932,23 @@
                 data-aos="fade-up"
                 data-aos-duration="900"
               >
-                <img
-                  src="img/test/score.svg"
-                  alt="Icon Performance Marketing"
-                  width="50"
-                  height="50"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <h6 class="font-18 expertise__item-title">
+                <div class="expertise__icon">
+                  <img
+                    src="img/test/score.svg"
+                    alt=""
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                  />
+                  <span class="sr-only">Performance Marketing</span>
+                </div>
+                <h3 class="font-18 expertise__item-title">
                   Performance Marketing
-                </h6>
-                <p>
-                  Lassen Sie sich im vielseitigen Bereich des Pay-per-Click
+                </h3>
+                <p class="expertise__item-desc">
+                  UnLassen Sie sich im vielseitigen Bereich des Pay-per-Click
                   Marketing von uns unterstützen.
                 </p>
               </div>
@@ -822,16 +959,20 @@
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
-                <img
-                  src="img/test/display-settings.svg"
-                  alt="Icon Webdesign"
-                  width="50"
-                  height="50"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <h6 class="font-18 expertise__item-title">Webdesign</h6>
-                <p>
+                <div class="expertise__icon">
+                  <img
+                    src="img/test/display-settings.svg"
+                    alt=""
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                  />
+                  <span class="sr-only">Webdesign</span>
+                </div>
+                <h3 class="font-18 expertise__item-title">Webdesign</h3>
+                <p class="expertise__item-desc">
                   Haben Sie einen modernen und starken Webauftritt? Wir helfen
                   weiter – egal ob bei Webseiten, komplexen IT-Systemen oder
                   Webshops.
@@ -841,16 +982,18 @@
           </div>
         </div>
       </section>
+      <!-- End : Expertise -->
 
-      <section class="sec-vision" data-aos="fade-up" data-aos-duration="500">
-        <div class="vision" data-aos="fade-up" data-aos-duration="500">
-          <div class="container" data-aos="fade-up" data-aos-duration="500">
-            <div
-              class="vision__inner"
-              data-aos="fade-up"
-              data-aos-duration="500"
-            >
-              <div
+      <section
+        class="sec-vision"
+        aria-labelledby="vision-title"
+        role="region"
+        data-aos="fade-up"
+      >
+        <div class="vision">
+          <div class="container">
+            <div class="vision__inner">
+              <figure
                 class="vision__image"
                 data-aos="fade-right"
                 data-aos-duration="400"
@@ -862,33 +1005,33 @@
                 >
                   <img
                     src="img/webp/vision.webp"
-                    alt="vison"
+                    alt="Team meeting zur Besprechung der Unternehmensvision"
                     width="647"
                     height="480"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
-              </div>
+                <figcaption class="sr-only">
+                  Unser Team entwickelt gemeinsame Visionen
+                </figcaption>
+              </figure>
+
               <div
                 class="vision__content ptb-90"
                 data-aos="fade-left"
                 data-aos-duration="500"
               >
                 <h3
+                  id="vision-title"
                   class="font-34 font-regular vision__title"
-                  data-aos="fade-up"
-                  data-aos-duration="300"
+                  tabindex="-1"
                 >
                   Unsere Vision
                 </h3>
-                <p
-                  class="font-34 font-bold vision__text"
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                >
-                  Unsere vielseitige Zusammensetzung zeichnet uns hierbei aus,
-                  denn wir sind nicht nur eine Agentur, sondern Ihre Agentur auf
-                  Augenhöhe.
+                <p class="font-34 font-bold vision__text">
+                  Unsere vielseitige Zusammensetzung zeichnet uns aus - wir sind
+                  nicht nur eine Agentur, sondern Ihr Partner auf Augenhöhe.
                 </p>
               </div>
             </div>
@@ -908,16 +1051,22 @@
             <div class="footer__top-inner">
               <nav aria-labelledby="footer-navigation">
                 <ul class="footer__nav-list" role="list">
-                  <li class="active" role="listitem">
-                    <a href="index.html">Home</a>
+                  <li role="listitem">
+                    <a href="index.html" class="active" aria-current="page"
+                      >Home</a
+                    >
                   </li>
                   <li role="listitem"><a href="services.html">Services</a></li>
                   <li role="listitem"><a href="about-us.html">Über uns</a></li>
-                  <li role="listitem"><a href="#">Career</a></li>
+                  <!-- <li role="listitem"><a href="career.html">Karriere</a></li> -->
                 </ul>
                 <ul class="footer__nav-list" role="list">
-                  <li role="listitem"><a href="contact-us.html">Kontakt</a></li>
-                  <li role="listitem"><a href="#">Datenschutzerklärung</a></li>
+                  <li role="listitem">
+                    <a href="contact-us.html">Kontakt</a>
+                  </li>
+                  <li role="listitem">
+                    <a href="privacy-policy.html">Datenschutzerklärung</a>
+                  </li>
                   <li role="listitem">
                     <a href="impressum.html">Impressum</a>
                   </li>
@@ -942,6 +1091,7 @@
                   <span itemprop="postalCode">55118</span>
                   <span itemprop="addressLocality">Mainz</span>
                 </div>
+
                 <a href="index.html" aria-label="Zurück zur Startseite">
                   <img
                     src="img/svg/logo.svg"

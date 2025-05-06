@@ -145,6 +145,7 @@
 
         &:nth-child(odd) {
             @media screen and (min-width: 767px) {
+                .services__image-wrapper,
                 img {
                     order: -1;
                 }
