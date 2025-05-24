@@ -23,24 +23,24 @@
     />
     <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
 
-    <title>impressum | Digital Shared Services GmbH</title>
+    <title>impressum | Digitale Shared Services GmbH</title>
 
     <!-- START : Meta Tags -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta
       name="description"
-      content="Welcome to the Digital Shared Services GmbH - your partner for comprehensive accounting services! We specialize in financial accounting, dunning and cost accounting."
+      content="Welcome to the Digitale Shared Services GmbH - your partner for comprehensive accounting services! We specialize in financial accounting, dunning and cost accounting."
     />
-    <meta property="og:title" content="Digital Shared Services GmbH" />
+    <meta property="og:title" content="Digitale Shared Services GmbH" />
     <meta
       property="og:description"
-      content="Welcome to the Digital Shared Services GmbH - your partner for comprehensive accounting services! We specialize in financial accounting, dunning and cost accounting"
+      content="Welcome to the Digitale Shared Services GmbH - your partner for comprehensive accounting services! We specialize in financial accounting, dunning and cost accounting"
     />
     <meta property="og:url" content="https://digital-shared-service.de/" />
     <meta
       property="og:site_name"
-      content="Contact Us | Digital Shared Services GmbH"
+      content="Contact Us | Digitale Shared Services GmbH"
     />
     <meta
       property="og:image"
@@ -62,11 +62,11 @@
         <a
           href="index.html"
           class="header-logo"
-          aria-label="Digital Shared Services GmbH Startseite"
+          aria-label="Digitale Shared Services GmbH Startseite"
         >
           <img
             src="../assets/img/svg/logo.svg"
-            alt="Digital Shared Services GmbH Logo"
+            alt="Digitale Shared Services GmbH Logo"
             width="457"
             height="124"
             loading="lazy"
@@ -77,10 +77,12 @@
         <nav aria-label="Hauptnavigation">
           <ul class="header-nav" role="list">
             <li role="listitem">
-              <a href="index.html">Home</a>
+              <a href="index.html" class="active" aria-current="page"
+                >Zuhause</a
+              >
             </li>
             <li role="listitem">
-              <a href="services.html">Services</a>
+              <a href="services.html">Dienstleistungen</a>
               <!-- <button class="header-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -141,9 +143,7 @@
               </div> -->
             </li>
 
-            <li role="listitem">
-              <a href="about-us.html">About Us</a>
-            </li>
+            <li role="listitem"><a href="about-us.html">Über uns</a></li>
             <!-- <li role="listitem"> -->
             <!-- <a href="#">Karriere</a> -->
             <!-- <button class="header-btn">
@@ -171,11 +171,18 @@
                 </ul>
               </div> -->
             <!-- </li> -->
-            <li role="listitem"><a href="contact-us.html">Contact Us</a></li>
+            <li role="listitem">
+              <a href="contact-us.html">Kontaktieren Sie uns</a>
+            </li>
           </ul>
         </nav>
 
-        <button class="hamburger">
+        <button
+          class="hamburger"
+          aria-label="Hauptmenü"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
           </div>
@@ -334,29 +341,31 @@
         <div class="container">
           <div class="footer__inner">
             <h2 class="font-18 footer__inner-title" id="footer-navigation">
-              Übersicht
+              Überblick
             </h2>
 
             <div class="footer__top-inner">
               <nav aria-labelledby="footer-navigation">
                 <ul class="footer__nav-list" role="list">
                   <li role="listitem">
-                    <a href="index.html">Home</a>
+                    <a href="index.html" class="active" aria-current="page"
+                      >Zuhause</a
+                    >
                   </li>
-                  <li role="listitem"><a href="services.html">Services</a></li>
                   <li role="listitem">
-                    <a href="about-us.html">About Us</a>
+                    <a href="services.html">Dienstleistungen</a>
                   </li>
-                  <li role="listitem"><a href="#">Career</a></li>
+                  <li role="listitem"><a href="about-us.html">Über uns</a></li>
+                  <!-- <li role="listitem"><a href="career.html">Karriere</a></li> -->
                 </ul>
                 <ul class="footer__nav-list" role="list">
                   <li role="listitem">
-                    <a href="contact-us.html">Contact Us</a>
+                    <a href="contact-us.html">Kontaktieren Sie uns</a>
                   </li>
                   <li role="listitem">
-                    <a href="privacy-policy.html">Datenschutzerklärung</a>
+                    <a href="privacy-policy.html">Datenschutzrichtlinie</a>
                   </li>
-                  <li role="listitem" class="active">
+                  <li role="listitem">
                     <a href="impressum.html">Impressum</a>
                   </li>
                 </ul>
@@ -368,7 +377,7 @@
                 itemtype="https://schema.org/Organization"
               >
                 <div class="footer__info-title" itemprop="name">
-                  Digital Shared Services GmbH Marketing GmbH
+                  Digitale Shared Services GmbH
                 </div>
                 <div
                   class="footer__info-address"
@@ -376,14 +385,15 @@
                   itemscope
                   itemtype="https://schema.org/PostalAddress"
                 >
-                  <span itemprop="streetAddress">Taunusstraße 59-61</span><br />
-                  <span itemprop="postalCode">55118</span>
-                  <span itemprop="addressLocality">Mainz</span>
+                  <span itemprop="streetAddress">Wallgäßchen 1 b,</span><br />
+                  <span itemprop="postalCode">01097</span>
+                  <span itemprop="addressLocality">Dresden</span>
                 </div>
+
                 <a href="index.html" aria-label="Zurück zur Startseite">
                   <img
                     src="../assets/img/svg/logo.svg"
-                    alt="Digital Shared Services GmbH Logo"
+                    alt="Digitale Shared Services GmbH Logo"
                     width="200"
                     height="54"
                     loading="lazy"
@@ -396,7 +406,9 @@
           </div>
 
           <div class="footer__bottom text-center">
-            <p>© 2025 Digital Shared Services GmbH | All Rights Reserved</p>
+            <p>
+              © 2025 Digitale Shared Services GmbH | Alle Rechte vorbehalten
+            </p>
           </div>
         </div>
       </div>
