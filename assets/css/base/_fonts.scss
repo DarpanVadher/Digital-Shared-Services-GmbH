@@ -270,9 +270,8 @@ $font-weights: (
         }
     }
 
-    // Font weight classes
     @each $name, $weight in $font-weights {
-        &-#{$name} {
+        &-#{"#{$name}"} {
             font-weight: $weight;
         }
     }

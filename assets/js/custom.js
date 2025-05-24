@@ -226,3 +226,51 @@ window.addEventListener("DOMContentLoaded", () => {
     cookieCard.style.display = "none";
   });
 });
+
+// ************************************************************************
+// lang switcher
+// ************************************************************************
+
+function toggleDropdown() {
+  const dropdown = document.getElementById("language-dropdown");
+  dropdown.classList.toggle("hidden");
+}
+
+function changeLanguage(lang, flagUrl) {
+  document.getElementById("selected-lang").innerText = lang;
+  document.getElementById("selected-flag").src = flagUrl;
+  closeDropdown();
+  updateSelectedDot(lang);
+  console.log("Language changed to:", lang);
+}
+
+function closeDropdown() {
+  document.getElementById("language-dropdown").classList.add("hidden");
+}
+
+function updateSelectedDot(selectedLang) {
+  document.querySelectorAll(".selected-dot").forEach((dot) => {
+    dot.classList.remove("active");
+  });
+  const selectedDot = document.getElementById(`dot-${selectedLang}`);
+  if (selectedDot) {
+    selectedDot.classList.add("active");
+  }
+}
+
+// Close on outside click or ESC key
+document.addEventListener("click", function (event) {
+  const switcher = document.querySelector(".language-switcher");
+  if (!switcher.contains(event.target)) {
+    closeDropdown();
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeDropdown();
+  }
+});
+
+// Initial dot setup for default language (DE)
+updateSelectedDot("DE");

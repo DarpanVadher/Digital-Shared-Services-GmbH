@@ -400,6 +400,82 @@
             }
         }
     }
+
+    .selected-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #27ae60;
+        border-radius: 50%;
+        display: none;
+        margin-left: auto;
+    }
+
+    .selected-dot.active {
+        display: inline-block;
+    }
+
+    .header-nav-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .language-switcher {
+        position: relative;
+        display: inline-block;
+        font-family: sans-serif;
+    }
+
+    #language-btn {
+        // background: white;
+        background-color: transparent;
+        color: var(--color-white);
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border-radius: 5px;
+    }
+
+    .flag {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        border: 1px solid #f0f0f0;
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .option {
+        padding: 8px 10px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .option:hover {
+        background-color: #f0f0f0;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    &.is-scroll #language-btn {
+        color: var(--color-black);
+    }
 }
 
 .hamburger {
