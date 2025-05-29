@@ -242,6 +242,12 @@ function changeLanguage(lang, flagUrl) {
   closeDropdown();
   updateSelectedDot(lang);
   console.log("Language changed to:", lang);
+
+  // Set the selected language cookie
+  setCookie("selectedLang", lang, 365);
+
+  // Reload the page
+  window.location.reload();
 }
 
 function closeDropdown() {
@@ -273,4 +279,46 @@ document.addEventListener("keydown", function (event) {
 });
 
 // Initial dot setup for default language (DE)
-updateSelectedDot("DE");
+updateSelectedDot("de");
+
+// Check & update selected language on page load
+function changeLanguage(langCode) {
+  const currentUrl = window.location.href;
+
+  // Save selected language in cookie
+  document.cookie = `selectedLang=${langCode}; path=/`;
+
+  // Detect and replace current language path in the URL
+  let newUrl = currentUrl;
+
+  if (langCode === "de") {
+    newUrl = currentUrl.replace("/en/", "/de/");
+  } else if (langCode === "en") {
+    newUrl = currentUrl.replace("/de/", "/en/");
+  }
+
+  // Avoid redirect loop
+  if (newUrl !== currentUrl) {
+    window.location.href = newUrl;
+  }
+}
+
+function getCookie(name) {
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(";").shift();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const selectedLangCookie = getCookie("selectedLang");
+  updateSelectedDot(selectedLangCookie);
+  if (selectedLangCookie) {
+    const currentLocation = window.location.href;
+    if (
+      (selectedLangCookie === "de" && currentLocation.includes("/en/")) ||
+      (selectedLangCookie === "en" && currentLocation.includes("/de/"))
+    ) {
+      changeLanguage(selectedLangCookie);
+    }
+  }
+});
