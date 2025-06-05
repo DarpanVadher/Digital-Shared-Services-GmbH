@@ -1479,13 +1479,8 @@ section {
 }
 @media screen and (max-width: 1199px) {
   .sec-hero .hero-overlay {
-<<<<<<< HEAD
     -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-=======
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
->>>>>>> 2384855c717b2df8da752435a16b07a558017f44
+    backdrop-filter: blur(10px);
   }
 }
 .sec-hero .hero__content {
@@ -2646,8 +2641,8 @@ section {
   border-radius: 16px;
   transition: all 0.3s ease;
   overflow: hidden;
-<<<<<<< HEAD
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   width: 25%;
 }
 @media screen and (max-width: 991px) {
@@ -2659,10 +2654,6 @@ section {
   .team__item {
     width: 100%;
   }
-=======
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
->>>>>>> 2384855c717b2df8da752435a16b07a558017f44
 }
 .team__item:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
