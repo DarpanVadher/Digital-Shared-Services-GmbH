@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      const lang = navigator.language || navigator.userLanguage;
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Redirecting...</title>
-  <script>
-    const lang = navigator.language || navigator.userLanguage;
-    if (lang.startsWith("de")) {
-      window.location.href = "/de/";
-    } else {
-      window.location.href = "/en/";
-    }
-  </script>
-</head>
+      // Check if the user's language is in the list of supported languages
+      const supportedLanguages = ["de", "en"];
+      if (!supportedLanguages.includes(lang)) {
+        lang = "en";
+      }
 
-<body>
-  <p>Redirecting...</p>
-</body>
+      console.log("Detected language:", lang);
 
+      // Set the selected language cookie
+      document.cookie = `selectedLang=${lang}; max-age=31536000; path=/`;
+
+      // Redirect to the appropriate language
+      if (lang === "de") {
+        window.location.href = "/de/";
+
+        // Reload the page
+        window.location.reload();
+      }
+
+      if (lang === "en") {
+        window.location.href = "/en/";
+
+        // Reload the page
+        window.location.reload();
+      }
+    </script>
+  </head>
+
+  <body>
+    <p>Redirecting...</p>
+  </body>
 </html>
