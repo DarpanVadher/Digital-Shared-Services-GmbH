@@ -770,6 +770,10 @@ section {
   top: 0;
 }
 
+.mx-auto {
+  margin: 0 auto;
+}
+
 .header {
   padding: 26px 30px;
   position: fixed;
@@ -1443,6 +1447,12 @@ section {
   will-change: transform, opacity;
   transition: transform 0.1s ease-out, opacity 0.3s ease-out;
 }
+@media screen and (max-width: 1599px) {
+  .sec-hero .hero {
+    background: url("../img/webp/hero-bg-1440.webp");
+    background-size: cover;
+  }
+}
 .sec-hero .hero__inner--left {
   padding-right: 140px;
   justify-content: flex-end;
@@ -1467,10 +1477,10 @@ section {
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
   pointer-events: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .sec-hero .hero-overlay {
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 }
 .sec-hero .hero__content {
@@ -1485,6 +1495,16 @@ section {
 @media screen and (max-width: 1439px) {
   .sec-hero .hero__content {
     margin-right: 80px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .sec-hero .hero__content {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2594,19 +2614,14 @@ section {
 }
 
 .team {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
   gap: 32px;
   padding: 20px 0;
 }
-@media screen and (max-width: 1199px) {
-  .team {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 @media screen and (max-width: 991px) {
   .team {
-    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
     gap: 20px;
   }
 }
@@ -2628,6 +2643,17 @@ section {
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  width: 25%;
+}
+@media screen and (max-width: 991px) {
+  .team__item {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .team__item {
+    width: 100%;
+  }
 }
 .team__item:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;

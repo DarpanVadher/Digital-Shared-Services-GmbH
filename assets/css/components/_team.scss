@@ -1,15 +1,11 @@
 .team {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 32px;
     padding: 20px 0;
 
-    @media screen and (max-width: 1199px) {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     @media screen and (max-width: 991px) {
-        grid-template-columns: repeat(2, 1fr);
+        flex-wrap: wrap;
         gap: 20px;
     }
 
@@ -31,6 +27,15 @@
         box-shadow:
             rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
             rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        width: 25%;
+
+        @media screen and (max-width: 991px) {
+            width: 40%;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
 
         &:hover {
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
