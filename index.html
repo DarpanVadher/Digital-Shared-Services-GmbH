@@ -1,40 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <title>Redirecting...</title>
     <script>
-      const lang = navigator.language || navigator.userLanguage;
+      // Set selected language cookie to "de" for 1 year
+      document.cookie = "selectedLang=de; max-age=31536000; path=/";
 
-      // Check if the user's language is in the list of supported languages
-      const supportedLanguages = ["de", "en"];
-      if (!supportedLanguages.includes(lang)) {
-        lang = "en";
-      }
-
-      console.log("Detected language:", lang);
-
-      // Set the selected language cookie
-      document.cookie = `selectedLang=${lang}; max-age=31536000; path=/`;
-
-      // Redirect to the appropriate language
-      if (lang === "de") {
-        window.location.href = "/de/";
-
-        // Reload the page
-        window.location.reload();
-      }
-
-      if (lang === "en") {
-        window.location.href = "/en/";
-
-        // Reload the page
-        window.location.reload();
-      }
+      // Always redirect to German version
+      window.location.href = "/de/";
     </script>
   </head>
 
   <body>
-    <p>Redirecting...</p>
+    <p>Redirecting to German version...</p>
   </body>
 </html>
