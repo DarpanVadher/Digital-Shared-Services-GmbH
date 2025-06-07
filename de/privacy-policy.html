@@ -37,19 +37,20 @@
 <body>
   <header class="header" role="banner">
     <div class="header-inner" data-aos="fade-down" data-aos-duration="500">
-      <a href="index.html" class="header-logo" aria-label="Digitale Shared Services GmbH Startseite">
-        <img src="../assets/img/svg/logo.svg" alt="Digitale Shared Services GmbH Logo" width="457" height="124"
+      <a href="index.html" class="header-logo" aria-label="Digital Shared Services GmbH Startseite">
+        <img src="../assets/img/logo/logo.webp" alt="Digital Shared Services GmbH Logo" width="457" height="124"
           loading="lazy" decoding="async" />
       </a>
 
-      <nav aria-label="Hauptnavigation">
-        <ul class="header-nav" role="list">
-          <li role="listitem">
-            <a href="index.html" class="active" aria-current="page">Zuhause</a>
-          </li>
-          <li role="listitem">
-            <a href="services.html">Dienstleistungen</a>
-            <!-- <button class="header-btn">
+      <div class="header-nav-wrapper">
+        <nav aria-label="Hauptnavigation">
+          <ul class="header-nav" role="list">
+            <li role="listitem">
+              <a href="index.html">Home</a>
+            </li>
+            <li role="listitem">
+              <a href="services.html">Services</a>
+              <!-- <button class="header-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="800px"
@@ -107,12 +108,14 @@
                   <li><a href="#">Analytics & Data Insights</a></li>
                 </ul>
               </div> -->
-          </li>
+            </li>
 
-          <li role="listitem"><a href="about-us.html">Über uns</a></li>
-          <!-- <li role="listitem"> -->
-          <!-- <a href="#">Karriere</a> -->
-          <!-- <button class="header-btn">
+            <li role="listitem">
+              <a href="about-us.html">About Us</a>
+            </li>
+            <!-- <li role="listitem"> -->
+            <!-- <a href="#">Karriere</a> -->
+            <!-- <button class="header-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="800px"
@@ -136,18 +139,39 @@
                   </li>
                 </ul>
               </div> -->
-          <!-- </li> -->
-          <li role="listitem">
-            <a href="contact-us.html">Kontaktieren Sie uns</a>
-          </li>
-        </ul>
-      </nav>
-
-      <button class="hamburger" aria-label="Hauptmenü" aria-expanded="false" aria-controls="mobile-menu">
-        <div class="hamburger-box">
-          <div class="hamburger-inner"></div>
+            <!-- </li> -->
+            <li role="listitem"><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="language-switcher">
+          <button id="language-btn" onclick="toggleDropdown()">
+            <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" id="selected-flag" />
+            <span id="selected-lang">DE</span>
+            <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.646 5.646a.5.5 0 0 1 .708 0L8 11.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div id="language-dropdown" class="dropdown hidden">
+            <div class="option" data-lang="DE" onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')">
+              <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" />
+              DE
+              <span class="selected-dot" id="dot-DE"></span>
+            </div>
+            <div class="option" data-lang="EN" onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')">
+              <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" />
+              EN
+              <span class="selected-dot" id="dot-EN"></span>
+            </div>
+          </div>
         </div>
-      </button>
+        <button class="hamburger" aria-label="Hauptmenü" aria-expanded="false" aria-controls="mobile-menu">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -495,7 +519,7 @@
             <nav aria-labelledby="footer-navigation">
               <ul class="footer__nav-list" role="list">
                 <li role="listitem">
-                  <a href="index.html" class="active" aria-current="page">Zuhause</a>
+                  <a href="index.html">Zuhause</a>
                 </li>
                 <li role="listitem">
                   <a href="services.html">Dienstleistungen</a>
@@ -508,7 +532,7 @@
                   <a href="contact-us.html">Kontaktieren Sie uns</a>
                 </li>
                 <li role="listitem">
-                  <a href="privacy-policy.html">Datenschutzrichtlinie</a>
+                  <a href="privacy-policy.html" class="active" aria-current="page">Datenschutzrichtlinie</a>
                 </li>
                 <li role="listitem">
                   <a href="impressum.html">Impressum</a>
@@ -518,17 +542,17 @@
 
             <div class="footer__info" itemscope itemtype="https://schema.org/Organization">
               <div class="footer__info-title" itemprop="name">
-                Digitale Shared Services GmbH
+                DSS – Digital Shared Services GmbH
               </div>
-              <div class="footer__info-address" itemprop="address" itemscope
+              <div class="footer__info-address" itemprop="address" itemscope=""
                 itemtype="https://schema.org/PostalAddress">
-                <span itemprop="streetAddress">Wallgäßchen 1 b,</span><br />
-                <span itemprop="postalCode">01097</span>
+                <span itemprop="streetAddress">Großenhainer Straße 179 </span><br>
+                <span itemprop="postalCode">01129</span>
                 <span itemprop="addressLocality">Dresden</span>
               </div>
 
               <a href="index.html" aria-label="Zurück zur Startseite">
-                <img src="../assets/img/svg/logo.svg" alt="Digitale Shared Services GmbH Logo" width="200" height="54"
+                <img src="../assets/img/logo/logo.webp" alt="Digitale Shared Services GmbH Logo" width="200" height="54"
                   loading="lazy" decoding="async" itemprop="logo" />
               </a>
             </div>

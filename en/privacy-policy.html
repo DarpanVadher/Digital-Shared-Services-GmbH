@@ -42,14 +42,15 @@
           loading="lazy" decoding="async" />
       </a>
 
-      <nav aria-label="Hauptnavigation">
-        <ul class="header-nav" role="list">
-          <li role="listitem">
-            <a href="index.html">Home</a>
-          </li>
-          <li role="listitem">
-            <a href="services.html">Services</a>
-            <!-- <button class="header-btn">
+      <div class="header-nav-wrapper">
+        <nav aria-label="Hauptnavigation">
+          <ul class="header-nav" role="list">
+            <li role="listitem">
+              <a href="index.html">Home</a>
+            </li>
+            <li role="listitem">
+              <a href="services.html">Services</a>
+              <!-- <button class="header-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="800px"
@@ -107,14 +108,14 @@
                   <li><a href="#">Analytics & Data Insights</a></li>
                 </ul>
               </div> -->
-          </li>
+            </li>
 
-          <li role="listitem">
-            <a href="about-us.html">About Us</a>
-          </li>
-          <!-- <li role="listitem"> -->
-          <!-- <a href="#">Karriere</a> -->
-          <!-- <button class="header-btn">
+            <li role="listitem">
+              <a href="about-us.html">About Us</a>
+            </li>
+            <!-- <li role="listitem"> -->
+            <!-- <a href="#">Karriere</a> -->
+            <!-- <button class="header-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="800px"
@@ -138,16 +139,39 @@
                   </li>
                 </ul>
               </div> -->
-          <!-- </li> -->
-          <li role="listitem"><a href="contact-us.html">Contact Us</a></li>
-        </ul>
-      </nav>
-
-      <button class="hamburger">
-        <div class="hamburger-box">
-          <div class="hamburger-inner"></div>
+            <!-- </li> -->
+            <li role="listitem"><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="language-switcher">
+          <button id="language-btn" onclick="toggleDropdown()">
+            <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" id="selected-flag" />
+            <span id="selected-lang">DE</span>
+            <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.646 5.646a.5.5 0 0 1 .708 0L8 11.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div id="language-dropdown" class="dropdown hidden">
+            <div class="option" data-lang="DE" onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')">
+              <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" />
+              DE
+              <span class="selected-dot" id="dot-DE"></span>
+            </div>
+            <div class="option" data-lang="EN" onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')">
+              <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" />
+              EN
+              <span class="selected-dot" id="dot-EN"></span>
+            </div>
+          </div>
         </div>
-      </button>
+        <button class="hamburger" aria-label="Hauptmenü" aria-expanded="false" aria-controls="mobile-menu">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -508,10 +532,10 @@
                   <a href="contact-us.html">Contact Us</a>
                 </li>
                 <li role="listitem" class="active">
-                  <a href="privacy-policy.html">Datenschutzerklärung</a>
+                  <a href="privacy-policy.html">Privacy</a>
                 </li>
                 <li role="listitem">
-                  <a href="impressum.html">Impressum</a>
+                  <a href="impressum.html">Imprint</a>
                 </li>
               </ul>
             </nav>
