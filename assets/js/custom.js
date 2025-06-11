@@ -207,7 +207,7 @@ function getCookie(name) {
 
 window.addEventListener("DOMContentLoaded", () => {
   const cookieCard = document.querySelector(".cookie-card-wrapper");
-  const acceptBtn = document.querySelector(".accept");
+  const acceptBtns = document.querySelectorAll(".accept");
   const closeBtn = document.querySelector(".close");
 
   // Hide modal if consent cookie exists
@@ -216,9 +216,11 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   // Save cookie and hide modal
-  acceptBtn.addEventListener("click", () => {
-    setCookie("cookie_consent", "accepted", 365);
-    cookieCard.style.display = "none";
+  acceptBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      setCookie("cookie_consent", "accepted", 365);
+      cookieCard.style.display = "none";
+    });
   });
 
   // Just hide modal (no cookie)
@@ -322,3 +324,35 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
+/* CONTACT US FORM START */
+
+const form = document.getElementById("contact-form");
+const successMessage = document.getElementById("success-message");
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  const action = form.getAttribute("action");
+
+  try {
+    const response = await fetch(action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      form.reset();
+      successMessage.style.display = "block";
+    } else {
+      alert("Something went wrong. Please try again later.");
+    }
+  } catch (error) {
+    alert("Failed to send message.");
+  }
+});
+/* CONTACT US FORM END */
