@@ -31,7 +31,7 @@
   <!-- END : Meta Tags -->
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.min.css" />
 </head>
 
 <body>
@@ -51,19 +51,11 @@
             <li role="listitem">
               <a href="services.html" class="active" aria-current="page">Dienstleistungen</a>
               <button class="header-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="800px"
-                  height="800px"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M11.9999 13.9394L17.4696 8.46973L18.5303 9.53039L11.9999 16.0607L5.46961 9.53039L6.53027 8.46973L11.9999 13.9394Z"
-                    fill="currentColor"
-                  />
+                    fill="currentColor" />
                 </svg>
               </button>
 
@@ -106,9 +98,7 @@
                     <a href="seo-optimization.html">SEO-Optimierung</a>
                   </li>
                   <li>
-                    <a href="social-media-advertising.html"
-                      >Social Media Werbung</a
-                    >
+                    <a href="social-media-advertising.html">Social Media Werbung</a>
                   </li>
                   <li>
                     <a href="content-marketing.html">Content-Marketing</a>
@@ -117,18 +107,14 @@
                     <a href="ppc-advertising.html">Pay-per-Click-Werbung</a>
                   </li>
                   <li>
-                    <a href="analytics-and-performance.html"
-                      >Datenanalyse & Erfolgskontrolle</a
-                    >
+                    <a href="analytics-and-performance.html">Datenanalyse & Erfolgskontrolle</a>
                   </li>
                 </ul>
               </div>
             </li>
 
             <li role="listitem">
-              <a href="about-us.html" 
-                >Über uns</a
-              >
+              <a href="about-us.html">Über uns</a>
             </li>
             <!-- <li role="listitem"> -->
             <!-- <a href="#">Karriere</a> -->
@@ -164,62 +150,28 @@
         </nav>
         <div class="language-switcher">
           <button id="language-btn" onclick="toggleDropdown()">
-            <img
-              src="https://flagcdn.com/w40/de.png"
-              alt="DE"
-              class="flag"
-              id="selected-flag"
-            />
+            <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" id="selected-flag" />
             <span id="selected-lang">DE</span>
-            <svg
-              id="chevron-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M1.646 5.646a.5.5 0 0 1 .708 0L8 11.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-              />
+            <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.646 5.646a.5.5 0 0 1 .708 0L8 11.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
             </svg>
           </button>
           <div id="language-dropdown" class="dropdown hidden">
-            <div
-              class="option"
-              data-lang="DE"
-              onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')"
-            >
-              <img
-                src="https://flagcdn.com/w40/de.png"
-                alt="DE"
-                class="flag"
-              />
+            <div class="option" data-lang="DE" onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')">
+              <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" />
               DE
               <span class="selected-dot active" id="dot-DE"></span>
             </div>
-            <div
-              class="option"
-              data-lang="EN"
-              onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')"
-            >
-              <img
-                src="https://flagcdn.com/w40/gb.png"
-                alt="EN"
-                class="flag"
-              />
+            <div class="option" data-lang="EN" onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')">
+              <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" />
               EN
               <span class="selected-dot" id="dot-EN"></span>
             </div>
           </div>
         </div>
-        <button
-          class="hamburger"
-          aria-label="Hauptmenü"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+        <button class="hamburger" aria-label="Hauptmenü" aria-expanded="false" aria-controls="mobile-menu">
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
           </div>
@@ -359,7 +311,7 @@
       </div>
     </section>
 
- 
+
 
 
     <section class="sec-services-list pb-90">
@@ -385,7 +337,10 @@
                     <b>Maßgeschneiderte Webentwicklung für Ihre spezifischen Bedürfnisse</b>
                     <br />
                     <br />
-                    Wir bieten Websites, die schnell laden und die Nutzer nicht warten lassen. Denn Konversionen können schon bei einer Verzögerung von nur 2 Sekunden verloren gehen! Durch den Einsatz intelligenter Serververfahren und sauberen Codes sind wir in der Lage, Absprungraten zu senken, Ladegeschwindigkeiten zu verbessern und die Verweildauer zu erhöhen.
+                    Wir bieten Websites, die schnell laden und die Nutzer nicht warten lassen. Denn Konversionen können
+                    schon bei einer Verzögerung von nur 2 Sekunden verloren gehen! Durch den Einsatz intelligenter
+                    Serververfahren und sauberen Codes sind wir in der Lage, Absprungraten zu senken,
+                    Ladegeschwindigkeiten zu verbessern und die Verweildauer zu erhöhen.
 
 
                     <br /><br />
@@ -414,11 +369,14 @@
                     <b> Verbessern Sie Ihre Online-Präsenz, auch wenn Sie schlafen!</b>
 
                     <br /><br />
-                    Unsere umfassenden Dienstleistungen umfassen alles von Metadaten und Backlinks bis hin zu mobiler UX und Website-Geschwindigkeit, damit Sie lokale Märkte dominieren oder globale Besucher anlocken können. Traffic ist nur der Anfang unserer Arbeit; wir sorgen dafür, dass er konvertiert wird.
+                    Unsere umfassenden Dienstleistungen umfassen alles von Metadaten und Backlinks bis hin zu mobiler UX
+                    und Website-Geschwindigkeit, damit Sie lokale Märkte dominieren oder globale Besucher anlocken
+                    können. Traffic ist nur der Anfang unserer Arbeit; wir sorgen dafür, dass er konvertiert wird.
 
 
                     </br></br>
-                    <b>Lassen Sie uns Ihren SEO-Rahmen festlegen - vereinbaren Sie noch heute einen Termin für Ihr Strategiegespräch!</b>
+                    <b>Lassen Sie uns Ihren SEO-Rahmen festlegen - vereinbaren Sie noch heute einen Termin für Ihr
+                      Strategiegespräch!</b>
                   </p>
                   <div class="card-button">Mehr erfahren</div>
                 </div>
@@ -443,7 +401,11 @@
                     </b>
                     <br />
                     <br />
-                    Unser Ziel ist es, Kampagnen in zahlende Kunden zu verwandeln. Wir entwickeln mehrstufige Funnel-Strategien, verknüpfen Werbemittel mit Echtzeitdaten und verfeinern sie auf der Grundlage ihrer Leistung, nicht ihrer Vorlieben. Wir schalten nicht einfach nur Werbung. Wir verfügen über soziale Werbetaktiken, die mit Ihrem Unternehmen wachsen können, egal ob Sie neue Leads ansprechen oder Ihr bestehendes Publikum erweitern möchten.
+                    Unser Ziel ist es, Kampagnen in zahlende Kunden zu verwandeln. Wir entwickeln mehrstufige
+                    Funnel-Strategien, verknüpfen Werbemittel mit Echtzeitdaten und verfeinern sie auf der Grundlage
+                    ihrer Leistung, nicht ihrer Vorlieben. Wir schalten nicht einfach nur Werbung. Wir verfügen über
+                    soziale Werbetaktiken, die mit Ihrem Unternehmen wachsen können, egal ob Sie neue Leads ansprechen
+                    oder Ihr bestehendes Publikum erweitern möchten.
                     <br /><br />
                     <b>Lassen Sie uns eine effektive Kampagne erstellen und Ihren Umsatz in die Höhe treiben!</b>
 
@@ -469,11 +431,14 @@
                     <b>Verwandeln Sie Worte in Wachstum für Ihre Marke!</b>
                     <br /><br />
 
-                    Wir sind Ihr Partner für Wachstum. Wir sind leidenschaftliche Schöpfer, die die Vision Ihrer Marke in Geschichten verwandeln, die begeistern und konvertieren. Wir arbeiten eng mit Ihnen zusammen, verstehen Ihre Ziele und erstellen Inhalte, die sich nahtlos in Ihre Vision einfügen
+                    Wir sind Ihr Partner für Wachstum. Wir sind leidenschaftliche Schöpfer, die die Vision Ihrer Marke
+                    in Geschichten verwandeln, die begeistern und konvertieren. Wir arbeiten eng mit Ihnen zusammen,
+                    verstehen Ihre Ziele und erstellen Inhalte, die sich nahtlos in Ihre Vision einfügen
 
                     <br /><br />
 
-                    <b>Wir haben es uns zur Aufgabe gemacht, Ihrer Marke Gehör zu verschaffen und ihre Geschichte unvergesslich zu machen.
+                    <b>Wir haben es uns zur Aufgabe gemacht, Ihrer Marke Gehör zu verschaffen und ihre Geschichte
+                      unvergesslich zu machen.
                     </b>
                   </p>
                   <div class="card-button">Mehr erfahren</div>
@@ -494,10 +459,14 @@
                 <div class="card-content">
                   <h3 class="card-title">PPC-Werbung</h3>
                   <p class="card-desc">
-                    <b>Betrachten Sie uns als Ihren ROI-besessenen, Klick-konvertierenden und leistungssteigernden Partner.</b>
+                    <b>Betrachten Sie uns als Ihren ROI-besessenen, Klick-konvertierenden und leistungssteigernden
+                      Partner.</b>
                     <br />
                     <br />
-                    Wir sind der Meinung, dass bezahlte Werbung nicht nur für mehr Traffic, sondern auch für bessere Ergebnisse sorgen sollte. Als leistungsorientierte PPC-Agentur sind wir davon besessen, Ihre Werbeausgaben in ernsthaftes Geschäftswachstum zu verwandeln.  Wir verfolgen, optimieren und testen, bis Ihre Ergebnisse für sich selbst sprechen.
+                    Wir sind der Meinung, dass bezahlte Werbung nicht nur für mehr Traffic, sondern auch für bessere
+                    Ergebnisse sorgen sollte. Als leistungsorientierte PPC-Agentur sind wir davon besessen, Ihre
+                    Werbeausgaben in ernsthaftes Geschäftswachstum zu verwandeln. Wir verfolgen, optimieren und testen,
+                    bis Ihre Ergebnisse für sich selbst sprechen.
                     <br /> <br />
                     <b>Lassen Sie uns Ihr Geschäft mit unseren avantgardistischen Taktiken zum Blühen bringen!
                     </b>
@@ -516,7 +485,10 @@
                   <p class="card-desc">
                     <b>Hinter jedem Klick steckt eine Geschichte. Lassen Sie uns Ihnen helfen, sie zu lesen!</b>
                     <br /><br />
-                    In der datenreichen digitalen Welt von heute ist das Verständnis von Leistung der entscheidende Faktor zwischen guten und großartigen Marken. Um Ihre Kunden besser zu verstehen, bieten wir Analysedienste an, mit denen Sie ihre Handlungen, Vorlieben und Bereiche, in denen sie sich nicht engagieren, verfolgen können. 
+                    In der datenreichen digitalen Welt von heute ist das Verständnis von Leistung der entscheidende
+                    Faktor zwischen guten und großartigen Marken. Um Ihre Kunden besser zu verstehen, bieten wir
+                    Analysedienste an, mit denen Sie ihre Handlungen, Vorlieben und Bereiche, in denen sie sich nicht
+                    engagieren, verfolgen können.
                     <br /><br />
                     <b>Decken Sie die grundlegenden Faktoren auf, die Ihr Wachstum vorantreiben!
 
@@ -546,23 +518,13 @@
               </h3>
 
               <div data-aos="fade-up" data-aos-duration="600">
-                <a
-                  href="contact-us.html#form"
-                  class="btn text-uppercase"
-                  data-aos="zoom-in"
-                  data-aos-duration="700"
-                >
+                <a href="contact-us.html#form" class="btn text-uppercase" data-aos="zoom-in" data-aos-duration="700">
                   <span> Loslegen</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    fill="currentColor"
-                    aria-hidden="true"
-                    focusable="false"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"
+                    focusable="false">
                     <path
-                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                    ></path>
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                    </path>
                   </svg>
                 </a>
               </div>
@@ -773,7 +735,7 @@
   </section>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="../assets/js/custom.js"></script>
+  <script src="../assets/js/custom.min.js"></script>
 </body>
 
 </html>

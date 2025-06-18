@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
 
-  <title> Pay-per-Click-Werbung  | Digitale Shared Services GmbH</title>
+  <title> Pay-per-Click-Werbung | Digitale Shared Services GmbH</title>
 
   <!-- START : Meta Tags -->
   <meta property="og:locale" content="en_US" />
@@ -31,7 +31,7 @@
   <!-- END : Meta Tags -->
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.min.css" />
 </head>
 
 <body>
@@ -51,19 +51,11 @@
             <li role="listitem">
               <a href="services.html" class="active" aria-current="page">Dienstleistungen</a>
               <button class="header-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="800px"
-                  height="800px"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M11.9999 13.9394L17.4696 8.46973L18.5303 9.53039L11.9999 16.0607L5.46961 9.53039L6.53027 8.46973L11.9999 13.9394Z"
-                    fill="currentColor"
-                  />
+                    fill="currentColor" />
                 </svg>
               </button>
 
@@ -106,9 +98,7 @@
                     <a href="seo-optimization.html">SEO-Optimierung</a>
                   </li>
                   <li>
-                    <a href="social-media-advertising.html"
-                      >Social Media Werbung</a
-                    >
+                    <a href="social-media-advertising.html">Social Media Werbung</a>
                   </li>
                   <li>
                     <a href="content-marketing.html">Content-Marketing</a>
@@ -117,18 +107,14 @@
                     <a href="ppc-advertising.html">Pay-per-Click-Werbung</a>
                   </li>
                   <li>
-                    <a href="analytics-and-performance.html"
-                      >Datenanalyse & Erfolgskontrolle</a
-                    >
+                    <a href="analytics-and-performance.html">Datenanalyse & Erfolgskontrolle</a>
                   </li>
                 </ul>
               </div>
             </li>
 
             <li role="listitem">
-              <a href="about-us.html" 
-                >Über uns</a
-              >
+              <a href="about-us.html">Über uns</a>
             </li>
             <!-- <li role="listitem"> -->
             <!-- <a href="#">Karriere</a> -->
@@ -164,62 +150,28 @@
         </nav>
         <div class="language-switcher">
           <button id="language-btn" onclick="toggleDropdown()">
-            <img
-              src="https://flagcdn.com/w40/de.png"
-              alt="DE"
-              class="flag"
-              id="selected-flag"
-            />
+            <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" id="selected-flag" />
             <span id="selected-lang">DE</span>
-            <svg
-              id="chevron-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M1.646 5.646a.5.5 0 0 1 .708 0L8 11.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-              />
+            <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.646 5.646a.5.5 0 0 1 .708 0L8 11.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
             </svg>
           </button>
           <div id="language-dropdown" class="dropdown hidden">
-            <div
-              class="option"
-              data-lang="DE"
-              onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')"
-            >
-              <img
-                src="https://flagcdn.com/w40/de.png"
-                alt="DE"
-                class="flag"
-              />
+            <div class="option" data-lang="DE" onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')">
+              <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" />
               DE
               <span class="selected-dot active" id="dot-DE"></span>
             </div>
-            <div
-              class="option"
-              data-lang="EN"
-              onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')"
-            >
-              <img
-                src="https://flagcdn.com/w40/gb.png"
-                alt="EN"
-                class="flag"
-              />
+            <div class="option" data-lang="EN" onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')">
+              <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" />
               EN
               <span class="selected-dot" id="dot-EN"></span>
             </div>
           </div>
         </div>
-        <button
-          class="hamburger"
-          aria-label="Hauptmenü"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+        <button class="hamburger" aria-label="Hauptmenü" aria-expanded="false" aria-controls="mobile-menu">
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
           </div>
@@ -243,7 +195,7 @@
         <div class="container">
           <div class="intro__inner">
             <h1 class="font-85 font-light text-uppercase intro__title" data-aos="fade-up" data-aos-duration="300">
-              Pay-per-Click  <br />
+              Pay-per-Click <br />
               Werbung
             </h1>
 
@@ -295,17 +247,21 @@
             <div class="expertise__item expertise__item--large" role="listitem" data-aos="fade-up"
               data-aos-duration="500">
               <p>
-                <b>Warum warten, bis man gefunden wird, wenn man von Anfang an sichtbar sein kann?</b> 
-Ob aufmerksamkeitsstarke YouTube-Anzeigen oder gezielte Suchanfragen bei Google – wir verwandeln Werbebudget in echten Mehrwert. Unsere PPC-Dienstleistungen sind auf Klarheit, Wirkung und Wachstum ausgelegt.
+                <b>Warum warten, bis man gefunden wird, wenn man von Anfang an sichtbar sein kann?</b>
+                Ob aufmerksamkeitsstarke YouTube-Anzeigen oder gezielte Suchanfragen bei Google – wir verwandeln
+                Werbebudget in echten Mehrwert. Unsere PPC-Dienstleistungen sind auf Klarheit, Wirkung und Wachstum
+                ausgelegt.
 
-                
+
               </p>
             </div>
 
             <div class="expertise__item expertise__item--large" role="listitem" data-aos="fade-up"
               data-aos-duration="800">
               <p>
-                Wir planen, optimieren und skalieren Ihre Kampagnen – damit jeder Klick zählt und jeder Cent nachvollziehbar eingesetzt wird. Jeder Klick bringt Ihr Unternehmen näher an die Marktführerschaft. Ab dem ersten Tag holen wir das Maximum für Sie heraus!
+                Wir planen, optimieren und skalieren Ihre Kampagnen – damit jeder Klick zählt und jeder Cent
+                nachvollziehbar eingesetzt wird. Jeder Klick bringt Ihr Unternehmen näher an die Marktführerschaft. Ab
+                dem ersten Tag holen wir das Maximum für Sie heraus!
               </p>
             </div>
           </div>
@@ -319,12 +275,14 @@ Ob aufmerksamkeitsstarke YouTube-Anzeigen oder gezielte Suchanfragen bei Google 
           <div class="exp__inner">
             <div class="exp__content" data-aos="fade-right">
               <h2 class="font-36 font-regular exp__title" data-aos="fade-up" data-aos-delay="100">
-                Warum wir? 
+                Warum wir?
               </h2>
 
               <p data-aos="fade-up" data-aos-delay="200">
-                Sie zahlen nicht für Klicks. Sie zahlen für Ergebnisse. 
-Wir entwickeln zielgerichtete PPC-Kampagnen mit hohen Konversionsraten und messbarem Wachstum. Mit datenbasierter Präzision und kontinuierlicher Optimierung holen wir das Beste aus Ihrem Budget heraus. Lassen Sie uns gemeinsam Klicks in nachhaltigen Erfolg verwandeln.
+                Sie zahlen nicht für Klicks. Sie zahlen für Ergebnisse.
+                Wir entwickeln zielgerichtete PPC-Kampagnen mit hohen Konversionsraten und messbarem Wachstum. Mit
+                datenbasierter Präzision und kontinuierlicher Optimierung holen wir das Beste aus Ihrem Budget heraus.
+                Lassen Sie uns gemeinsam Klicks in nachhaltigen Erfolg verwandeln.
 
               </p>
 
@@ -332,22 +290,22 @@ Wir entwickeln zielgerichtete PPC-Kampagnen mit hohen Konversionsraten und messb
                 <li data-aos="fade-up" data-aos-delay="300">
                   <img src="../assets/img/svg/performance-marketing.svg" alt="Symbol für digitale Kommunikation"
                     width="30" height="30" />
-                    Performance-orientierte Strategie 
+                  Performance-orientierte Strategie
                 </li>
                 <li data-aos="fade-up" data-aos-delay="400">
                   <img src="../assets/img/svg/end-to-end-expertise.svg" alt="Herz-Symbol für Leidenschaft" width="30"
                     height="30" />
-                    Ganzheitliche Funnel-Expertise 
+                  Ganzheitliche Funnel-Expertise
                 </li>
                 <li data-aos="fade-up" data-aos-delay="500">
                   <img src="../assets/img/svg/transparent-reporting-i.svg" alt="Kompass-Symbol für Orientierung"
                     width="30" height="30" />
-                    Transparentes Reporting 
+                  Transparentes Reporting
                 </li>
                 <li data-aos="fade-up" data-aos-delay="600">
                   <img src="../assets/img/svg/enhancing_seo_optimisation.svg" alt="Krone-Symbol für Exzellenz"
                     width="30" height="30" />
-                    Konsequente Optimierung 
+                  Konsequente Optimierung
                 </li>
               </ul>
             </div>
@@ -386,7 +344,9 @@ Wir entwickeln zielgerichtete PPC-Kampagnen mit hohen Konversionsraten und messb
                   Google Search Ads Management
                 </h3>
                 <p>
-                  Mit gezielten Keywords und überzeugendem Anzeigentext bringen wir Ihr Unternehmen ganz nach oben. Unsere Google Ads-Kampagnen erzeugen Aufmerksamkeit, bauen Vertrauen auf und leiten potenzielle Kunden direkt zu Ihnen – präzise, klar und überzeugend.
+                  Mit gezielten Keywords und überzeugendem Anzeigentext bringen wir Ihr Unternehmen ganz nach oben.
+                  Unsere Google Ads-Kampagnen erzeugen Aufmerksamkeit, bauen Vertrauen auf und leiten potenzielle Kunden
+                  direkt zu Ihnen – präzise, klar und überzeugend.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="500">
@@ -401,7 +361,9 @@ Wir entwickeln zielgerichtete PPC-Kampagnen mit hohen Konversionsraten und messb
                   Display & YouTube Ads
                 </h3>
                 <p>
-                  Von aufmerksamkeitsstarken Bannern bis zu nicht überspringbaren Videos: Wir machen Ihre Marke visuell unvergesslich. Die richtige Botschaft, das passende Format und perfektes Timing sorgen dafür, dass aus Zuschauern Kunden werden.
+                  Von aufmerksamkeitsstarken Bannern bis zu nicht überspringbaren Videos: Wir machen Ihre Marke visuell
+                  unvergesslich. Die richtige Botschaft, das passende Format und perfektes Timing sorgen dafür, dass aus
+                  Zuschauern Kunden werden.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="600">
@@ -416,7 +378,9 @@ Wir entwickeln zielgerichtete PPC-Kampagnen mit hohen Konversionsraten und messb
                   Werbetexte & A/B-Testing
                 </h3>
                 <p>
-                  Wir schreiben starke Anzeigentexte und testen verschiedene Varianten – Headlines, Call-to-Actions und Ansprache – um herauszufinden, was bei Ihrer Zielgruppe wirklich funktioniert. Jeder Test bringt uns näher an die perfekte Ansprache.
+                  Wir schreiben starke Anzeigentexte und testen verschiedene Varianten – Headlines, Call-to-Actions und
+                  Ansprache – um herauszufinden, was bei Ihrer Zielgruppe wirklich funktioniert. Jeder Test bringt uns
+                  näher an die perfekte Ansprache.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -431,7 +395,9 @@ Wir entwickeln zielgerichtete PPC-Kampagnen mit hohen Konversionsraten und messb
                   eCommerce, das verkauft
                 </h3>
                 <p>
-                  Ihr Onlineshop soll nicht nur Produkte zeigen – sondern verkaufen. Wir erstellen sichere, benutzerfreundliche Shops mit Shopify, WooCommerce und anderen Tools. Schneller Checkout, sichere Zahlungen und klare Produktführung machen den Unterschied.
+                  Ihr Onlineshop soll nicht nur Produkte zeigen – sondern verkaufen. Wir erstellen sichere,
+                  benutzerfreundliche Shops mit Shopify, WooCommerce und anderen Tools. Schneller Checkout, sichere
+                  Zahlungen und klare Produktführung machen den Unterschied.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -446,7 +412,8 @@ Wir entwickeln zielgerichtete PPC-Kampagnen mit hohen Konversionsraten und messb
                   LLandingpage-Optimierung
                 </h3>
                 <p>
-                  Ihre Anzeige holt den Klick – die Landingpage macht den Abschluss. Wir optimieren Ihre Seiten für Performance, Nutzerführung und Zielerreichung – ob für Leads, Verkäufe oder Terminbuchungen.
+                  Ihre Anzeige holt den Klick – die Landingpage macht den Abschluss. Wir optimieren Ihre Seiten für
+                  Performance, Nutzerführung und Zielerreichung – ob für Leads, Verkäufe oder Terminbuchungen.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -461,7 +428,8 @@ Wir entwickeln zielgerichtete PPC-Kampagnen mit hohen Konversionsraten und messb
                   Remarketing-Kampagnen
                 </h3>
                 <p>
-                  Wir holen zurück, was verloren ging. Unsere Remarketing-Kampagnen sprechen gezielt Nutzer an, die bereits Interesse gezeigt, aber noch nicht konvertiert haben – kanalübergreifend und punktgenau.
+                  Wir holen zurück, was verloren ging. Unsere Remarketing-Kampagnen sprechen gezielt Nutzer an, die
+                  bereits Interesse gezeigt, aber noch nicht konvertiert haben – kanalübergreifend und punktgenau.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -530,34 +498,25 @@ Wir entwickeln zielgerichtete PPC-Kampagnen mit hohen Konversionsraten und messb
                 </h3> -->
 
               <div class="vision__subtitle font-24" data-aos="fade-up" data-aos-duration="400">
-                Willkommen bei Pay-per-Click-Werbung, die wirklich klickt. 
+                Willkommen bei Pay-per-Click-Werbung, die wirklich klickt.
               </div>
 
               <p class="mb-30" data-aos="fade-up" data-aos-duration="500">
-                Von starken Anzeigentexten bis zu conversion-optimierten Landingpages – bei uns ist jeder Klick auf Erfolg ausgerichtet. Jeder Klick kann Ihr nächster Verkauf sein. 
+                Von starken Anzeigentexten bis zu conversion-optimierten Landingpages – bei uns ist jeder Klick auf
+                Erfolg ausgerichtet. Jeder Klick kann Ihr nächster Verkauf sein.
                 <br /><br />
 
                 Bereit für Ergebnisse? Kontaktieren Sie uns jetzt und starten Sie durch.
               </p>
 
               <div data-aos="fade-up" data-aos-duration="600">
-                <a
-                  href="contact-us.html#form"
-                  class="btn text-uppercase"
-                  data-aos="zoom-in"
-                  data-aos-duration="700"
-                >
+                <a href="contact-us.html#form" class="btn text-uppercase" data-aos="zoom-in" data-aos-duration="700">
                   <span> Loslegen</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    fill="currentColor"
-                    aria-hidden="true"
-                    focusable="false"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"
+                    focusable="false">
                     <path
-                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                    ></path>
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                    </path>
                   </svg>
                 </a>
               </div>
@@ -771,7 +730,7 @@ Wir entwickeln zielgerichtete PPC-Kampagnen mit hohen Konversionsraten und messb
   </section>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="../assets/js/custom.js"></script>
+  <script src="../assets/js/custom.min.js"></script>
 </body>
 
 </html>
