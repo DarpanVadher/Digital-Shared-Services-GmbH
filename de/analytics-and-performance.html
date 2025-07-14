@@ -184,17 +184,17 @@
   </header>
 
   <main>
-    <section class="sec-intro pb-90">
+    <section class="sec-intro pb-90" aria-label="Datenanalyse & Erfolgskontrolle Einführung">
       <div class="intro" style="
-            background-image: linear-gradient(
-                rgba(0, 0, 0, 0.1),
-                rgba(0, 0, 0, 0.1)
-              ),
-              url('../assets/img/webp/analytics-data-insights.webp');
-            background-size: cover;
-            background-position: center;
-          ">
-        <div class="intro__bg"></div>
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url('../assets/img/webp/analytics-data-insights.webp');
+        background-size: cover;
+        background-position: center;
+      ">
+        <div class="intro__bg" aria-hidden="true"></div>
         <div class="container">
           <div class="intro__inner">
             <h1 class="font-85 font-light text-uppercase intro__title" data-aos="fade-up" data-aos-duration="300">
@@ -202,7 +202,8 @@
               Erfolgskontrolle
             </h1>
 
-            <a href="#dms" class="intro__link" data-aos="fade-up" data-aos-duration="600">
+            <a href="#dms" class="intro__link" data-aos="fade-up" data-aos-duration="600"
+              aria-label="Mehr über unsere digitalen Marketingservices erfahren">
               Digitaler Marketingservice
               <svg xmlns="http://www.w3.org/2000/svg" width="16.167" height="21.498" aria-hidden="true"
                 focusable="false">
@@ -216,17 +217,19 @@
           </div>
         </div>
 
-        <ul class="intro__social" aria-label="Social media links">
+        <ul class="intro__social" aria-label="Social Media Links">
           <li data-aos="fade-left" data-aos-duration="600">
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-              aria-label="Visit our Instagram page">
-              <img src="../assets/img/svg/instagram.svg" alt="Instagram" height="32" width="32" loading="lazy" />
+              aria-label="Besuchen Sie unsere Instagram Seite">
+              <img src="../assets/img/svg/instagram.svg" alt="Instagram Icon - Digital Shared Services" height="32"
+                width="32" loading="lazy" />
             </a>
           </li>
           <li data-aos="fade-left" data-aos-duration="900">
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-              aria-label="Visit our LinkedIn page">
-              <img src="../assets/img/svg/linkedin.svg" alt="LinkedIn" height="32" width="32" loading="lazy" />
+              aria-label="Besuchen Sie unsere LinkedIn Seite">
+              <img src="../assets/img/svg/linkedin.svg" alt="LinkedIn Icon - Digital Shared Services" height="32"
+                width="32" loading="lazy" />
             </a>
           </li>
         </ul>
@@ -237,18 +240,10 @@
       id="dms">
       <div class="expertise">
         <div class="container">
-          <!-- <h2
-              id="expertise-title"
-              class="font-34 text-center font-regular text-uppercase expertise__title"
-              data-aos="fade-up"
-              data-aos-duration="300"
-            >
-              Web Development
-            </h2> -->
-
-          <div class="expertise__list">
+          <div class="expertise__list" role="list">
             <div class="expertise__item expertise__item--large" role="listitem" data-aos="fade-up"
               data-aos-duration="500">
+              <h2 id="expertise-title" class="sr-only">Datenanalyse & Erfolgskontrolle</h2>
               <p>
                 Der Schlüssel zu erfolgreichem Marketing sind nicht mehr
                 Klicks, sondern bessere Einblicke. Wir übernehmen die Analyse
@@ -262,11 +257,11 @@
             <div class="expertise__item expertise__item--large" role="listitem" data-aos="fade-up"
               data-aos-duration="800">
               <p>
-                Unser Team hilft Ihnen beim Einrichten von Google Analytics,
-                beim Aufbau conversionorientierter Dashboards und beim Tracken
-                sämtlicher Nutzeraktionen. So entstehen datenbasierte
-                Entscheidungen und messbarer Erfolg. Jetzt kostenloses
-                Analytics-Review vereinbaren!
+                Unser Team hilft Ihnen beim Einrichten von <strong>Google Analytics</strong>,
+                beim Aufbau <strong>conversionorientierter Dashboards</strong> und beim Tracken
+                sämtlicher Nutzeraktionen. So entstehen <strong>datenbasierte
+                  Entscheidungen</strong> und messbarer Erfolg. <a href="#contact" class="cta-link">Jetzt kostenloses
+                  Analytics-Review vereinbaren!</a>
               </p>
             </div>
           </div>
@@ -274,13 +269,13 @@
       </div>
     </section>
 
-    <section class="sec-exp pb-90" data-aos="fade-up">
+    <section class="sec-exp pb-90" data-aos="fade-up" aria-labelledby="why-us-heading">
       <div class="exp ptb-90">
         <div class="container">
           <div class="exp__inner">
             <div class="exp__content" data-aos="fade-right">
-              <h2 class="font-36 font-regular exp__title" data-aos="fade-up" data-aos-delay="100">
-                Warum wir?
+              <h2 id="why-us-heading" class="font-36 font-regular exp__title" data-aos="fade-up" data-aos-delay="100">
+                Warum uns für Datenanalyse wählen?
               </h2>
 
               <p data-aos="fade-up" data-aos-delay="200">
@@ -291,63 +286,55 @@
               </p>
 
               <ul class="exp__list" role="list">
-                <li data-aos="fade-up" data-aos-delay="300">
-                  <img src="../assets/img/svg/strategy-first-always.svg" alt="Symbol für digitale Kommunikation"
-                    width="30" height="30" />
+                <li data-aos="fade-up" data-aos-delay="300" role="listitem">
+                  <img src="../assets/img/svg/strategy-first-always.svg" alt="Strategie Icon - Datenanalyse Konzept"
+                    width="30" height="30" loading="lazy" />
                   Strategische Umsetzung
                 </li>
-                <li data-aos="fade-up" data-aos-delay="400">
-                  <img src="../assets/img/svg/experienced-professionals-i.svg" alt="Herz-Symbol für Leidenschaft"
-                    width="30" height="30" />
+                <li data-aos="fade-up" data-aos-delay="400" role="listitem">
+                  <img src="../assets/img/svg/experienced-professionals-i.svg"
+                    alt="Experten Icon - Analytics Spezialisten" width="30" height="30" loading="lazy" />
                   Erfahrene Spezialisten
                 </li>
-                <li data-aos="fade-up" data-aos-delay="500">
-                  <img src="../assets/img/svg/compass.svg" alt="Kompass-Symbol für Orientierung" width="30"
-                    height="30" />
+                <li data-aos="fade-up" data-aos-delay="500" role="listitem">
+                  <img src="../assets/img/svg/compass.svg" alt="Analytics Ausrichtung Icon - Klare Insights" width="30"
+                    height="30" loading="lazy" />
                   Zielgerichtete Einblicke
                 </li>
-                <li data-aos="fade-up" data-aos-delay="600">
-                  <img src="../assets/img/svg/personal-dashboard-i.svg" alt="Krone-Symbol für Exzellenz" width="30"
-                    height="30" />
+                <li data-aos="fade-up" data-aos-delay="600" role="listitem">
+                  <img src="../assets/img/svg/personal-dashboard-i.svg" alt="Dashboard Icon - Individuelle Berichte"
+                    width="30" height="30" loading="lazy" />
                   Individuelle Dashboards
                 </li>
-                <li data-aos="fade-up" data-aos-delay="600">
-                  <img src="../assets/img/svg/practical-suggestions-i.svg" alt="Krone-Symbol für Exzellenz" width="30"
-                    height="30" />
+                <li data-aos="fade-up" data-aos-delay="600" role="listitem">
+                  <img src="../assets/img/svg/practical-suggestions-i.svg"
+                    alt="Handlungsempfehlungen Icon - Praktische Lösungen" width="30" height="30" loading="lazy" />
                   Konkrete Handlungsempfehlungen
                 </li>
               </ul>
             </div>
 
             <div class="exp__image-wrapper" data-aos="fade-left" data-aos-delay="300">
-              <img src="../assets/img/webp/web-dev.webp" alt="web development" width="500" height="300"
-                class="../assets/img-fluid exp__image" loading="lazy" />
+              <img src="../assets/img/webp/web-dev.webp" alt="Datenanalyse Dashboard mit wichtigen Kennzahlen"
+                width="500" height="300" class="img-fluid exp__image" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="sec-detail pb-90" data-aos="fade-up" data-aos-duration="500">
+    <section class="sec-detail pb-90" data-aos="fade-up" data-aos-duration="500"
+      aria-labelledby="analytics-services-heading">
       <div class="detail" data-aos="fade-up" data-aos-duration="500">
         <div class="container" data-aos="fade-up" data-aos-duration="500">
-          <h2 class="detail__title font-30 text-uppercase font-regular mb-30" data-aos="fade-up"
-            data-aos-duration="400">
+          <h2 id="analytics-services-heading" class="detail__title font-30 text-uppercase font-regular mb-30"
+            data-aos="fade-up" data-aos-duration="400">
             Unsere Leistungen im Bereich Analytics & Performance Tracking
           </h2>
-          <!-- <p data-aos="fade-up" data-aos-delay="200" class="mb-30">
-              We offer websites that load quickly and don't make users wait.
-              Because conversions can be lost with as little as a 2-second
-              delay! By utilizing smart server procedures and maintaining clean
-              code, we are able to decrease bounce rates, improve load speeds,
-              and boost dwell time.
-
-              <br /><br />
-              <b>Contact Us and Get Your Site Evaluated!</b>
-            </p> -->
 
           <div class="detail__inner">
-            <div class="detail__item" data-aos="fade-up" data-aos-duration="400">
+            <!-- Service 1 -->
+            <div class="detail__item" data-aos="fade-up" data-aos-duration="400" role="article">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="500">
                 <h3 class="font-24 font-regular mb-20">
                   Google Analytics Setup & Reports
@@ -361,12 +348,14 @@
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="500">
-                <img src="../assets/img/svg/google-analytics-setup-reports.svg" alt="marketing" loading="lazy"
-                  width="100" height="100" class="../assets/img-fluid" />
+                <img src="../assets/img/svg/google-analytics-setup-reports.svg"
+                  alt="Google Analytics Einrichtung - Datenanalyse Service" loading="lazy" width="100" height="100"
+                  class="img-fluid" />
               </div>
             </div>
 
-            <div class="detail__item" data-aos="fade-up" data-aos-duration="500">
+            <!-- Service 2 -->
+            <div class="detail__item" data-aos="fade-up" data-aos-duration="500" role="article">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="600">
                 <h3 class="font-24 font-regular mb-20">
                   Conversion Rate Optimization (CRO)
@@ -378,15 +367,17 @@
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="600">
-                <img src="../assets/img/svg/conversion-rate-optimization.svg" alt="marketing" loading="lazy" width="100"
-                  height="100" class="../assets/img-fluid" />
+                <img src="../assets/img/svg/conversion-rate-optimization.svg"
+                  alt="Conversion Optimierung - Steigerung Ihrer Umsätze" loading="lazy" width="100" height="100"
+                  class="img-fluid" />
               </div>
             </div>
 
-            <div class="detail__item" data-aos="fade-up" data-aos-duration="600">
+            <!-- Service 3 -->
+            <div class="detail__item" data-aos="fade-up" data-aos-duration="600" role="article">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="700">
                 <h3 class="font-24 font-regular mb-20">
-                  Heatmaps and recordings of user sessions
+                  Heatmaps und Nutzersitzungsaufzeichnungen
                 </h3>
                 <p>
                   Sehen Sie Ihre Website durch die Augen Ihrer Nutzer. Mit
@@ -396,15 +387,17 @@
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
-                <img src="../assets/img/svg/heatmaps-and-recordings-of-user-sessions.svg" alt="marketing" loading="lazy"
-                  width="100" height="100" class="../assets/img-fluid" />
+                <img src="../assets/img/svg/heatmaps-and-recordings-of-user-sessions.svg"
+                  alt="Heatmap Analyse - Nutzerverhalten verstehen" loading="lazy" width="100" height="100"
+                  class="img-fluid" />
               </div>
             </div>
 
-            <div class="detail__item" data-aos="fade-up" data-aos-duration="600">
+            <!-- Service 4 -->
+            <div class="detail__item" data-aos="fade-up" data-aos-duration="600" role="article">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="700">
                 <h3 class="font-24 font-regular mb-20">
-                  Data Visualization & KPI Reports
+                  Datenvisualisierung & KPI Reports
                 </h3>
                 <p>
                   Schluss mit Standard-Reports: Ob Leads, Conversions oder
@@ -414,12 +407,14 @@
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
-                <img src="../assets/img/svg/data-visualization-kpi-reports.svg" alt="marketing" loading="lazy"
-                  width="100" height="100" class="../assets/img-fluid" />
+                <img src="../assets/img/svg/data-visualization-kpi-reports.svg"
+                  alt="Datenvisualisierung - Klare Kennzahlen auf einen Blick" loading="lazy" width="100" height="100"
+                  class="img-fluid" />
               </div>
             </div>
 
-            <div class="detail__item" data-aos="fade-up" data-aos-duration="600">
+            <!-- Service 5 -->
+            <div class="detail__item" data-aos="fade-up" data-aos-duration="600" role="article">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="700">
                 <h3 class="font-24 font-regular mb-20">
                   Event & Funnel Tracking
@@ -432,82 +427,11 @@
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
-                <img src="../assets/img/svg/event-funnel-tracking.svg" alt="marketing" loading="lazy" width="100"
-                  height="100" class="../assets/img-fluid" />
+                <img src="../assets/img/svg/event-funnel-tracking.svg"
+                  alt="Funnel Tracking - Optimierung Ihrer Verkaufskanäle" loading="lazy" width="100" height="100"
+                  class="img-fluid" />
               </div>
             </div>
-
-            <!-- <div
-                class="detail__item"
-                data-aos="fade-up"
-                data-aos-duration="600"
-              >
-                <div
-                  class="detail__item-text"
-                  data-aos="fade-right"
-                  data-aos-duration="700"
-                >
-                  <h3 class="font-24 font-regular mb-20">
-                    Website Maintenance & Support
-                  </h3>
-                  <p>
-                    Think of us as your behind-the-scenes tech team! Websites
-                    need constant care. Our website maintenance services
-                    guarantee that your website is constantly secure, current,
-                    and operating efficiently.
-                  </p>
-                </div>
-                <div
-                  class="detail__item-image"
-                  data-aos="zoom-in"
-                  data-aos-duration="700"
-                >
-                  <img
-                    src="../assets/img/svg/marketing.svg"
-                    alt="marketing"
-                    loading="lazy"
-                    width="100"
-                    height="100"
-                    class="../assets/img-fluid"
-                  />
-                </div>
-              </div>
-
-              <div
-                class="detail__item"
-                data-aos="fade-up"
-                data-aos-duration="600"
-              >
-                <div
-                  class="detail__item-text"
-                  data-aos="fade-right"
-                  data-aos-duration="700"
-                >
-                  <h3 class="font-24 font-regular mb-20">
-                    Website Speed Optimization
-                  </h3>
-                  <p>
-                    Slow websites are deal-breakers. Faster websites mean
-                    happier visitors, better search rankings, and more
-                    conversions. We ensure your site loads fast to improve user
-                    experience and boost SEO.
-                  </p>
-                </div>
-                <div
-                  class="detail__item-image"
-                  data-aos="zoom-in"
-                  data-aos-duration="700"
-                >
-                  <img
-                    src="../assets/img/svg/marketing.svg"
-                    alt="marketing"
-                    loading="lazy"
-                    width="100"
-                    height="100"
-                    class="../assets/img-fluid"
-                  />
-                </div>
-              </div> -->
           </div>
         </div>
       </div>
@@ -519,7 +443,8 @@
           <div class="vision__inner" data-aos="fade-up" data-aos-duration="500">
             <div class="vision__image" data-aos="fade-right" data-aos-duration="400">
               <div class="vision__image-inner" data-aos="zoom-in" data-aos-duration="400">
-                <img src="../assets/img/webp/web-dev-discuss.webp" alt="vison" width="647" height="480"
+                <img src="../assets/img/webp/web-dev-discuss.webp"
+                  alt="Web development team discussing measurable results for business success" width="647" height="480"
                   loading="lazy" />
               </div>
             </div>
@@ -685,7 +610,6 @@
       </div>
     </div>
   </footer>
-  >
 
   <section class="cookie-card-wrapper">
     <div class="cookie-card">
@@ -759,7 +683,7 @@
         </ul>
       </div>
       <div class="actions">
-        <div></div>
+
         <button class="accept">Alle akzeptieren</button>
       </div>
     </div>
