@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Redirecting...</title>
-    <script>
-      // Set selected language cookie to "de" for 1 year
-      document.cookie = "selectedLang=de; max-age=31536000; path=/";
 
-      // Always redirect to German version
-      window.location.href = "/de/";
-    </script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting...</title>
+  <script>
+    // Set selected language cookie to "de" for 1 year
+    document.cookie = "selectedLang=de; max-age=31536000; path=/";
 
-  <body>
-    <p>Redirecting to German version...</p>
-  </body>
+    // Always redirect to German version
+    window.location.href = "/de/";
+  </script>
+</head>
+
+<body>
+  <p>Redirecting to German version...</p>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMXCTMNE2B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-PMXCTMNE2B');
+  </script>
+</body>
+
 </html>
