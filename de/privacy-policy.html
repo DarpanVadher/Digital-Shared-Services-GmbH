@@ -32,7 +32,7 @@
   <!-- END : Meta Tags -->
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.min.css" />
 </head>
 
 <body>
@@ -51,7 +51,7 @@
             </li>
             <li role="listitem">
               <a href="services.html">Dienstleistungen</a>
-              <button class="header-btn">
+              <button class="header-btn" aria-label="Open navigation menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24"
                   fill="currentColor">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -119,7 +119,7 @@
             </li>
             <!-- <li role="listitem"> -->
             <!-- <a href="#">Karriere</a> -->
-            <!-- <button class="header-btn">
+            <!-- <button class="header-btn" aria-label="Open navigation menu">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="800px"
@@ -151,7 +151,8 @@
         </nav>
         <div class="language-switcher">
           <button id="language-btn" onclick="toggleDropdown()">
-            <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" id="selected-flag" />
+            <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="DE" class="flag"
+              id="selected-flag" />
             <span id="selected-lang">DE</span>
             <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               viewBox="0 0 16 16">
@@ -160,13 +161,15 @@
             </svg>
           </button>
           <div id="language-dropdown" class="dropdown hidden">
-            <div class="option" data-lang="DE" onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')">
-              <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" />
+            <div class="option" data-lang="DE"
+              onclick="changeLanguage('de', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg')">
+              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="DE" class="flag" />
               DE
               <span class="selected-dot active" id="dot-DE"></span>
             </div>
-            <div class="option" data-lang="EN" onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')">
-              <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" />
+            <div class="option" data-lang="EN"
+              onclick="changeLanguage('en', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg')">
+              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="EN" class="flag" />
               EN
               <span class="selected-dot" id="dot-EN"></span>
             </div>
