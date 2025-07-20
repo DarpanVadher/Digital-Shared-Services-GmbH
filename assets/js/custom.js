@@ -356,3 +356,81 @@ form.addEventListener("submit", async function (e) {
   }
 });
 /* CONTACT US FORM END */
+
+
+// ########################################################################
+// Cookie consent
+// ########################################################################
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Get DOM elements
+  const cookieModal = document.querySelector('.cookie-modal-wrapper');
+  const closeBtn = document.querySelector('.cookie-modal-close-btn');
+  const savePrefsBtn = document.querySelector('.cookie-action-primary');
+  const essentialOnlyBtn = document.querySelectorAll('.cookie-action-secondary')[0];
+  const acceptAllBtn = document.querySelectorAll('.cookie-action-secondary')[1];
+  const cookieCheckboxes = document.querySelectorAll('.cookie-category-checkbox:not([disabled])');
+
+  // Check if user has already made a choice
+  const userChoice = localStorage.getItem('cookieConsent');
+  if (userChoice) {
+    hideModal();
+  }
+
+  // Close button functionality
+  closeBtn.addEventListener('click', hideModal);
+
+  // Save Preferences button
+  savePrefsBtn.addEventListener('click', function () {
+    const consent = getCurrentSelections();
+    localStorage.setItem('cookieConsent', JSON.stringify(consent));
+    hideModal();
+  });
+
+  // Essential Only button
+  essentialOnlyBtn.addEventListener('click', function () {
+    cookieCheckboxes.forEach(checkbox => {
+      checkbox.checked = false;
+    });
+    const consent = { essential: true, externalMedia: false };
+    localStorage.setItem('cookieConsent', JSON.stringify(consent));
+    hideModal();
+  });
+
+  // Accept All button
+  acceptAllBtn.addEventListener('click', function () {
+    cookieCheckboxes.forEach(checkbox => {
+      checkbox.checked = true;
+    });
+    const consent = { essential: true, externalMedia: true };
+    localStorage.setItem('cookieConsent', JSON.stringify(consent));
+    hideModal();
+  });
+
+  // ESC key to close modal
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && cookieModal.style.display !== 'none') {
+      hideModal();
+    }
+  });
+
+  // Helper function to hide modal
+  function hideModal() {
+    cookieModal.style.display = 'none';
+  }
+
+  // Helper function to get current checkbox selections
+  function getCurrentSelections() {
+    return {
+      essential: true, // Always true as it's required
+      externalMedia: document.getElementById('external-media').checked
+    };
+  }
+
+  // Optional: Close when clicking outside the modal
+  cookieModal.addEventListener('click', function (e) {
+    if (e.target === cookieModal) {
+      hideModal();
+    }
+  });
+});

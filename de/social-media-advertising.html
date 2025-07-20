@@ -151,7 +151,7 @@
         </nav>
         <div class="language-switcher">
           <button id="language-btn" onclick="toggleDropdown()">
-            <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="DE" class="flag"
+            <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="Germany" class="flag"
               id="selected-flag" />
             <span id="selected-lang">DE</span>
             <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -163,13 +163,13 @@
           <div id="language-dropdown" class="dropdown hidden">
             <div class="option" data-lang="DE"
               onclick="changeLanguage('de', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="DE" class="flag" />
+              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="Germany" class="flag" />
               DE
               <span class="selected-dot active" id="dot-DE"></span>
             </div>
             <div class="option" data-lang="EN"
               onclick="changeLanguage('en', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="EN" class="flag" />
+              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="English" class="flag" />
               EN
               <span class="selected-dot" id="dot-EN"></span>
             </div>
@@ -708,80 +708,111 @@
     </div>
   </footer>
 
-  <section class="cookie-card-wrapper">
-    <div class="cookie-card">
-      <div class="title font-24">
-        <div class="title-text">🍪 Datenschutz-präferenz</div>
-
-        <button class="close" aria-label="Close cookie banner" title="Close cookie banner">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="none">
-            <g id="Menu / Close_SM">
-              <path id="Vector" d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke="#000000" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </g>
-          </svg>
-        </button>
-      </div>
-
-      <div class="description-wrapper">
-        <p class="description">
-          Wir benötigen Ihre Einwilligung, bevor Sie unsere Website weiter
-          besuchen können. Wenn Sie unter 16 Jahre alt sind und Ihre
-          Einwilligung zu optionalen Services geben möchten, müssen Sie Ihre
-          Erziehungsberechtigten um Erlaubnis bitten. Wir verwenden Cookies
-          und andere Technologien auf unserer Website. Einige von ihnen sind
-          essenziell, während andere uns helfen, diese Website und Ihre
-          Erfahrung zu verbessern. Personenbezogene Daten können verarbeitet
-          werden (z. B. IP-Adressen), z. B. für personalisierte Anzeigen und
-          Inhalte oder die Messung von Anzeigen und Inhalten. Weitere
-          Informationen über die Verwendung Ihrer Daten finden Sie in unserer
-          Datenschutzerklärung. Es besteht keine Verpflichtung, in die
-          Verarbeitung Ihrer Daten einzuwilligen, um dieses Angebot zu nutzen.
-          Sie können Ihre Auswahl jederzeit unter Einstellungen widerrufen
-          oder anpassen. Bitte beachten Sie, dass aufgrund individueller
-          Einstellungen möglicherweise nicht alle Funktionen der Website
-          verfügbar sind.
-          <a href="privacy-policy.html">policies</a>.
-        </p>
-        <br />
-        <hr />
-        <p class="description">
-          Einige Services verarbeiten personenbezogene Daten in den USA. Mit
-          Ihrer Einwilligung zur Nutzung dieser Services willigen Sie auch in
-          die Verarbeitung Ihrer Daten in den USA gemäß Art. 49 (1) lit. a
-          GDPR ein. Der EuGH stuft die USA als ein Land mit unzureichendem
-          Datenschutz nach EU-Standards ein. Es besteht beispielsweise die
-          Gefahr, dass US-Behörden personenbezogene Daten in
-          Überwachungsprogrammen verarbeiten, ohne dass für Europäerinnen und
-          Europäer eine Klagemöglichkeit besteht.
-        </p>
-
-        <div class="checkbox-wrapper">
-          <div class="checkbox-item">
-            <input type="checkbox" name="Essenziell" id="essenziell" checked disabled />
-            <label for="essenziell">Essenziell</label>
+  <section class="cookie-modal-wrapper">
+    <div class="cookie-modal-overlay">
+      <div class="cookie-modal-container">
+        <div class="cookie-modal-header">
+          <div class="cookie-modal-title-wrapper">
+            <div class="cookie-modal-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                </path>
+              </svg>
+            </div>
+            <h2 class="cookie-modal-title">Privatsphäre Präferenzen</h2>
           </div>
-          <div class="checkbox-item">
-            <input type="checkbox" name="all" id="all" />
-            <label for="all">Externe Medien</label>
-          </div>
+          <button class="cookie-modal-close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+            <span class="visually-hidden">Close</span>
+          </button>
         </div>
 
-        <ul class="btn-list">
-          <li>
-            <button class="accept">Einwilligung speichern</button>
-          </li>
-          <li>
-            <button class="accept">
-              Nur essenzielle Cookies akzeptieren
-            </button>
-          </li>
-          <!-- <li><button class="savePreferences">Individuelle Datenschutz-Präferenzen</button></li> -->
-        </ul>
-      </div>
-      <div class="actions">
+        <div class="cookie-modal-content">
+          <div class="cookie-modal-description">
+            <p class="cookie-modal-text">
+              Wir benötigen Ihre Einwilligung, bevor Sie unsere Website weiter besuchen können. Wenn Sie unter 16 Jahre
+              alt sind und Ihre Einwilligung zu optionalen Services geben möchten, müssen Sie Ihre
+              Erziehungsberechtigten um Erlaubnis bitten. Wir verwenden Cookies und andere Technologien auf unserer
+              Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu
+              verbessern. Personenbezogene Daten können verarbeitet werden (z. B. IP-Adressen), z. B. für
+              personalisierte Anzeigen und Inhalte oder die Messung von Anzeigen und Inhalten. Weitere Informationen
+              über die Verwendung Ihrer Daten finden Sie in unserer Datenschutzerklärung. Es besteht keine
+              Verpflichtung, in die Verarbeitung Ihrer Daten einzuwilligen, um dieses Angebot zu nutzen. Sie können Ihre
+              Auswahl jederzeit unter Einstellungen widerrufen oder anpassen. Bitte beachten Sie, dass aufgrund
+              individueller Einstellungen möglicherweise nicht alle Funktionen der Website verfügbar sind. policies.
+            </p>
+            <div class="cookie-modal-notice">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+                <path d="M8.5 8.5v.01"></path>
+                <path d="M16 15.5v.01"></path>
+                <path d="M12 12v.01"></path>
+                <path d="M11 17v.01"></path>
+                <path d="M7 14v.01"></path>
+              </svg>
+              <div class="cookie-notice-content">
+                <p class="cookie-notice-title">Datenverarbeitung notice</p>
+                <p class="cookie-notice-text">
+                  Einige Services verarbeiten personenbezogene Daten in den USA. Mit Ihrer Einwilligung zur Nutzung
+                  dieser Services willigen Sie auch in die Verarbeitung Ihrer Daten in den USA gemäß Art. 49 (1) lit. a
+                  GDPR ein. Der EuGH stuft die USA als ein Land mit unzureichendem Datenschutz nach EU-Standards ein. Es
+                  besteht beispielsweise die Gefahr, dass US-Behörden personenbezogene Daten in Überwachungsprogrammen
+                  verarbeiten, ohne dass für Europäerinnen und Europäer eine Klagemöglichkeit besteht.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <button class="accept">Alle akzeptieren</button>
+          <div class="cookie-modal-divider"></div>
+
+          <div class="cookie-categories">
+            <h3 class="cookie-categories-title">Cookie Categories</h3>
+            <div class="cookie-categories-list">
+              <div class="cookie-category-item cookie-category-essential">
+                <div class="cookie-category-content">
+                  <input type="checkbox" name="essential" class="cookie-category-checkbox" id="essential" checked
+                    disabled>
+                  <div class="cookie-category-info">
+                    <label for="essential" class="cookie-category-name">Essential Cookies</label>
+                    <p class="cookie-category-description">Erforderlich für die grundlegenden Website-Funktionen</p>
+                  </div>
+                </div>
+                <span class="cookie-category-tag cookie-category-required">Erforderlich</span>
+              </div>
+
+              <div class="cookie-category-item">
+                <div class="cookie-category-content">
+                  <input type="checkbox" name="external-media" class="cookie-category-checkbox" id="external-media">
+                  <div class="cookie-category-info">
+                    <label for="external-media" class="cookie-category-name">External Media</label>
+                    <p class="cookie-category-description">Inhalte von externen Plattformen wie YouTube, Vimeo</p>
+                  </div>
+                </div>
+                <span class="cookie-category-tag">Optional</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cookie-modal-divider"></div>
+
+          <div class="cookie-modal-actions">
+            <button class="cookie-action-btn cookie-action-primary">Speichern Präferenzen</button>
+            <button class="cookie-action-btn cookie-action-secondary">Einfach unverzichtbar</button>
+            <button class="cookie-action-btn cookie-action-secondary">Akzeptiere alles</button>
+          </div>
+
+          <p class="cookie-modal-footer">
+            Erfahren Sie mehr in unserer <a href="privacy-policy.html"
+              class="cookie-modal-link">Datenschutzrichtlinie</a>
+          </p>
+        </div>
       </div>
     </div>
   </section>

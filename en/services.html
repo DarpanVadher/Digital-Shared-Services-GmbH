@@ -146,7 +146,7 @@
 
         <div class="language-switcher">
           <button id="language-btn" onclick="toggleDropdown()">
-            <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="EN" class="flag"
+            <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="English" class="flag"
               id="selected-flag" />
             <span id="selected-lang">EN</span>
             <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -158,13 +158,13 @@
           <div id="language-dropdown" class="dropdown hidden">
             <div class="option" data-lang="DE"
               onclick="changeLanguage('de', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="DE" class="flag" />
+              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="Germany" class="flag" />
               DE
               <span class="selected-dot" id="dot-DE"></span>
             </div>
             <div class="option" data-lang="EN"
               onclick="changeLanguage('en', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="EN" class="flag" />
+              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="English" class="flag" />
               EN
               <span class="selected-dot active" id="dot-EN"></span>
             </div>
@@ -794,71 +794,108 @@
     </div>
   </footer>
 
-  <section class="cookie-card-wrapper">
-    <div class="cookie-card">
-      <div class="title font-24">
-        <div class="title-text">🍪 Privacy Preferences</div>
-
-        <button class="close" aria-label="Close cookie banner" title="Close cookie banner">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="none">
-            <g id="Menu / Close_SM">
-              <path id="Vector" d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke="#000000" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </g>
-          </svg>
-        </button>
-      </div>
-
-      <div class="description-wrapper">
-        <p class="description">
-          We require your consent before you can continue visiting our website.
-          If you are under 16 and would like to consent to optional services,
-          you must ask your legal guardians for permission.
-          We use cookies and other technologies on our website. Some of them are
-          essential, while others help us improve this website and your experience.
-          Personal data may be processed (e.g., IP addresses), for example for
-          personalized ads and content, or to measure ads and content performance.
-          For more information on how we use your data, please see our
-          <a href="privacy-policy.html">Privacy Policy</a>.
-          There is no obligation to consent to data processing to use this site.
-          You can withdraw or adjust your choices at any time under settings.
-          Please note that due to individual settings, not all website functions
-          may be available.
-        </p>
-        <br />
-        <hr />
-        <p class="description">
-          Some services process personal data in the USA. By consenting to the use
-          of these services, you also consent to the processing of your data in the
-          USA in accordance with Art. 49 (1) lit. a GDPR. The ECJ considers the USA
-          a country with inadequate data protection under EU standards.
-          For example, there is a risk that US authorities may process personal data
-          in surveillance programs without legal recourse for Europeans.
-        </p>
-
-        <div class="checkbox-wrapper">
-          <div class="checkbox-item">
-            <input type="checkbox" name="Essential" id="essential" checked disabled />
-            <label for="essential">Essential</label>
+  <section class="cookie-modal-wrapper">
+    <div class="cookie-modal-overlay">
+      <div class="cookie-modal-container">
+        <div class="cookie-modal-header">
+          <div class="cookie-modal-title-wrapper">
+            <div class="cookie-modal-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                </path>
+              </svg>
+            </div>
+            <h2 class="cookie-modal-title">Privacy Preferences</h2>
           </div>
-          <div class="checkbox-item">
-            <input type="checkbox" name="all" id="all" />
-            <label for="all">External Media</label>
-          </div>
+          <button class="cookie-modal-close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+            <span class="visually-hidden">Close</span>
+          </button>
         </div>
 
-        <ul class="btn-list">
-          <li>
-            <button class="accept">Save Consent</button>
-          </li>
-          <li>
-            <button class="accept">Accept Only Essential Cookies</button>
-          </li>
-          <!-- <li><button class="savePreferences">Individual Privacy Preferences</button></li> -->
-        </ul>
-      </div>
-      <div class="actions">
-        <button class="accept">Accept All</button>
+        <div class="cookie-modal-content">
+          <div class="cookie-modal-description">
+            <p class="cookie-modal-text">
+              We require your consent before you can continue visiting our website. If you are under 16 and would like
+              to consent to optional services, you must ask your legal guardians for permission. We use cookies and
+              other technologies on our website. Some of them are essential, while others help us improve this website
+              and your experience. Personal data may be processed (e.g., IP addresses), for example for personalized ads
+              and content, or to measure ads and content performance. For more information on how we use your data,
+              please see our Privacy Policy. There is no obligation to consent to data processing to use this site. You
+              can withdraw or adjust your choices at any time under settings. Please note that due to individual
+              settings, not all website functions may be available.
+            </p>
+            <div class="cookie-modal-notice">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+                <path d="M8.5 8.5v.01"></path>
+                <path d="M16 15.5v.01"></path>
+                <path d="M12 12v.01"></path>
+                <path d="M11 17v.01"></path>
+                <path d="M7 14v.01"></path>
+              </svg>
+              <div class="cookie-notice-content">
+                <p class="cookie-notice-title">Data Processing Notice</p>
+                <p class="cookie-notice-text">
+                  Some services process personal data in the USA. By consenting to the use of these services, you also
+                  consent to the processing of your data in the USA in accordance with Art. 49 (1) lit. a GDPR. The ECJ
+                  considers the USA a country with inadequate data protection under EU standards. For example, there is
+                  a risk that US authorities may process personal data in surveillance programs without legal recourse
+                  for Europeans.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cookie-modal-divider"></div>
+
+          <div class="cookie-categories">
+            <h3 class="cookie-categories-title">Cookie Categories</h3>
+            <div class="cookie-categories-list">
+              <div class="cookie-category-item cookie-category-essential">
+                <div class="cookie-category-content">
+                  <input type="checkbox" name="essential" class="cookie-category-checkbox" id="essential" checked
+                    disabled>
+                  <div class="cookie-category-info">
+                    <label for="essential" class="cookie-category-name">Essential Cookies</label>
+                    <p class="cookie-category-description">Required for basic website functionality</p>
+                  </div>
+                </div>
+                <span class="cookie-category-tag cookie-category-required">Required</span>
+              </div>
+
+              <div class="cookie-category-item">
+                <div class="cookie-category-content">
+                  <input type="checkbox" name="external-media" class="cookie-category-checkbox" id="external-media">
+                  <div class="cookie-category-info">
+                    <label for="external-media" class="cookie-category-name">External Media</label>
+                    <p class="cookie-category-description">Content from external platforms like YouTube, Vimeo</p>
+                  </div>
+                </div>
+                <span class="cookie-category-tag">Optional</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cookie-modal-divider"></div>
+
+          <div class="cookie-modal-actions">
+            <button class="cookie-action-btn cookie-action-primary">Save Preferences</button>
+            <button class="cookie-action-btn cookie-action-secondary">Essential Only</button>
+            <button class="cookie-action-btn cookie-action-secondary">Accept All</button>
+          </div>
+
+          <p class="cookie-modal-footer">
+            Learn more in our <a href="privacy-policy.html" class="cookie-modal-link">Privacy Policy</a>
+          </p>
+        </div>
       </div>
     </div>
   </section>
