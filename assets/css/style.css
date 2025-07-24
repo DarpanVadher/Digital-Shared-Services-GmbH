@@ -395,6 +395,7 @@ section {
 .ptb-90 {
   padding: 90px 0;
 }
+
 @media screen and (max-width: 1599px) {
   .ptb-90 {
     padding: 70px 0;
@@ -420,10 +421,10 @@ section {
     padding: 35px 0;
   }
 }
-
 .pb-90 {
   padding-bottom: 90px;
 }
+
 @media screen and (max-width: 1599px) {
   .pb-90 {
     padding-bottom: 70px;
@@ -449,7 +450,6 @@ section {
     padding-bottom: 35px;
   }
 }
-
 .btn {
   border: 3px solid var(--color-white);
   display: inline-flex;
