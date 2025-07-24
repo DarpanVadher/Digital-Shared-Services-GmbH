@@ -434,3 +434,74 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const modalOverlay = document.querySelector('.tech-modal-overlay');
+  const modalContainer = document.querySelector('.tech-modal-container');
+  const closeBtn = document.querySelector('.tech-modal-close-btn');
+  const declineBtn = document.querySelector('.tech-decline-btn');
+
+  // Function to show modal with animation
+  function showModal() {
+    modalOverlay.style.display = 'flex';
+
+    // Trigger reflow to enable animation
+    void modalOverlay.offsetWidth;
+
+    modalOverlay.style.opacity = '1';
+    modalContainer.style.transform = 'scale(1)';
+    modalContainer.style.opacity = '1';
+  }
+
+  // Function to close modal with animation
+  function closeModal() {
+    modalOverlay.style.opacity = '0';
+    modalContainer.style.transform = 'scale(0.95)';
+    modalContainer.style.opacity = '0';
+
+    // Remove modal after animation completes
+    setTimeout(() => {
+      modalOverlay.style.display = 'none';
+    }, 300);
+  }
+
+  // Show modal after 5 seconds
+  setTimeout(showModal, 5000);
+
+  // Close when X button is clicked
+  closeBtn.addEventListener('click', closeModal);
+
+  // Close when decline button is clicked
+  declineBtn.addEventListener('click', closeModal);
+
+  // Close when clicking outside the modal
+  modalOverlay.addEventListener('click', function (e) {
+    if (e.target === modalOverlay) {
+      closeModal();
+    }
+  });
+
+  // Prevent clicks inside modal from closing it
+  modalContainer.addEventListener('click', function (e) {
+    e.stopPropagation();
+  });
+
+  // Handle form submission
+  const form = document.querySelector('.tech-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const emailInput = document.querySelector('.tech-email-input');
+      const email = emailInput.value.trim();
+
+      if (email) {
+        // Here you would typically send the email to your server
+        console.log('Submitted email:', email);
+        alert('Thank you for your interest! We\'ll be in touch soon.');
+        closeModal();
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    });
+  }
+});

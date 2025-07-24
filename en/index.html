@@ -35,7 +35,7 @@
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.min.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
 <body>
@@ -892,6 +892,78 @@
       </div>
     </div>
   </footer>
+
+  <div class="tech-modal-overlay" style="display: none;">
+    <div class="tech-modal-container">
+      <button class="tech-modal-close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="tech-modal-close-icon">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+      <div class="tech-modal-grid">
+        <div class="tech-modal-features">
+          <div class="tech-features-grid">
+            <div class="tech-feature-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="tech-feature-icon tech-icon-web">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span class="tech-feature-label">Web Dev</span>
+            </div>
+            <div class="tech-feature-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="tech-feature-icon tech-icon-mobile">
+                <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                <path d="M12 18h.01"></path>
+              </svg>
+              <span class="tech-feature-label">Mobile Apps</span>
+            </div>
+            <div class="tech-feature-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="tech-feature-icon tech-icon-globe">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+              <span class="tech-feature-label">Cloud Solutions</span>
+            </div>
+            <div class="tech-feature-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="tech-feature-icon tech-icon-database">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                <path d="M3 12A9 3 0 0 0 21 12"></path>
+              </svg>
+              <span class="tech-feature-label">Database</span>
+            </div>
+          </div>
+        </div>
+        <div class="tech-modal-content">
+          <div class="tech-offer-header">
+            <h2 class="tech-offer-title">Transform Your Ideas!</h2>
+            <div class="tech-discount-amount">20% OFF</div>
+            <p class="tech-offer-description">Get your custom software solution at a special price</p>
+          </div>
+          <form class="tech-form">
+            <div class="tech-input-container">
+              <input class="tech-email-input" placeholder="What is your email?" required type="email" value="">
+              <button class="tech-send-btn" type="submit">SEND</button>
+            </div>
+            <button class="tech-cta-btn" type="submit">Get 20% Off!</button>
+          </form>
+          <button class="tech-decline-btn">I'm not interested :(</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- <section class="cookie-card-wrapper">
     <div class="cookie-card">
