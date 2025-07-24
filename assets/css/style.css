@@ -648,6 +648,31 @@ section {
   margin: 0 auto;
 }
 
+.calendly-badge-widget .calendly-badge-content span {
+  display: none;
+}
+
+html[lang=en] .calendly-badge-widget .calendly-badge-content span {
+  font-size: 0;
+  position: relative;
+  display: block;
+}
+
+html[lang=en] .calendly-badge-widget .calendly-badge-content {
+  font-size: 0;
+}
+
+html[lang=en] .calendly-badge-widget .calendly-badge-content span::after {
+  content: "Book a call";
+  font-size: 14px;
+  display: block;
+}
+
+.calendly-overlay .calendly-popup {
+  max-width: 680px;
+  min-width: 680px;
+}
+
 .header {
   padding: 26px 30px;
   position: fixed;
