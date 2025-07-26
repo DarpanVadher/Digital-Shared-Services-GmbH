@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const termsCheckbox = document.getElementById("terms");
-  const submitButton = document.getElementById("submit-button");
+  const submitButton = form.querySelector('button[type="submit"]');
 
   console.log("termsCheckbox.value", termsCheckbox.value);
 
