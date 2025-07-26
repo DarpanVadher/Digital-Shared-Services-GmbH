@@ -2203,6 +2203,19 @@ html[lang=en] .calendly-badge-widget .calendly-badge-content span::after {
   resize: none;
 }
 
+@media screen and (max-width: 767px) {
+  .iti--fullscreen-popup.iti--container {
+    padding: 100px 40px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .iti__search-input {
+    min-height: 40px !important;
+    padding: 10px !important;
+  }
+}
+
 .hire {
   padding: 90px 0;
   color: var(--color-white);
@@ -2239,6 +2252,7 @@ html[lang=en] .calendly-badge-widget .calendly-badge-content span::after {
 @media screen and (max-width: 767px) {
   .hire__list {
     gap: 16px;
+    padding-bottom: 16px;
   }
 }
 .hire__right {

@@ -172,3 +172,16 @@
         }
     }
 }
+
+.iti--fullscreen-popup.iti--container {
+    @media screen and (max-width: 767px) {
+        padding: 100px 40px !important;
+    }
+}
+
+.iti__search-input {
+    @media screen and (max-width: 767px) {
+        min-height: 40px !important;
+        padding: 10px !important;
+    }
+}
