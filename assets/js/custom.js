@@ -505,3 +505,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+
+// ####################################
+// phone number js
+// ####################################
+
+const phoneInputField = document.querySelector("#phone");
+
+const iti = window.intlTelInput(phoneInputField, {
+  separateDialCode: true,
+  initialCountry: "in", // default India
+  preferredCountries: ["in", "us", "gb", "ae"],
+  utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
+});
+
+// Optional: To append full international number to payload
+document.getElementById("contact-form").addEventListener("submit", function () {
+  const fullPhoneInput = document.createElement("input");
+  fullPhoneInput.type = "hidden";
+  fullPhoneInput.name = "fullPhone";
+  fullPhoneInput.value = iti.getNumber(); // e.g., +919999999999
+  this.appendChild(fullPhoneInput);
+});
