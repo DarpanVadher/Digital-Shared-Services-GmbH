@@ -33,7 +33,9 @@
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+  <link rel="stylesheet" href="../assets/css/style.min.css" />
 </head>
 
 <body>
@@ -248,9 +250,9 @@
               <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required />
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="300">
-              <label for="phone" class="sr-only">Ihre Telefonnummer</label>
-              <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer" pattern="[0-9+\s\-()]*" />
+            <div data-aos="fade-up" class="form__phone" data-aos-duration="300">
+              <label for="phone" class="sr-only">Your Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" />
             </div>
 
             <div data-aos="fade-up" data-aos-duration="300">
@@ -545,9 +547,6 @@
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <script
     type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1', text: 'Zeitplan Zeitfenster', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-
-
-  <script src="../assets/js/custom.min.js"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMXCTMNE2B"></script>
   <script>
@@ -559,6 +558,11 @@
 
     gtag("config", "G-PMXCTMNE2B");
   </script>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
+  <script src="../assets/js/custom.min.js"></script>
 </body>
 
 </html>
