@@ -1,38 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const termsCheckbox = document.getElementById("terms");
-  const submitButton = form.querySelector('button[type="submit"]');
-
-  console.log("termsCheckbox.value", termsCheckbox.value);
-
-  function toggleSubmitButton() {
-    if (termsCheckbox.checked) {
-      submitButton.disabled = false;
-      submitButton.classList.remove("bg-gray-400", "cursor-not-allowed");
-      submitButton.classList.add(
-        "bg-blue-600",
-        "hover:bg-blue-700",
-        "cursor-pointer",
-        "text-white"
-      );
-    } else {
-      submitButton.disabled = true;
-      submitButton.classList.remove(
-        "bg-blue-600",
-        "hover:bg-blue-700",
-        "cursor-pointer",
-        "text-white"
-      );
-      submitButton.classList.add("bg-gray-400", "cursor-not-allowed");
-    }
-  }
-
-  // Initial state check
-  toggleSubmitButton();
-
-  // Listen for change
-  termsCheckbox.addEventListener("change", toggleSubmitButton);
-});
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
   const successBox = document.getElementById("success-message");
