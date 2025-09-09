@@ -2,6 +2,11 @@
     background-color: var(--color-gray);
     color: var(--color-white);
 
+    &__social{
+        display: flex !important;
+        margin-top: 40px;
+    }
+
     &__info {
         display: flex;
         align-items: flex-start;
