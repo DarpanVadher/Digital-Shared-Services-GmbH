@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Favicon & Manifest -->
   <link rel="icon" type="image/png" href="../assets/img/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
   <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
+
+  <!-- Robots -->
   <meta name="robots" content="index, follow">
 
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://digital-shared-services.com/en/social-media-advertising.html" />
+  <link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/social-media-advertising.html" />
+  <link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/social-media-advertising.html" />
+
+  <!-- Title -->
   <title>Social Media Advertising | Digital Shared Services GmbH</title>
 
-  <!-- START : Meta Tags -->
+  <!-- Meta Description -->
+  <meta name="description" content="Social media advertising that delivers: strategy, campaign management, and content for Facebook, Instagram, LinkedIn & more — targeted, creative, measurable." />
+
+  <!-- Open Graph / Twitter -->
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
-  <meta name="description"
-    content="Digital Shared Service GmbH is a full-service digital agency in Dresden, Germany, specializing in marketing strategy, creative design, content development, and digital technology. We deliver results-driven solutions tailored to your brand.." />
-  <meta property="og:title" content="Digital Shared Services GmbH" />
-  <meta property="og:description"
-    content="Digital Shared Service GmbH is a full-service digital agency in Dresden, Germany, specializing in marketing strategy, creative design, content development, and digital technology. We deliver results-driven solutions tailored to your brand." />
+  <meta property="og:title" content="Social Media Advertising | Digital Shared Services GmbH" />
+  <meta property="og:description" content="Social media advertising that delivers: strategy, campaign management, and content for Facebook, Instagram, LinkedIn & more — targeted, creative, measurable." />
   <meta property="og:url" content="https://digital-shared-services.com/en/social-media-advertising.html" />
-  <meta property="og:site_name" content="Social Media Advertising | Digital Shared Services GmbH" />
-  <meta property="og:image"
-    content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg" />
-  <meta name="twitter:image"
-    content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg" />
-  <link rel="canonical" href="https://digital-shared-services.com/en/social-media-advertising.html" />
-  <!-- END : Meta Tags -->
+  <meta property="og:site_name" content="Digital Shared Services GmbH" />
+  <meta property="og:image" content="https://digital-shared-services.com/assets/img/og/og-default.jpg" />
 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Social Media Advertising | Digital Shared Services GmbH" />
+  <meta name="twitter:description" content="Social media advertising that delivers: strategy, campaign management, and content for Facebook, Instagram, LinkedIn & more — targeted, creative, measurable." />
+  <meta name="twitter:image" content="https://digital-shared-services.com/assets/img/og/og-default.jpg" />
+
+  <!-- Stylesheets -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.min.css" />
 </head>
 
 <body>
   <header class="header" role="banner">
     <div class="header-inner" data-aos="fade-down" data-aos-duration="500">
-      <a href="index.html" class="header-logo" aria-label="Digital Shared Services GmbH Startseite">
+      <a href="/en/index.html" class="header-logo" aria-label="Digital Shared Services GmbH Startseite">
         <img src="../assets/img/logo/logo.webp" alt="Digital Shared Services GmbH Logo" width="457" height="124"
           loading="lazy" decoding="async" />
       </a>
@@ -48,11 +56,11 @@
         <nav aria-label="Hauptnavigation">
           <ul class="header-nav" role="list">
             <li role="listitem">
-              <a href="index.html">Home</a>
+              <a href="/en/index.html">Home</a>
             </li>
             <li role="listitem">
               <a href="services.html" class="active" aria-current="page">Services</a>
-              <button class="header-btn" aria-label="Open navigation menu">
+              <button class="header-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24"
                   fill="currentColor">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -116,7 +124,7 @@
             <li role="listitem"><a href="about-us.html">About Us</a></li>
             <!-- <li role="listitem"> -->
             <!-- <a href="#">Karriere</a> -->
-            <!-- <button class="header-btn" aria-label="Open navigation menu">
+            <!-- <button class="header-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="800px"
@@ -147,8 +155,7 @@
 
         <div class="language-switcher">
           <button id="language-btn" onclick="toggleDropdown()">
-            <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="English" class="flag"
-              id="selected-flag" />
+            <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" id="selected-flag" />
             <span id="selected-lang">EN</span>
             <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               viewBox="0 0 16 16">
@@ -157,15 +164,13 @@
             </svg>
           </button>
           <div id="language-dropdown" class="dropdown hidden">
-            <div class="option" data-lang="DE"
-              onclick="changeLanguage('de', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="Germany" class="flag" />
+            <div class="option" data-lang="DE" onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')">
+              <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" />
               DE
               <span class="selected-dot" id="dot-DE"></span>
             </div>
-            <div class="option" data-lang="EN"
-              onclick="changeLanguage('en', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="English" class="flag" />
+            <div class="option" data-lang="EN" onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')">
+              <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" />
               EN
               <span class="selected-dot active" id="dot-EN"></span>
             </div>
@@ -201,7 +206,7 @@
             </h1>
 
             <a href="#dms" class="intro__link" data-aos="fade-up" data-aos-duration="600">
-              Digital Marketing Service
+              Marketing Services
               <svg xmlns="http://www.w3.org/2000/svg" width="16.167" height="21.498" aria-hidden="true"
                 focusable="false">
                 <g fill="none" stroke="#32506a" stroke-width="2">
@@ -216,13 +221,13 @@
 
         <ul class="intro__social" aria-label="Social media links">
           <li data-aos="fade-left" data-aos-duration="600">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/digitalsharedservices/" target="_blank" rel="noopener noreferrer"
               aria-label="Visit our Instagram page">
               <img src="../assets/img/svg/instagram.svg" alt="Instagram" height="32" width="32" loading="lazy" />
             </a>
           </li>
           <li data-aos="fade-left" data-aos-duration="900">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/company/digital-shared-services/" target="_blank" rel="noopener noreferrer"
               aria-label="Visit our LinkedIn page">
               <img src="../assets/img/svg/linkedin.svg" alt="LinkedIn" height="32" width="32" loading="lazy" />
             </a>
@@ -249,19 +254,20 @@
               data-aos-duration="500">
               <p>
                 Turn social clicks into customers – from scrolling to action.
-                We create targeted, performance-based ads across platforms
-                like Instagram, LinkedIn, TikTok, and more, ensuring your
-                brand is seen where your audience spends time.
+                We create targeted, performance-driven ads
+                on platforms like Instagram, LinkedIn, TikTok and more,
+                ensuring your brand is visible exactly where your audience spends time.
               </p>
             </div>
 
             <div class="expertise__item expertise__item--large" role="listitem" data-aos="fade-up"
               data-aos-duration="800">
               <p>
-                Our approach is designed to measurably increase reach,
-                engagement, and inquiries – whether you're launching, scaling,
-                or running remarketing campaigns. Looking for more than
-                visibility? Book your free strategy session today.
+                Our methods are designed to measurably increase reach, engagement,
+                and enquiries – whether you’re launching, scaling,
+                or running focused remarketing.
+                Want more than just visibility?
+                Book your free strategy session today.
               </p>
             </div>
           </div>
@@ -279,15 +285,16 @@
               </h2>
 
               <p data-aos="fade-up" data-aos-delay="200">
-                Whether you're launching something new or entering an untapped
-                market – we're the right partner for every growth phase. Our
-                custom campaigns support your entire business lifecycle – from
-                increasing brand awareness to generating qualified leads.
-                Whether your budget is $500 or $50,000, our strategies are
-                scalable, efficient, and data-driven. With a sharp focus on
-                impact, cutting-edge audience segmentation, and
-                platform-specific know-how, we deliver results that matter –
-                all backed by transparent reporting every step of the way.
+                From exciting product launches to reaching new audiences –
+                we are the right partner for every growth stage.
+                Our tailored campaigns support you throughout your business lifecycle –
+                from boosting brand awareness to driving qualified leads.
+                Whether your budget is €500 or €50,000:
+                our strategies are scalable, efficient, and data-driven.
+                With a clear focus on impact, advanced audience segmentation,
+                and platform-specific expertise,
+                we deliver maximum results – keeping you fully informed
+                with transparent reporting.
               </p>
 
               <ul class="exp__list" role="list">
@@ -299,7 +306,7 @@
                 <li data-aos="fade-up" data-aos-delay="400">
                   <img src="../assets/img/svg//innovative-data-driven-strategy-i.svg" alt="Herz-Symbol für Leidenschaft"
                     width="30" height="30" />
-                  Innovative Data-Driven Strategy
+                  Innovative, Data-Driven Strategy
                 </li>
                 <li data-aos="fade-up" data-aos-delay="500">
                   <img src="../assets/img/svg/cutting-edge-audience-segmentation-i.svg"
@@ -309,7 +316,7 @@
                 <li data-aos="fade-up" data-aos-delay="600">
                   <img src="../assets/img/svg/platform-specific-proficiency-i.svg" alt="Krone-Symbol für Exzellenz"
                     width="30" height="30" />
-                  Platform-Specific Proficiency
+                  Platform-Specific Expertis
                 </li>
                 <li data-aos="fade-up" data-aos-delay="600">
                   <img src="../assets/img/svg/transparent-reporting-i.svg" alt="Krone-Symbol für Exzellenz" width="30"
@@ -333,7 +340,7 @@
         <div class="container" data-aos="fade-up" data-aos-duration="500">
           <h2 class="detail__title font-30 text-uppercase font-regular mb-30" data-aos="fade-up"
             data-aos-duration="400">
-            Our services in Social Media Advertising
+            Our Social Media Advertising Services
           </h2>
           <!-- <p data-aos="fade-up" data-aos-delay="200" class="mb-30">
               Our goal is to transform campaigns into paying clients. We build
@@ -351,15 +358,17 @@
             <div class="detail__item" data-aos="fade-up" data-aos-duration="400">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="500">
                 <h3 class="font-24 font-regular mb-20">
-                  Social Media Advertising – Across All Channels
+                  Social Media Advertising – Cross-Channel Approach
                 </h3>
                 <p>
-                  We create social media campaigns tailored to your business
-                  goals – on Facebook, Instagram, LinkedIn, TikTok, and more.
-                  Our team carefully plans each campaign to make the most of
-                  your budget and generate measurable results. For us, it’s
-                  not just about reach – it’s about what it drives: awareness,
-                  leads, or sales.
+                  We create social media campaigns aligned with your business goals –
+                  whether on Facebook, Instagram, LinkedIn, TikTok,
+                  or other platforms.
+                  Every campaign is strategically planned
+                  to allocate budgets efficiently and deliver measurable results.
+                  For us, it’s not just about reach –
+                  it’s about what that reach achieves:
+                  brand awareness, leads, or sales.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="500">
@@ -374,12 +383,13 @@
                   Strategy & Creative for Visual Platforms
                 </h3>
                 <p>
-                  On visually driven channels like Instagram, TikTok, or
-                  Pinterest, we craft compelling ad creatives and copy
-                  tailored to your audience and the platform format – whether
-                  it's stories, reels, or feeds. Our approach is backed by
-                  real user behavior, interest data, and engagement patterns –
-                  to deliver meaningful outcomes, not just clicks.
+                  On visual channels like Instagram, TikTok, or Pinterest,
+                  we design eye-catching visuals and copy
+                  tailored to your audience and the format –
+                  whether Story, Reel, or Feed.
+                  Our work is based on solid data on user behaviour,
+                  interests, and interactions –
+                  ensuring real results instead of empty clicks.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="600">
@@ -391,14 +401,15 @@
             <div class="detail__item" data-aos="fade-up" data-aos-duration="600">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="700">
                 <h3 class="font-24 font-regular mb-20">
-                  Targeting and Retargeting Audiences
+                  Audience Targeting &amp; Retargeting
                 </h3>
                 <p>
-                  A stop to wasted funds! Demographics, online behavior, and
-                  desire to purchase are the building blocks of our audience
-                  segments. Whether you're pursuing cold leads or warm
-                  re-engagements, our targeting will ensure you constantly
-                  reach the most likely to take action.
+                  No more wasted budget!
+                  Demographic data, online behaviour, and purchase intent
+                  form the foundation of our audience segments.
+                  Whether you’re reaching cold leads or warm re-engagements,
+                  our targeting ensures you connect with the people
+                  most likely to take action.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -410,15 +421,16 @@
             <div class="detail__item" data-aos="fade-up" data-aos-duration="600">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="700">
                 <h3 class="font-24 font-regular mb-20">
-                  Creative Design and Copywriting
+                  Creative Design &amp; Copywriting
                 </h3>
                 <p>
-                  Our ads don’t just look good – they perform. Using
-                  eye-catching visuals, animations, and video, we craft
-                  content that grabs attention within seconds and drives
-                  action. Whether static, carousel, or video format – we blend
-                  strong visuals with strategic copy to maximize clicks and
-                  conversions.
+                  Our ads don’t just look great – they work.
+                  With attention-grabbing images, animations, and videos,
+                  we craft content that sparks interest within seconds
+                  and motivates action.
+                  Whether static, carousel, or video:
+                  we combine striking visual design with persuasive copywriting
+                  to measurably increase clicks and responses.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -433,10 +445,11 @@
                   Campaign Performance Tracking
                 </h3>
                 <p>
-                  We measure what matters – and make success visible. With
-                  clear goal setting and regular performance reviews, you stay
-                  informed about how your campaigns are doing. That way, your
-                  budget is used effectively and delivers real results.
+                  We measure what matters – and make success visible.
+                  Through clear goal-setting and regular analysis,
+                  you’ll always know how your campaigns are performing.
+                  This ensures your budget is invested wisely
+                 and delivers tangible results.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -545,20 +558,21 @@
               </div>
 
               <p class="mb-30" data-aos="fade-up" data-aos-duration="500">
-                Your target audience is already online – we’ll make sure they
-                notice you. Whether launching a new product or strengthening
-                your brand, our social media campaigns leave a lasting
-                impression and deliver your message effectively.
+                Your audience is already online –
+                we make sure they notice you.
+                Whether for a product launch or brand-building:
+                our social media campaigns leave a lasting impression
+                and get your message across.
                 <br /><br />
 
-                Ready to expand your reach with targeted social media ads?
+                
                 <br />
-                <b>Request your custom offer now.</b>
+                <b>Ready to boost your reach with targeted social media advertising?</b>
               </p>
 
               <div data-aos="fade-up" data-aos-duration="600">
                 <a href="contact-us.html#form" class="btn text-uppercase" data-aos="zoom-in" data-aos-duration="700">
-                  <span> Get Started </span>
+                  <span> Request Your Custom Quote </span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"
                     focusable="false">
                     <path
@@ -648,7 +662,7 @@
             <nav aria-labelledby="footer-navigation">
               <ul class="footer__nav-list" role="list">
                 <li role="listitem">
-                  <a href="index.html" class="active" aria-current="page">Home</a>
+                  <a href="/en/index.html" class="active" aria-current="page">Home</a>
                 </li>
                 <li role="listitem"><a href="services.html">Services</a></li>
                 <li role="listitem"><a href="about-us.html">About Us</a></li>
@@ -678,7 +692,7 @@
                 <span itemprop="addressLocality">Dresden</span>
               </div>
 
-              <a href="index.html" aria-label="Zurück zur Startseite">
+              <a href="/en/index.html" aria-label="Zurück zur Startseite">
                 <img src="../assets/img/logo/logo.webp" alt="Digital Shared Services GmbH Logo" width="200" height="54"
                   loading="lazy" decoding="async" itemprop="logo" />
               </a>
@@ -693,133 +707,85 @@
     </div>
   </footer>
 
-  <section class="cookie-modal-wrapper">
-    <div class="cookie-modal-overlay">
-      <div class="cookie-modal-container">
-        <div class="cookie-modal-header">
-          <div class="cookie-modal-title-wrapper">
-            <div class="cookie-modal-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                </path>
-              </svg>
-            </div>
-            <h2 class="cookie-modal-title">Privacy Preferences</h2>
+  <section class="cookie-card-wrapper">
+    <div class="cookie-card">
+      <div class="title font-24">
+        <div class="title-text">🍪 Privacy Preferences</div>
+
+        <button class="close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="none">
+            <g id="Menu / Close_SM">
+              <path id="Vector" d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke="#000000" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <div class="description-wrapper">
+        <p class="description">
+          We require your consent before you can continue visiting our
+          website. If you are under 16 and would like to consent to optional
+          services, you must ask your legal guardians for permission. We use
+          cookies and other technologies on our website. Some of them are
+          essential, while others help us improve this website and your
+          experience. Personal data may be processed (e.g., IP addresses), for
+          example for personalized ads and content, or to measure ads and
+          content performance. For more information on how we use your data,
+          please see our
+          <a href="privacy-policy.html">Privacy Policy</a>. There is no
+          obligation to consent to data processing to use this site. You can
+          withdraw or adjust your choices at any time under settings. Please
+          note that due to individual settings, not all website functions may
+          be available.
+        </p>
+        <br />
+        <hr />
+        <p class="description">
+          Some services process personal data in the USA. By consenting to the
+          use of these services, you also consent to the processing of your
+          data in the USA in accordance with Art. 49 (1) lit. a GDPR. The ECJ
+          considers the USA a country with inadequate data protection under EU
+          standards. For example, there is a risk that US authorities may
+          process personal data in surveillance programs without legal
+          recourse for Europeans.
+        </p>
+
+        <div class="checkbox-wrapper">
+          <div class="checkbox-item">
+            <input type="checkbox" name="Essential" id="essential" checked disabled />
+            <label for="essential">Essential</label>
           </div>
-          <button class="cookie-modal-close-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 6 6 18"></path>
-              <path d="m6 6 12 12"></path>
-            </svg>
-            <span class="visually-hidden">Close</span>
-          </button>
+          <div class="checkbox-item">
+            <input type="checkbox" name="all" id="all" />
+            <label for="all">External Media</label>
+          </div>
         </div>
 
-        <div class="cookie-modal-content">
-          <div class="cookie-modal-description">
-            <p class="cookie-modal-text">
-              We require your consent before you can continue visiting our website. If you are under 16 and would like
-              to consent to optional services, you must ask your legal guardians for permission. We use cookies and
-              other technologies on our website. Some of them are essential, while others help us improve this website
-              and your experience. Personal data may be processed (e.g., IP addresses), for example for personalized ads
-              and content, or to measure ads and content performance. For more information on how we use your data,
-              please see our Privacy Policy. There is no obligation to consent to data processing to use this site. You
-              can withdraw or adjust your choices at any time under settings. Please note that due to individual
-              settings, not all website functions may be available.
-            </p>
-            <div class="cookie-modal-notice">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
-                <path d="M8.5 8.5v.01"></path>
-                <path d="M16 15.5v.01"></path>
-                <path d="M12 12v.01"></path>
-                <path d="M11 17v.01"></path>
-                <path d="M7 14v.01"></path>
-              </svg>
-              <div class="cookie-notice-content">
-                <p class="cookie-notice-title">Data Processing Notice</p>
-                <p class="cookie-notice-text">
-                  Some services process personal data in the USA. By consenting to the use of these services, you also
-                  consent to the processing of your data in the USA in accordance with Art. 49 (1) lit. a GDPR. The ECJ
-                  considers the USA a country with inadequate data protection under EU standards. For example, there is
-                  a risk that US authorities may process personal data in surveillance programs without legal recourse
-                  for Europeans.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cookie-modal-divider"></div>
-
-          <div class="cookie-categories">
-            <h3 class="cookie-categories-title">Cookie Categories</h3>
-            <div class="cookie-categories-list">
-              <div class="cookie-category-item cookie-category-essential">
-                <div class="cookie-category-content">
-                  <input type="checkbox" name="essential" class="cookie-category-checkbox" id="essential" checked
-                    disabled>
-                  <div class="cookie-category-info">
-                    <label for="essential" class="cookie-category-name">Essential Cookies</label>
-                    <p class="cookie-category-description">Required for basic website functionality</p>
-                  </div>
-                </div>
-                <span class="cookie-category-tag cookie-category-required">Required</span>
-              </div>
-
-              <div class="cookie-category-item">
-                <div class="cookie-category-content">
-                  <input type="checkbox" name="external-media" class="cookie-category-checkbox" id="external-media">
-                  <div class="cookie-category-info">
-                    <label for="external-media" class="cookie-category-name">External Media</label>
-                    <p class="cookie-category-description">Content from external platforms like YouTube, Vimeo</p>
-                  </div>
-                </div>
-                <span class="cookie-category-tag">Optional</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="cookie-modal-divider"></div>
-
-          <div class="cookie-modal-actions">
-            <button class="cookie-action-btn cookie-action-primary">Save Preferences</button>
-            <button class="cookie-action-btn cookie-action-secondary">Essential Only</button>
-            <button class="cookie-action-btn cookie-action-secondary">Accept All</button>
-          </div>
-
-          <p class="cookie-modal-footer">
-            Learn more in our <a href="privacy-policy.html" class="cookie-modal-link">Privacy Policy</a>
-          </p>
-        </div>
+        <ul class="btn-list">
+          <li>
+            <button class="accept">Save Consent</button>
+          </li>
+          <li>
+            <button class="accept">Accept Only Essential Cookies</button>
+          </li>
+          <!-- <li><button class="savePreferences">Individual Privacy Preferences</button></li> -->
+        </ul>
+      </div>
+      <div class="actions">
+        <div></div>
+        <button class="accept">Accept All</button>
       </div>
     </div>
   </section>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script
-    type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1', text: 'Zeitplan Zeitfenster', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-
-
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script
-    type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1', text: 'Zeitplan Zeitfenster', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-
-
   <script src="../assets/js/custom.min.js"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMXCTMNE2B"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-PMXCTMNE2B');
-  </script>
+  <!-- Calendly Badge-Widget Beginn -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min', text: 'Book a meeting now!', color: '#ff0202', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly Badge-Widget Ende -->
 </body>
 
 </html>

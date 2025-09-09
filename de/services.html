@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Favicon & Manifest -->
   <link rel="icon" type="image/png" href="../assets/img/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
   <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
+
+  <!-- Robots -->
   <meta name="robots" content="index, follow">
 
-  <title>Services | Digitale Shared Services GmbH</title>
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://digital-shared-services.com/de/services.html" />
+  <link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/services.html" />
+  <link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/services.html" />
 
-  <!-- START : Meta Tags -->
+  <!-- Title -->
+  <title>Leistungen | Digital Shared Services GmbH</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Unsere Leistungen im Überblick: Webentwicklung, SEO, Social Media Marketing, Content Marketing, PPC Werbung & Branding – alles aus einer Hand." />
+
+  <!-- Open Graph / Twitter -->
   <meta property="og:locale" content="de_DE" />
   <meta property="og:type" content="website" />
-  <meta name="description"
-    content="Digital Shared Service GmbH ist eine Full-Service-Digitalagentur aus Dresden, spezialisiert auf Marketingstrategien, kreatives Design, Content-Entwicklung und digitale Technologien. Wir bieten markenorientierte, erfolgsbasierte Lösungen." />
-  <meta property="og:title" content="Digitale Shared Services GmbH" />
-  <meta property="og:description"
-    content="Digital Shared Service GmbH ist eine Full-Service-Digitalagentur aus Dresden, spezialisiert auf Marketingstrategien, kreatives Design, Content-Entwicklung und digitale Technologien. Wir bieten markenorientierte, erfolgsbasierte Lösungen." />
+  <meta property="og:title" content="Leistungen | Digital Shared Services GmbH" />
+  <meta property="og:description" content="Unsere Leistungen im Überblick: Webentwicklung, SEO, Social Media Marketing, Content Marketing, PPC Werbung & Branding – alles aus einer Hand." />
   <meta property="og:url" content="https://digital-shared-services.com/de/services.html" />
-  <meta property="og:site_name" content="Services | Digitale Shared Services GmbH" />
-  <meta property="og:image"
-    content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg" />
-  <meta name="twitter:image"
-    content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg" />
-  <link rel="canonical" href="https://digital-shared-services.com/de/services.html" />
-  <!-- END : Meta Tags -->
+  <meta property="og:site_name" content="Digital Shared Services GmbH" />
+  <meta property="og:image" content="https://digital-shared-services.com/assets/img/og/og-default.jpg" />
 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Leistungen | Digital Shared Services GmbH" />
+  <meta name="twitter:description" content="Unsere Leistungen im Überblick: Webentwicklung, SEO, Social Media Marketing, Content Marketing, PPC Werbung & Branding – alles aus einer Hand." />
+  <meta name="twitter:image" content="https://digital-shared-services.com/assets/img/og/og-default.jpg" />
+
+  <!-- Stylesheets -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.min.css" />
 </head>
 
 <body>
   <header class="header" role="banner">
     <div class="header-inner" data-aos="fade-down" data-aos-duration="500">
-      <a href="index.html" class="header-logo" aria-label="Digitale Shared Services GmbH Startseite">
+      <a href="/de/index.html" class="header-logo" aria-label="Digitale Shared Services GmbH Startseite">
         <img src="../assets/img/logo/logo.webp" alt="Digitale Shared Services GmbH Logo" width="457" height="124"
           loading="lazy" decoding="async" />
       </a>
@@ -48,11 +56,11 @@
         <nav aria-label="Hauptnavigation">
           <ul class="header-nav" role="list">
             <li role="listitem">
-              <a href="index.html">Home</a>
+              <a href="/de/index.html">Home</a>
             </li>
             <li role="listitem">
               <a href="services.html" class="active" aria-current="page">Dienstleistungen</a>
-              <button class="header-btn" aria-label="Open navigation menu">
+              <button class="header-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24"
                   fill="currentColor">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -120,7 +128,7 @@
             </li>
             <!-- <li role="listitem"> -->
             <!-- <a href="#">Karriere</a> -->
-            <!-- <button class="header-btn" aria-label="Open navigation menu">
+            <!-- <button class="header-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="800px"
@@ -152,8 +160,7 @@
         </nav>
         <div class="language-switcher">
           <button id="language-btn" onclick="toggleDropdown()">
-            <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="Germany" class="flag"
-              id="selected-flag" />
+            <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" id="selected-flag" />
             <span id="selected-lang">DE</span>
             <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               viewBox="0 0 16 16">
@@ -162,15 +169,13 @@
             </svg>
           </button>
           <div id="language-dropdown" class="dropdown hidden">
-            <div class="option" data-lang="DE"
-              onclick="changeLanguage('de', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="Germany" class="flag" />
+            <div class="option" data-lang="DE" onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')">
+              <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" />
               DE
               <span class="selected-dot active" id="dot-DE"></span>
             </div>
-            <div class="option" data-lang="EN"
-              onclick="changeLanguage('en', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="English" class="flag" />
+            <div class="option" data-lang="EN" onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')">
+              <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" />
               EN
               <span class="selected-dot" id="dot-EN"></span>
             </div>
@@ -221,13 +226,13 @@
 
         <ul class="intro__social" aria-label="Social media links">
           <li data-aos="fade-left" data-aos-duration="600">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/digitalsharedservices/" target="_blank" rel="noopener noreferrer"
               aria-label="Visit our Instagram page">
               <img src="../assets/img/svg/instagram.svg" alt="Instagram" height="32" width="32" loading="lazy" />
             </a>
           </li>
           <li data-aos="fade-left" data-aos-duration="900">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/company/digital-shared-services/" target="_blank" rel="noopener noreferrer"
               aria-label="Visit our LinkedIn page">
               <img src="../assets/img/svg/linkedin.svg" alt="LinkedIn" height="32" width="32" loading="lazy" />
             </a>
@@ -323,7 +328,7 @@
       <div class="services-list">
         <div class="container">
           <h2 class="font-30 text-uppercase mb-30 font-regular services-list__title" data-aos="fade-up">
-            Our Services
+            Unsere Leistungen
           </h2>
           <div class="services-list__inner">
             <a class="services-list__item" href="web-development.html">
@@ -339,17 +344,17 @@
                 <div class="card-content">
                   <h3 class="card-title">Webentwicklung</h3>
                   <p class="card-desc">
-                    <b>Maßgeschneiderte Webentwicklung für Ihre spezifischen Bedürfnisse</b>
+                    <b>Maßgeschneiderte Webentwicklung für moderne, schnelle Websites</b>
                     <br />
                     <br />
-                    Wir bieten Websites, die schnell laden und die Nutzer nicht warten lassen. Denn Konversionen können
-                    schon bei einer Verzögerung von nur 2 Sekunden verloren gehen! Durch den Einsatz intelligenter
-                    Serververfahren und sauberen Codes sind wir in der Lage, Absprungraten zu senken,
-                    Ladegeschwindigkeiten zu verbessern und die Verweildauer zu erhöhen.
+                    Wir entwickeln Websites, die schnell laden, klar strukturiert sind und auf allen Geräten überzeugen.
+                    Sauberer Code, performante Server-Setups und ein durchdachtes Design reduzieren Absprünge,
+                    verbessern die Ladezeiten und erhöhen die Conversion-Wahrscheinlichkeit.
+                    Auf Wunsch integrieren wir ein leicht bedienbares CMS, Formular-Workflows, Tracking und Barrierefreiheit.
 
 
                     <br /><br />
-                    <b>Kontaktieren Sie uns und lassen Sie Ihre Website evaluieren!
+                    <b>Lassen Sie Ihre Website prüfen – wir liefern konkrete, umsetzbare Empfehlungen.
                     </b>
 
                   </p>
@@ -369,19 +374,20 @@
                   </picture>
                 </div>
                 <div class="card-content">
-                  <h3 class="card-title">SEO-Optimierung</h3>
+                  <h3 class="card-title">Suchmaschinenoptimierung</h3>
                   <p class="card-desc">
-                    <b> Verbessern Sie Ihre Online-Präsenz, auch wenn Sie schlafen!</b>
+                    <b>Besser gefunden werden – nachhaltig und planbar</b>
 
                     <br /><br />
-                    Unsere umfassenden Dienstleistungen umfassen alles von Metadaten und Backlinks bis hin zu mobiler UX
-                    und Website-Geschwindigkeit, damit Sie lokale Märkte dominieren oder globale Besucher anlocken
-                    können. Traffic ist nur der Anfang unserer Arbeit; wir sorgen dafür, dass er konvertiert wird.
+                    Wir kombinieren Inhaltsqualität, Seitenstruktur und technische Sauberkeit,
+                    damit Sie bei relevanten Suchanfragen sichtbar sind.
+                    Dazu gehören Keyword‑Recherche, verständliche Inhalte, interne Verlinkung,
+                    lokale Sichtbarkeit (Local SEO) sowie ein sauberes Monitoring.
+                    So erreichen Sie Ihre Zielgruppe genau dann, wenn sie nach Ihren Leistungen sucht.
 
 
                     </br></br>
-                    <b>Lassen Sie uns Ihren SEO-Rahmen festlegen - vereinbaren Sie noch heute einen Termin für Ihr
-                      Strategiegespräch!</b>
+                    <b>Vereinbaren Sie ein Strategiegespräch – wir zeigen Ihnen die größten Potenziale.</b>
                   </p>
                   <div class="card-button">Mehr erfahren</div>
                 </div>
@@ -401,18 +407,17 @@
                 <div class="card-content">
                   <h3 class="card-title">Social-Media-Werbung</h3>
                   <p class="card-desc">
-                    <b>Überlassen wir das Targeting von Social Media-Anzeigen nicht dem Zufall!
+                    <b>Zielgenaue Kampagnen, die aus Reichweite Anfragen machen
 
                     </b>
                     <br />
                     <br />
-                    Unser Ziel ist es, Kampagnen in zahlende Kunden zu verwandeln. Wir entwickeln mehrstufige
-                    Funnel-Strategien, verknüpfen Werbemittel mit Echtzeitdaten und verfeinern sie auf der Grundlage
-                    ihrer Leistung, nicht ihrer Vorlieben. Wir schalten nicht einfach nur Werbung. Wir verfügen über
-                    soziale Werbetaktiken, die mit Ihrem Unternehmen wachsen können, egal ob Sie neue Leads ansprechen
-                    oder Ihr bestehendes Publikum erweitern möchten.
+                    Wir definieren klare Ziele, Zielgruppen und Botschaften, entwickeln Creatives,
+                    testen Varianten und optimieren laufend auf messbare Ergebnisse.
+                    Ob Lead‑Generierung, Reichweitenaufbau oder Retargeting:
+                    Ihre Kampagnen wachsen mit – datenbasiert und transparent.
                     <br /><br />
-                    <b>Lassen Sie uns eine effektive Kampagne erstellen und Ihren Umsatz in die Höhe treiben!</b>
+                    <b>Starten wir eine Kampagne, die messbar liefert – ohne Ratespiele.</b>
 
                   </p>
                   <div class="card-button">Mehr erfahren</div>
@@ -433,17 +438,17 @@
                 <div class="card-content">
                   <h3 class="card-title">Content-Marketing</h3>
                   <p class="card-desc">
-                    <b>Verwandeln Sie Worte in Wachstum für Ihre Marke!</b>
+                    <b>Inhalte, die erklären, Vertrauen schaffen und konvertieren</b>
                     <br /><br />
 
-                    Wir sind Ihr Partner für Wachstum. Wir sind leidenschaftliche Schöpfer, die die Vision Ihrer Marke
-                    in Geschichten verwandeln, die begeistern und konvertieren. Wir arbeiten eng mit Ihnen zusammen,
-                    verstehen Ihre Ziele und erstellen Inhalte, die sich nahtlos in Ihre Vision einfügen
+                    Wir planen Themen entlang Ihrer Ziele und der Bedürfnisse Ihrer Zielgruppe,
+                    erstellen Formate wie Blogartikel, Landingpages, Whitepaper oder Case‑Stories
+                    und verteilen sie sinnvoll über Website, Newsletter und Social Media.
+                    So entsteht Content, der auffindbar ist und wirkt – ohne leere Phrasen.
 
                     <br /><br />
 
-                    <b>Wir haben es uns zur Aufgabe gemacht, Ihrer Marke Gehör zu verschaffen und ihre Geschichte
-                      unvergesslich zu machen.
+                    <b>Holen wir das Maximum aus Ihren Themen – mit Plan, Qualität und Konsistenz.
                     </b>
                   </p>
                   <div class="card-button">Mehr erfahren</div>
@@ -462,18 +467,17 @@
                   </picture>
                 </div>
                 <div class="card-content">
-                  <h3 class="card-title">PPC-Werbung</h3>
+                  <h3 class="card-title">Pay-per-Click Werbung</h3>
                   <p class="card-desc">
-                    <b>Betrachten Sie uns als Ihren ROI-besessenen, Klick-konvertierenden und leistungssteigernden
-                      Partner.</b>
+                    <b>Bezahlte Reichweite mit klaren Zielen und sauberem Tracking</b>
                     <br />
                     <br />
-                    Wir sind der Meinung, dass bezahlte Werbung nicht nur für mehr Traffic, sondern auch für bessere
-                    Ergebnisse sorgen sollte. Als leistungsorientierte PPC-Agentur sind wir davon besessen, Ihre
-                    Werbeausgaben in ernsthaftes Geschäftswachstum zu verwandeln. Wir verfolgen, optimieren und testen,
-                    bis Ihre Ergebnisse für sich selbst sprechen.
+                    Wir erstellen und betreuen Ihre Werbeanzeigen auf Google, Microsoft
+                    und anderen Plattformen. Von der Auswahl der passenden Suchbegriffe
+                    über überzeugende Anzeigentexte bis zur laufenden Optimierung:
+                    Unser Ziel ist, dass Sie mit jedem eingesetzten Euro mehr Kunden gewinnen.
                     <br /> <br />
-                    <b>Lassen Sie uns Ihr Geschäft mit unseren avantgardistischen Taktiken zum Blühen bringen!
+                    <b>Sie Ihr Werbebudget gezielt ein – wir sorgen für messbaren Erfolg.
                     </b>
                   </p>
                   <div class="card-button">Mehr erfahren</div>
@@ -486,16 +490,16 @@
                   <img src="../assets/img/webp/analytics-data-insights.webp" alt="Mountain landscape" />
                 </div>
                 <div class="card-content">
-                  <h3 class="card-title">Analysen und Datenanalysen</h3>
+                  <h3 class="card-title">Analysen &amp; Reporting</h3>
                   <p class="card-desc">
-                    <b>Hinter jedem Klick steckt eine Geschichte. Lassen Sie uns Ihnen helfen, sie zu lesen!</b>
+                    <b>Wir machen Performance sichtbar – für Entscheidungen mit Klarheit</b>
                     <br /><br />
-                    In der datenreichen digitalen Welt von heute ist das Verständnis von Leistung der entscheidende
-                    Faktor zwischen guten und großartigen Marken. Um Ihre Kunden besser zu verstehen, bieten wir
-                    Analysedienste an, mit denen Sie ihre Handlungen, Vorlieben und Bereiche, in denen sie sich nicht
-                    engagieren, verfolgen können.
+                    Von der Einrichtung Ihrer Analysetools bis zur Auswertung der wichtigsten Kennzahlen:
+                    Wir zeigen klar, welche Maßnahmen wirken, wo es Verbesserungspotenzial gibt
+                    und wie Sie Ihre Ziele schneller erreichen können.
+                    Auf Wunsch übernehmen wir auch die regelmäßige Überprüfung und Anpassung.
                     <br /><br />
-                    <b>Decken Sie die grundlegenden Faktoren auf, die Ihr Wachstum vorantreiben!
+                    <b>Entdecken Sie die Hebel für Wachstum – datenbasiert und nachvollziehbar.
 
                     </b>
                   </p>
@@ -519,12 +523,13 @@
             </div>
             <div class="vision__content ptb-90" data-aos="fade-left" data-aos-duration="500">
               <h3 class="font-34 text-uppercase font-regular vision__title" data-aos="fade-up" data-aos-duration="300">
-                Regelmäßige Tipps, Tricks und Branchen-Insights? Wir teilen unser Wissen dort, wo Profis netzwerken.
+                Regelmäßig frische Tipps, praxisnahe Einblicke und Branchen-News.
+                Folgen Sie uns auf LinkedIn und bleiben Sie up to date.
               </h3>
 
               <div data-aos="fade-up" data-aos-duration="600">
-                <a href="contact-us.html#form" class="btn text-uppercase" data-aos="zoom-in" data-aos-duration="700">
-                  <span> Loslegen</span>
+                <a href="https://www.linkedin.com/company/digital-shared-services/" class="btn text-uppercase" data-aos="zoom-in" data-aos-duration="700">
+                  <span> LinkedIn </span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"
                     focusable="false">
                     <path
@@ -614,7 +619,7 @@
             <nav aria-labelledby="footer-navigation">
               <ul class="footer__nav-list" role="list">
                 <li role="listitem">
-                  <a href="index.html">Home</a>
+                  <a href="/de/index.html">Home</a>
                 </li>
                 <li role="listitem">
                   <a href="services.html" class="active" aria-current="page">Dienstleistungen</a>
@@ -646,7 +651,7 @@
                 <span itemprop="addressLocality">Dresden</span>
               </div>
 
-              <a href="index.html" aria-label="Zurück zur Startseite">
+              <a href="/de/index.html" aria-label="Zurück zur Startseite">
                 <img src="../assets/img/logo/logo.webp" alt="Digitale Shared Services GmbH Logo" width="200" height="54"
                   loading="lazy" decoding="async" itemprop="logo" />
               </a>
@@ -655,141 +660,97 @@
         </div>
 
         <div class="footer__bottom text-center">
-          <p>© 2025 Digitale Shared Services GmbH | Alle Rechte vorbehalten</p>
+          <p>© 2025 Digital Shared Services GmbH | Alle Rechte vorbehalten</p>
         </div>
       </div>
     </div>
   </footer>
-  <section class="cookie-modal-wrapper">
-    <div class="cookie-modal-overlay">
-      <div class="cookie-modal-container">
-        <div class="cookie-modal-header">
-          <div class="cookie-modal-title-wrapper">
-            <div class="cookie-modal-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                </path>
-              </svg>
-            </div>
-            <h2 class="cookie-modal-title">Privatsphäre Präferenzen</h2>
+
+  <section class="cookie-card-wrapper">
+    <div class="cookie-card">
+      <div class="title font-24">
+        <div class="title-text">🍪 Datenschutz-präferenz</div>
+
+        <button class="close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="none">
+            <g id="Menu / Close_SM">
+              <path id="Vector" d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke="#000000" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <div class="description-wrapper">
+        <p class="description">
+          Wir benötigen Ihre Einwilligung, bevor Sie unsere Website weiter
+          besuchen können. Wenn Sie unter 16 Jahre alt sind und Ihre
+          Einwilligung zu optionalen Services geben möchten, müssen Sie Ihre
+          Erziehungsberechtigten um Erlaubnis bitten. Wir verwenden Cookies
+          und andere Technologien auf unserer Website. Einige von ihnen sind
+          essenziell, während andere uns helfen, diese Website und Ihre
+          Erfahrung zu verbessern. Personenbezogene Daten können verarbeitet
+          werden (z. B. IP-Adressen), z. B. für personalisierte Anzeigen und
+          Inhalte oder die Messung von Anzeigen und Inhalten. Weitere
+          Informationen über die Verwendung Ihrer Daten finden Sie in unserer
+          Datenschutzerklärung. Es besteht keine Verpflichtung, in die
+          Verarbeitung Ihrer Daten einzuwilligen, um dieses Angebot zu nutzen.
+          Sie können Ihre Auswahl jederzeit unter Einstellungen widerrufen
+          oder anpassen. Bitte beachten Sie, dass aufgrund individueller
+          Einstellungen möglicherweise nicht alle Funktionen der Website
+          verfügbar sind.
+          <a href="privacy-policy.html">policies</a>.
+        </p>
+        <br />
+        <hr />
+        <p class="description">
+          Einige Services verarbeiten personenbezogene Daten in den USA. Mit
+          Ihrer Einwilligung zur Nutzung dieser Services willigen Sie auch in
+          die Verarbeitung Ihrer Daten in den USA gemäß Art. 49 (1) lit. a
+          GDPR ein. Der EuGH stuft die USA als ein Land mit unzureichendem
+          Datenschutz nach EU-Standards ein. Es besteht beispielsweise die
+          Gefahr, dass US-Behörden personenbezogene Daten in
+          Überwachungsprogrammen verarbeiten, ohne dass für Europäerinnen und
+          Europäer eine Klagemöglichkeit besteht.
+        </p>
+
+        <div class="checkbox-wrapper">
+          <div class="checkbox-item">
+            <input type="checkbox" name="Essenziell" id="essenziell" checked disabled />
+            <label for="essenziell">Essenziell</label>
           </div>
-          <button class="cookie-modal-close-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 6 6 18"></path>
-              <path d="m6 6 12 12"></path>
-            </svg>
-            <span class="visually-hidden">Close</span>
-          </button>
+          <div class="checkbox-item">
+            <input type="checkbox" name="all" id="all" />
+            <label for="all">Externe Medien</label>
+          </div>
         </div>
 
-        <div class="cookie-modal-content">
-          <div class="cookie-modal-description">
-            <p class="cookie-modal-text">
-              Wir benötigen Ihre Einwilligung, bevor Sie unsere Website weiter besuchen können. Wenn Sie unter 16 Jahre
-              alt sind und Ihre Einwilligung zu optionalen Services geben möchten, müssen Sie Ihre
-              Erziehungsberechtigten um Erlaubnis bitten. Wir verwenden Cookies und andere Technologien auf unserer
-              Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu
-              verbessern. Personenbezogene Daten können verarbeitet werden (z. B. IP-Adressen), z. B. für
-              personalisierte Anzeigen und Inhalte oder die Messung von Anzeigen und Inhalten. Weitere Informationen
-              über die Verwendung Ihrer Daten finden Sie in unserer Datenschutzerklärung. Es besteht keine
-              Verpflichtung, in die Verarbeitung Ihrer Daten einzuwilligen, um dieses Angebot zu nutzen. Sie können Ihre
-              Auswahl jederzeit unter Einstellungen widerrufen oder anpassen. Bitte beachten Sie, dass aufgrund
-              individueller Einstellungen möglicherweise nicht alle Funktionen der Website verfügbar sind. policies.
-            </p>
-            <div class="cookie-modal-notice">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
-                <path d="M8.5 8.5v.01"></path>
-                <path d="M16 15.5v.01"></path>
-                <path d="M12 12v.01"></path>
-                <path d="M11 17v.01"></path>
-                <path d="M7 14v.01"></path>
-              </svg>
-              <div class="cookie-notice-content">
-                <p class="cookie-notice-title">Datenverarbeitung notice</p>
-                <p class="cookie-notice-text">
-                  Einige Services verarbeiten personenbezogene Daten in den USA. Mit Ihrer Einwilligung zur Nutzung
-                  dieser Services willigen Sie auch in die Verarbeitung Ihrer Daten in den USA gemäß Art. 49 (1) lit. a
-                  GDPR ein. Der EuGH stuft die USA als ein Land mit unzureichendem Datenschutz nach EU-Standards ein. Es
-                  besteht beispielsweise die Gefahr, dass US-Behörden personenbezogene Daten in Überwachungsprogrammen
-                  verarbeiten, ohne dass für Europäerinnen und Europäer eine Klagemöglichkeit besteht.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cookie-modal-divider"></div>
-
-          <div class="cookie-categories">
-            <h3 class="cookie-categories-title">Cookie-Kategorien</h3>
-            <div class="cookie-categories-list">
-              <div class="cookie-category-item cookie-category-essential">
-                <div class="cookie-category-content">
-                  <input type="checkbox" name="essential" class="cookie-category-checkbox" id="essential" checked
-                    disabled>
-                  <div class="cookie-category-info">
-                    <label for="essential" class="cookie-category-name">Wesentliche Cookies</label>
-                    <p class="cookie-category-description">Erforderlich für die grundlegenden Website-Funktionen</p>
-                  </div>
-                </div>
-                <span class="cookie-category-tag cookie-category-required">Erforderlich</span>
-              </div>
-
-              <div class="cookie-category-item">
-                <div class="cookie-category-content">
-                  <input type="checkbox" name="external-media" class="cookie-category-checkbox" id="external-media">
-                  <div class="cookie-category-info">
-                    <label for="external-media" class="cookie-category-name">Externe Medien</label>
-                    <p class="cookie-category-description">Inhalte von externen Plattformen wie YouTube, Vimeo</p>
-                  </div>
-                </div>
-                <span class="cookie-category-tag">Optional</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="cookie-modal-divider"></div>
-
-          <div class="cookie-modal-actions">
-            <button class="cookie-action-btn cookie-action-primary">Speichern Präferenzen</button>
-            <button class="cookie-action-btn cookie-action-secondary">Einfach unverzichtbar</button>
-            <button class="cookie-action-btn cookie-action-secondary">Akzeptiere alles</button>
-          </div>
-
-          <p class="cookie-modal-footer">
-            Erfahren Sie mehr in unserer <a href="privacy-policy.html"
-              class="cookie-modal-link">Datenschutzrichtlinie</a>
-          </p>
-        </div>
+        <ul class="btn-list">
+          <li>
+            <button class="accept">Einwilligung speichern</button>
+          </li>
+          <li>
+            <button class="accept">
+              Nur essenzielle Cookies akzeptieren
+            </button>
+          </li>
+          <!-- <li><button class="savePreferences">Individuelle Datenschutz-Präferenzen</button></li> -->
+        </ul>
+      </div>
+      <div class="actions">
+        <div></div>
+        <button class="accept">Alle akzeptieren</button>
       </div>
     </div>
   </section>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script
-    type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1', text: 'Zeitplan Zeitfenster', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-
-
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script
-    type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1', text: 'Zeitplan Zeitfenster', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-
-
   <script src="../assets/js/custom.min.js"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMXCTMNE2B"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-PMXCTMNE2B');
-  </script>
+  <!-- Calendly Badge-Widget Beginn -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min', text: 'Jetzt Termin buchen!', color: '#ff0000', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly Badge-Widget Ende -->
 </body>
 
 </html>

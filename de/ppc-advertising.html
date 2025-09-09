@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Favicon & Manifest -->
   <link rel="icon" type="image/png" href="../assets/img/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
   <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
-  <meta name="robots" content="index, follow" />
 
-  <title>Pay-per-Click-Werbung | Digitale Shared Services GmbH</title>
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
 
-  <!-- START : Meta Tags -->
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://digital-shared-services.com/de/ppc-advertising.html" />
+  <link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/ppc-advertising.html" />
+  <link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/ppc-advertising.html" />
+
+  <!-- Title -->
+  <title>Pay-per-Click-Werbung | Digital Shared Services GmbH</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Gezielte PPC-Werbung für messbare Erfolge: Google Ads, Bing Ads & Social Media Kampagnen – optimiert für maximale Reichweite und Conversion." />
+
+  <!-- Open Graph / Twitter -->
   <meta property="og:locale" content="de_DE" />
   <meta property="og:type" content="website" />
-  <meta name="description"
-    content="Digital Shared Service GmbH ist eine Full-Service-Digitalagentur aus Dresden, spezialisiert auf Marketingstrategien, kreatives Design, Content-Entwicklung und digitale Technologien. Wir bieten markenorientierte, erfolgsbasierte Lösungen." />
-  <meta property="og:title" content="Digitale Shared Services GmbH" />
-  <meta property="og:description"
-    content="Digital Shared Service GmbH ist eine Full-Service-Digitalagentur aus Dresden, spezialisiert auf Marketingstrategien, kreatives Design, Content-Entwicklung und digitale Technologien. Wir bieten markenorientierte, erfolgsbasierte Lösungen." />
+  <meta property="og:title" content="Pay-per-Click-Werbung | Digital Shared Services GmbH" />
+  <meta property="og:description" content="Gezielte PPC-Werbung für messbare Erfolge: Google Ads, Bing Ads & Social Media Kampagnen – optimiert für maximale Reichweite und Conversion." />
   <meta property="og:url" content="https://digital-shared-services.com/de/ppc-advertising.html" />
-  <meta property="og:site_name" content="PPC Advertising | Digitale Shared Services GmbH" />
-  <meta property="og:image"
-    content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg" />
-  <meta name="twitter:image"
-    content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg" />
-  <link rel="canonical" href="https://digital-shared-services.com/de/ppc-advertising.html" />
-  <!-- END : Meta Tags -->
+  <meta property="og:site_name" content="Digital Shared Services GmbH" />
+  <meta property="og:image" content="https://digital-shared-services.com/assets/img/og/og-default.jpg" />
 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pay-per-Click-Werbung | Digital Shared Services GmbH" />
+  <meta name="twitter:description" content="Gezielte PPC-Werbung für messbare Erfolge: Google Ads, Bing Ads & Social Media Kampagnen – optimiert für maximale Reichweite und Conversion." />
+  <meta name="twitter:image" content="https://digital-shared-services.com/assets/img/og/og-default.jpg" />
+
+  <!-- Stylesheets -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.min.css" />
 </head>
 
 <body>
   <header class="header" role="banner">
     <div class="header-inner" data-aos="fade-down" data-aos-duration="500">
-      <a href="index.html" class="header-logo" aria-label="Digitale Shared Services GmbH Startseite">
+      <a href="/de/index.html" class="header-logo" aria-label="Digitale Shared Services GmbH Startseite">
         <img src="../assets/img/logo/logo.webp" alt="Digitale Shared Services GmbH Logo" width="457" height="124"
           loading="lazy" decoding="async" />
       </a>
@@ -48,11 +56,11 @@
         <nav aria-label="Hauptnavigation">
           <ul class="header-nav" role="list">
             <li role="listitem">
-              <a href="index.html">Home</a>
+              <a href="/de/index.html">Home</a>
             </li>
             <li role="listitem">
               <a href="services.html" class="active" aria-current="page">Dienstleistungen</a>
-              <button class="header-btn" aria-label="Open navigation menu">
+              <button class="header-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24"
                   fill="currentColor">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -120,7 +128,7 @@
             </li>
             <!-- <li role="listitem"> -->
             <!-- <a href="#">Karriere</a> -->
-            <!-- <button class="header-btn" aria-label="Open navigation menu">
+            <!-- <button class="header-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="800px"
@@ -152,8 +160,7 @@
         </nav>
         <div class="language-switcher">
           <button id="language-btn" onclick="toggleDropdown()">
-            <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="Germany" class="flag"
-              id="selected-flag" />
+            <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" id="selected-flag" />
             <span id="selected-lang">DE</span>
             <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               viewBox="0 0 16 16">
@@ -162,15 +169,13 @@
             </svg>
           </button>
           <div id="language-dropdown" class="dropdown hidden">
-            <div class="option" data-lang="DE"
-              onclick="changeLanguage('de', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="Germany" class="flag" />
+            <div class="option" data-lang="DE" onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')">
+              <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" />
               DE
               <span class="selected-dot active" id="dot-DE"></span>
             </div>
-            <div class="option" data-lang="EN"
-              onclick="changeLanguage('en', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="English" class="flag" />
+            <div class="option" data-lang="EN" onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')">
+              <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" />
               EN
               <span class="selected-dot" id="dot-EN"></span>
             </div>
@@ -205,7 +210,7 @@
             </h1>
 
             <a href="#dms" class="intro__link" data-aos="fade-up" data-aos-duration="600">
-              Digitaler Marketingservice
+              Details ansehen
               <svg xmlns="http://www.w3.org/2000/svg" width="16.167" height="21.498" aria-hidden="true"
                 focusable="false">
                 <g fill="none" stroke="#32506a" stroke-width="2">
@@ -220,13 +225,13 @@
 
         <ul class="intro__social" aria-label="Social media links">
           <li data-aos="fade-left" data-aos-duration="600">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/digitalsharedservices/" target="_blank" rel="noopener noreferrer"
               aria-label="Visit our Instagram page">
               <img src="../assets/img/svg/instagram.svg" alt="Instagram" height="32" width="32" loading="lazy" />
             </a>
           </li>
           <li data-aos="fade-left" data-aos-duration="900">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/company/digital-shared-services/" target="_blank" rel="noopener noreferrer"
               aria-label="Visit our LinkedIn page">
               <img src="../assets/img/svg/linkedin.svg" alt="LinkedIn" height="32" width="32" loading="lazy" />
             </a>
@@ -252,23 +257,33 @@
             <div class="expertise__item expertise__item--large" role="listitem" data-aos="fade-up"
               data-aos-duration="500">
               <p>
-                <b>Warum warten, bis man gefunden wird, wenn man von Anfang an
-                  sichtbar sein kann?</b>
-                Ob aufmerksamkeitsstarke YouTube-Anzeigen oder gezielte
-                Suchanfragen bei Google – wir verwandeln Werbebudget in echten
-                Mehrwert. Unsere PPC-Dienstleistungen sind auf Klarheit,
-                Wirkung und Wachstum ausgelegt.
+                Warum warten, bis man zufällig gefunden wird,  
+                wenn man von Anfang an sichtbar sein kann?  
+                Ob aufmerksamkeitsstarke YouTube-Anzeigen  
+                oder gezielte Google-Suchanzeigen –  
+                wir machen aus Ihrem Werbebudget  
+                echten Mehrwert.  
+                Unsere Leistungen im Bereich  
+                zielgerichteter Online-Anzeigen  
+                setzen auf Klarheit, Wirkung und nachhaltiges Wachstum.  
+                Ab dem ersten Tag arbeiten wir daran,  
+                das Beste aus Ihren Kampagnen herauszuholen 
+
               </p>
             </div>
 
             <div class="expertise__item expertise__item--large" role="listitem" data-aos="fade-up"
               data-aos-duration="800">
               <p>
-                Wir planen, optimieren und skalieren Ihre Kampagnen – damit
-                jeder Klick zählt und jeder Cent nachvollziehbar eingesetzt
-                wird. Jeder Klick bringt Ihr Unternehmen näher an die
-                Marktführerschaft. Ab dem ersten Tag holen wir das Maximum für
-                Sie heraus!
+                Wir planen, optimieren und skalieren Ihre Kampagnen –  
+                damit jeder Klick zählt und jeder investierte Euro  
+                gezielt eingesetzt wird.  
+                So erreichen wir gemeinsam mehr Sichtbarkeit  
+                und sprechen genau die Menschen an,  
+                die für Ihr Unternehmen wichtig sind.  
+                Mit klaren Botschaften, präziser Aussteuerung  
+                und stetiger Verbesserung  
+                erzielen wir Ergebnisse, die sich messen lassen.
               </p>
             </div>
           </div>
@@ -286,34 +301,36 @@
               </h2>
 
               <p data-aos="fade-up" data-aos-delay="200">
-                Sie zahlen nicht für Klicks. Sie zahlen für Ergebnisse. Wir
-                entwickeln zielgerichtete PPC-Kampagnen mit hohen
-                Konversionsraten und messbarem Wachstum. Mit datenbasierter
-                Präzision und kontinuierlicher Optimierung holen wir das Beste
-                aus Ihrem Budget heraus. Lassen Sie uns gemeinsam Klicks in
-                nachhaltigen Erfolg verwandeln.
+                Bei uns geht es nicht um Klicks um jeden Preis –  
+                sondern um messbare Ergebnisse.  
+                Wir entwickeln gezielte Pay-per-Click-Kampagnen (PPC),  
+                die Ihre Zielgruppe erreichen und zu wertvollen Kontakten führen.  
+                Mit datenbasierter Planung und laufender Optimierung  
+                nutzen wir Ihr Budget verantwortungsvoll und wirkungsvoll.  
+                So verwandeln wir Klicks in echten, nachhaltigen Mehrwert.
+
               </p>
 
               <ul class="exp__list" role="list">
                 <li data-aos="fade-up" data-aos-delay="300">
                   <img src="../assets/img/svg/performance-marketing.svg" alt="Symbol für digitale Kommunikation"
                     width="30" height="30" />
-                  Performance-orientierte Strategie
+                  Strategie mit klarer Leistungsorientierung
                 </li>
                 <li data-aos="fade-up" data-aos-delay="400">
                   <img src="../assets/img/svg/end-to-end-expertise.svg" alt="Herz-Symbol für Leidenschaft" width="30"
                     height="30" />
-                  Ganzheitliche Funnel-Expertise
+                  Ganzheitliche Kampagnenplanung
                 </li>
                 <li data-aos="fade-up" data-aos-delay="500">
                   <img src="../assets/img/svg/transparent-reporting-i.svg" alt="Kompass-Symbol für Orientierung"
                     width="30" height="30" />
-                  Transparentes Reporting
+                  Transparente Auswertung
                 </li>
                 <li data-aos="fade-up" data-aos-delay="600">
                   <img src="../assets/img/svg/enhancing_seo_optimisation.svg" alt="Krone-Symbol für Exzellenz"
                     width="30" height="30" />
-                  Konsequente Optimierung
+                  Kontinuierliche Optimierung
                 </li>
               </ul>
             </div>
@@ -332,7 +349,7 @@
         <div class="container" data-aos="fade-up" data-aos-duration="500">
           <h2 class="detail__title font-30 text-uppercase font-regular mb-30" data-aos="fade-up"
             data-aos-duration="400">
-            Unsere Leistungen im Bereich PPC-Werbung
+            Unsere Leistungen im Bereich Pay-per-Click-Werbung (PPC)
           </h2>
           <!-- <p data-aos="fade-up" data-aos-delay="200" class="mb-30">
               We offer websites that load quickly and don't make users wait.
@@ -352,11 +369,12 @@
                   Google Search Ads Management
                 </h3>
                 <p>
-                  Mit gezielten Keywords und überzeugendem Anzeigentext
-                  bringen wir Ihr Unternehmen ganz nach oben. Unsere Google
-                  Ads-Kampagnen erzeugen Aufmerksamkeit, bauen Vertrauen auf
-                  und leiten potenzielle Kunden direkt zu Ihnen – präzise,
-                  klar und überzeugend.
+                  Mit gezielten Keywords und klaren Anzeigentexten  
+                  bringen wir Ihre Angebote dorthin,  
+                  wo Ihre Kunden suchen.  
+                  Unsere Google Ads-Kampagnen schaffen Sichtbarkeit,  
+                  bauen Vertrauen auf  
+                  und leiten interessierte Nutzer gezielt zu Ihnen.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="500">
@@ -368,14 +386,14 @@
             <div class="detail__item" data-aos="fade-up" data-aos-duration="500">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="600">
                 <h3 class="font-24 font-regular mb-20">
-                  Display & YouTube Ads
+                  Display- & YouTube-Anzeigen
                 </h3>
                 <p>
-                  Von aufmerksamkeitsstarken Bannern bis zu nicht
-                  überspringbaren Videos: Wir machen Ihre Marke visuell
-                  unvergesslich. Die richtige Botschaft, das passende Format
-                  und perfektes Timing sorgen dafür, dass aus Zuschauern
-                  Kunden werden.
+                  Von auffälligen Bannern bis zu Videos, die im Kopf bleiben:  
+                  Wir setzen Ihre Marke visuell in Szene.  
+                  Die passende Botschaft, das richtige Format  
+                  und der richtige Zeitpunkt sorgen dafür,  
+                  dass aus Zuschauern Kunden werden.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="600">
@@ -390,11 +408,10 @@
                   Werbetexte & A/B-Testing
                 </h3>
                 <p>
-                  Wir schreiben starke Anzeigentexte und testen verschiedene
-                  Varianten – Headlines, Call-to-Actions und Ansprache – um
-                  herauszufinden, was bei Ihrer Zielgruppe wirklich
-                  funktioniert. Jeder Test bringt uns näher an die perfekte
-                  Ansprache.
+                  Wir entwickeln überzeugende Anzeigentexte  
+                  und testen unterschiedliche Varianten –  
+                  von Headlines über Call-to-Actions bis zur Tonalität –  
+                  um herauszufinden, was bei Ihrer Zielgruppe am besten ankommt.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -409,11 +426,12 @@
                   eCommerce, das verkauft
                 </h3>
                 <p>
-                  Ihr Onlineshop soll nicht nur Produkte zeigen – sondern
-                  verkaufen. Wir erstellen sichere, benutzerfreundliche Shops
-                  mit Shopify, WooCommerce und anderen Tools. Schneller
-                  Checkout, sichere Zahlungen und klare Produktführung machen
-                  den Unterschied.
+                  Ihr Onlineshop soll nicht nur Produkte zeigen –  
+                  sondern Verkäufe erzielen.  
+                  Wir erstellen sichere, nutzerfreundliche Shops  
+                  mit Shopify, WooCommerce und weiteren Lösungen.  
+                  Schneller Checkout, sichere Bezahlung  
+                  und eine klare Produktführung machen den Unterschied
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -425,13 +443,14 @@
             <div class="detail__item" data-aos="fade-up" data-aos-duration="600">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="700">
                 <h3 class="font-24 font-regular mb-20">
-                  LLandingpage-Optimierung
+                  Landingpage-Optimierung
                 </h3>
                 <p>
-                  Ihre Anzeige holt den Klick – die Landingpage macht den
-                  Abschluss. Wir optimieren Ihre Seiten für Performance,
-                  Nutzerführung und Zielerreichung – ob für Leads, Verkäufe
-                  oder Terminbuchungen.
+                  Die Anzeige bringt den Klick –  
+                  die Landingpage macht den Abschluss.  
+                  Wir optimieren Ihre Seiten für klare Nutzerführung  
+                  und Zielerreichung –  
+                  ob für Leads, Verkäufe oder Terminbuchungen.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -446,10 +465,11 @@
                   Remarketing-Kampagnen
                 </h3>
                 <p>
-                  Wir holen zurück, was verloren ging. Unsere
-                  Remarketing-Kampagnen sprechen gezielt Nutzer an, die
-                  bereits Interesse gezeigt, aber noch nicht konvertiert haben
-                  – kanalübergreifend und punktgenau.
+                  Wir holen Interessenten zurück,  
+                  die bereits Kontakt mit Ihrem Angebot hatten,  
+                  aber noch nicht gekauft oder gebucht haben.  
+                  Unsere Remarketing-Kampagnen sprechen diese Nutzer gezielt an –  
+                  über mehrere Kanäle hinweg und genau im richtigen Moment
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -518,22 +538,22 @@
                 </h3> -->
 
               <div class="vision__subtitle font-24" data-aos="fade-up" data-aos-duration="400">
-                Willkommen bei Pay-per-Click-Werbung, die wirklich klickt.
+                Willkommen bei Pay-per-Click-Werbung (PPC), die wirkt.
               </div>
 
               <p class="mb-30" data-aos="fade-up" data-aos-duration="500">
-                Von starken Anzeigentexten bis zu conversion-optimierten
-                Landingpages – bei uns ist jeder Klick auf Erfolg
-                ausgerichtet. Jeder Klick kann Ihr nächster Verkauf sein.
+                Von klaren Anzeigentexten bis zu optimierten Landingpages –  
+                bei uns ist jeder Klick auf Ihr Ziel ausgerichtet.  
+
                 <br /><br />
 
-                Bereit für Ergebnisse? Kontaktieren Sie uns jetzt und starten
-                Sie durch.
+                Bereit, den nächsten Schritt zu gehen?  
+                Kontaktieren Sie uns jetzt und lassen Sie uns starten.
               </p>
 
               <div data-aos="fade-up" data-aos-duration="600">
                 <a href="contact-us.html#form" class="btn text-uppercase" data-aos="zoom-in" data-aos-duration="700">
-                  <span> Loslegen</span>
+                  <span> Jetzt starten </span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"
                     focusable="false">
                     <path
@@ -623,7 +643,7 @@
             <nav aria-labelledby="footer-navigation">
               <ul class="footer__nav-list" role="list">
                 <li role="listitem">
-                  <a href="index.html" class="active" aria-current="page">Home</a>
+                  <a href="/de/index.html" class="active" aria-current="page">Home</a>
                 </li>
                 <li role="listitem">
                   <a href="services.html">Dienstleistungen</a>
@@ -650,12 +670,12 @@
               </div>
               <div class="footer__info-address" itemprop="address" itemscope=""
                 itemtype="https://schema.org/PostalAddress">
-                <span itemprop="streetAddress">Großenhainer Straße 179 </span><br />
+                <span itemprop="streetAddress">Großenhainer Straße 179 </span><br>
                 <span itemprop="postalCode">01129</span>
                 <span itemprop="addressLocality">Dresden</span>
               </div>
 
-              <a href="index.html" aria-label="Zurück zur Startseite">
+              <a href="/de/index.html" aria-label="Zurück zur Startseite">
                 <img src="../assets/img/logo/logo.webp" alt="Digitale Shared Services GmbH Logo" width="200" height="54"
                   loading="lazy" decoding="async" itemprop="logo" />
               </a>
@@ -665,166 +685,99 @@
 
         <div class="footer__bottom text-center">
           <p>
-            © 2025 Digitale Shared Services GmbH | Alle Rechte vorbehalten
+            © 2025 Digital Shared Services GmbH | Alle Rechte vorbehalten
           </p>
         </div>
       </div>
     </div>
   </footer>
 
-  <section class="cookie-modal-wrapper">
-    <div class="cookie-modal-overlay">
-      <div class="cookie-modal-container">
-        <div class="cookie-modal-header">
-          <div class="cookie-modal-title-wrapper">
-            <div class="cookie-modal-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                </path>
-              </svg>
-            </div>
-            <h2 class="cookie-modal-title">Privatsphäre Präferenzen</h2>
-          </div>
-          <button class="cookie-modal-close-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 6 6 18"></path>
-              <path d="m6 6 12 12"></path>
-            </svg>
-            <span class="visually-hidden">Close</span>
-          </button>
-        </div>
+  <section class="cookie-card-wrapper">
+    <div class="cookie-card">
+      <div class="title font-24">
+        <div class="title-text">🍪 Datenschutz-präferenz</div>
 
-        <div class="cookie-modal-content">
-          <div class="cookie-modal-description">
-            <p class="cookie-modal-text">
-              Wir benötigen Ihre Einwilligung, bevor Sie unsere Website weiter
-              besuchen können. Wenn Sie unter 16 Jahre alt sind und Ihre
-              Einwilligung zu optionalen Services geben möchten, müssen Sie
-              Ihre Erziehungsberechtigten um Erlaubnis bitten. Wir verwenden
-              Cookies und andere Technologien auf unserer Website. Einige von
-              ihnen sind essenziell, während andere uns helfen, diese Website
-              und Ihre Erfahrung zu verbessern. Personenbezogene Daten können
-              verarbeitet werden (z. B. IP-Adressen), z. B. für
-              personalisierte Anzeigen und Inhalte oder die Messung von
-              Anzeigen und Inhalten. Weitere Informationen über die Verwendung
-              Ihrer Daten finden Sie in unserer Datenschutzerklärung. Es
-              besteht keine Verpflichtung, in die Verarbeitung Ihrer Daten
-              einzuwilligen, um dieses Angebot zu nutzen. Sie können Ihre
-              Auswahl jederzeit unter Einstellungen widerrufen oder anpassen.
-              Bitte beachten Sie, dass aufgrund individueller Einstellungen
-              möglicherweise nicht alle Funktionen der Website verfügbar sind.
-              policies.
-            </p>
-            <div class="cookie-modal-notice">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
-                <path d="M8.5 8.5v.01"></path>
-                <path d="M16 15.5v.01"></path>
-                <path d="M12 12v.01"></path>
-                <path d="M11 17v.01"></path>
-                <path d="M7 14v.01"></path>
-              </svg>
-              <div class="cookie-notice-content">
-                <p class="cookie-notice-title">Datenverarbeitung notice</p>
-                <p class="cookie-notice-text">
-                  Einige Services verarbeiten personenbezogene Daten in den
-                  USA. Mit Ihrer Einwilligung zur Nutzung dieser Services
-                  willigen Sie auch in die Verarbeitung Ihrer Daten in den USA
-                  gemäß Art. 49 (1) lit. a GDPR ein. Der EuGH stuft die USA
-                  als ein Land mit unzureichendem Datenschutz nach
-                  EU-Standards ein. Es besteht beispielsweise die Gefahr, dass
-                  US-Behörden personenbezogene Daten in Überwachungsprogrammen
-                  verarbeiten, ohne dass für Europäerinnen und Europäer eine
-                  Klagemöglichkeit besteht.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cookie-modal-divider"></div>
-
-          <div class="cookie-categories">
-            <h3 class="cookie-categories-title">Cookie-Kategorien</h3>
-            <div class="cookie-categories-list">
-              <div class="cookie-category-item cookie-category-essential">
-                <div class="cookie-category-content">
-                  <input type="checkbox" name="essential" class="cookie-category-checkbox" id="essential" checked
-                    disabled />
-                  <div class="cookie-category-info">
-                    <label for="essential" class="cookie-category-name">Wesentliche Cookies</label>
-                    <p class="cookie-category-description">
-                      Erforderlich für die grundlegenden Website-Funktionen
-                    </p>
-                  </div>
-                </div>
-                <span class="cookie-category-tag cookie-category-required">Erforderlich</span>
-              </div>
-
-              <div class="cookie-category-item">
-                <div class="cookie-category-content">
-                  <input type="checkbox" name="external-media" class="cookie-category-checkbox" id="external-media" />
-                  <div class="cookie-category-info">
-                    <label for="external-media" class="cookie-category-name">Externe Medien</label>
-                    <p class="cookie-category-description">
-                      Inhalte von externen Plattformen wie YouTube, Vimeo
-                    </p>
-                  </div>
-                </div>
-                <span class="cookie-category-tag">Optional</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="cookie-modal-divider"></div>
-
-          <div class="cookie-modal-actions">
-            <button class="cookie-action-btn cookie-action-primary">
-              Speichern Präferenzen
-            </button>
-            <button class="cookie-action-btn cookie-action-secondary">
-              Einfach unverzichtbar
-            </button>
-            <button class="cookie-action-btn cookie-action-secondary">
-              Akzeptiere alles
-            </button>
-          </div>
-
-          <p class="cookie-modal-footer">
-            Erfahren Sie mehr in unserer
-            <a href="privacy-policy.html" class="cookie-modal-link">Datenschutzrichtlinie</a>
-          </p>
-        </div>
+        <button class="close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="none">
+            <g id="Menu / Close_SM">
+              <path id="Vector" d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke="#000000" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </button>
       </div>
+
+      <div class="description-wrapper">
+        <p class="description">
+          Wir benötigen Ihre Einwilligung, bevor Sie unsere Website weiter
+          besuchen können. Wenn Sie unter 16 Jahre alt sind und Ihre
+          Einwilligung zu optionalen Services geben möchten, müssen Sie Ihre
+          Erziehungsberechtigten um Erlaubnis bitten. Wir verwenden Cookies
+          und andere Technologien auf unserer Website. Einige von ihnen sind
+          essenziell, während andere uns helfen, diese Website und Ihre
+          Erfahrung zu verbessern. Personenbezogene Daten können verarbeitet
+          werden (z. B. IP-Adressen), z. B. für personalisierte Anzeigen und
+          Inhalte oder die Messung von Anzeigen und Inhalten. Weitere
+          Informationen über die Verwendung Ihrer Daten finden Sie in unserer
+          Datenschutzerklärung. Es besteht keine Verpflichtung, in die
+          Verarbeitung Ihrer Daten einzuwilligen, um dieses Angebot zu nutzen.
+          Sie können Ihre Auswahl jederzeit unter Einstellungen widerrufen
+          oder anpassen. Bitte beachten Sie, dass aufgrund individueller
+          Einstellungen möglicherweise nicht alle Funktionen der Website
+          verfügbar sind.
+          <a href="privacy-policy.html">policies</a>.
+        </p>
+        <br />
+        <hr />
+        <p class="description">
+          Einige Services verarbeiten personenbezogene Daten in den USA. Mit
+          Ihrer Einwilligung zur Nutzung dieser Services willigen Sie auch in
+          die Verarbeitung Ihrer Daten in den USA gemäß Art. 49 (1) lit. a
+          GDPR ein. Der EuGH stuft die USA als ein Land mit unzureichendem
+          Datenschutz nach EU-Standards ein. Es besteht beispielsweise die
+          Gefahr, dass US-Behörden personenbezogene Daten in
+          Überwachungsprogrammen verarbeiten, ohne dass für Europäerinnen und
+          Europäer eine Klagemöglichkeit besteht.
+        </p>
+
+        <div class="checkbox-wrapper">
+          <div class="checkbox-item">
+            <input type="checkbox" name="Essenziell" id="essenziell" checked disabled />
+            <label for="essenziell">Essenziell</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" name="all" id="all" />
+            <label for="all">Externe Medien</label>
+          </div>
+        </div>
+
+        <ul class="btn-list">
+          <li>
+            <button class="accept">Einwilligung speichern</button>
+          </li>
+          <li>
+            <button class="accept">
+              Nur essenzielle Cookies akzeptieren
+            </button>
+          </li>
+          <!-- <li><button class="savePreferences">Individuelle Datenschutz-Präferenzen</button></li> -->
+        </ul>
+      </div>
+      <div class="actions">
+        <div></div>
+        <button class="accept">Alle akzeptieren</button>
+      </div>
+    </div>
     </div>
   </section>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script
-    type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1', text: 'Zeitplan Zeitfenster', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-
-
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script
-    type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1', text: 'Zeitplan Zeitfenster', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-
-
   <script src="../assets/js/custom.min.js"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMXCTMNE2B"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-PMXCTMNE2B");
-  </script>
+  <!-- Calendly Badge-Widget Beginn -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min', text: 'Jetzt Termin buchen!', color: '#ff0000', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly Badge-Widget Ende -->
 </body>
 
 </html>

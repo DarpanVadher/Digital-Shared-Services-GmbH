@@ -1,2 +1,26 @@
-@use "base" as *;
-@use "components" as *;
+// Base
+@import "base/variables";
+@import "base/mixin";
+@import "base/fonts";
+@import "base/genaral";
+
+// Components
+@import "components/header";
+@import "components/hero";
+@import "components/marketing";
+@import "components/cta";
+@import "components/service";
+@import "components/references";
+@import "components/expertise";
+@import "components/vision";
+@import "components/intro";
+@import "components/form";
+@import "components/hire";
+@import "components/exp";
+@import "components/text-img";
+@import "components/team";
+@import "components/value";
+@import "components/footer";
+@import "components/cookie-card";
+@import "components/detail";
+@import "components/services-list";

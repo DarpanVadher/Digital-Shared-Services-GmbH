@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /private/
+Allow: /
+
+Sitemap: https://digital-shared-services.com/sitemap.xml

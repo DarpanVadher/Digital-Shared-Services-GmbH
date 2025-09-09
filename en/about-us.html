@@ -22,49 +22,61 @@
       href="../assets/img/favicon/apple-touch-icon.png"
     />
     <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
+
     <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://digital-shared-services.com/en/about-us.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://digital-shared-services.com/en/about-us.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://digital-shared-services.com/de/about-us.html"
+    />
+    <!-- optional neutral home: -->
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://digital-shared-services.com/"
+    />
 
     <title>About Us | Digital Shared Services GmbH</title>
 
-    <!-- START : Meta Tags -->
+    <!-- Social / Open Graph -->
+    <meta
+      name="description"
+      content="Digital Shared Services GmbH is a full‑service digital agency in Dresden, Germany, specializing in marketing strategy, creative design, content development, and digital technology. We deliver results‑driven solutions tailored to your brand."
+    />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta
-      name="description"
-      content="Digital Shared Service GmbH is a full-service digital agency in Dresden, Germany, specializing in marketing strategy, creative design, content development, and digital technology. We deliver results-driven solutions tailored to your brand."
+      property="og:title"
+      content="About Us | Digital Shared Services GmbH"
     />
-    <meta property="og:title" content="Digital Shared Services GmbH" />
     <meta
       property="og:description"
-      content="Digital Shared Service GmbH is a full-service digital agency in Dresden, Germany, specializing in marketing strategy, creative design, content development, and digital technology. We deliver results-driven solutions tailored to your brand."
+      content="Digital Shared Services GmbH is a full‑service digital agency in Dresden, Germany, specializing in marketing strategy, creative design, content development, and digital technology. We deliver results‑driven solutions tailored to your brand."
     />
     <meta
       property="og:url"
       content="https://digital-shared-services.com/en/about-us.html"
     />
-    <meta
-      property="og:site_name"
-      content="About Us | Digital Shared Services GmbH"
-    />
+    <meta property="og:site_name" content="Digital Shared Services GmbH" />
     <meta
       property="og:image"
-      content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg"
+      content="https://digital-shared-services.com/assets/img/og-image.jpg"
     />
     <meta
       name="twitter:image"
-      content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg"
+      content="https://digital-shared-services.com/assets/img/og-image.jpg"
     />
-    <link
-      rel="canonical"
-      href="https://digital-shared-services.com/en/about-us.html"
-    />
-    <!-- END : Meta Tags -->
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      href="https://assets.calendly.com/assets/external/widget.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="../assets/css/style.min.css" />
   </head>
 
@@ -72,7 +84,7 @@
     <header class="header" role="banner">
       <div class="header-inner" data-aos="fade-down" data-aos-duration="500">
         <a
-          href="index.html"
+          href="/en/index.html"
           class="header-logo"
           aria-label="Digital Shared Services GmbH Startseite"
         >
@@ -90,11 +102,11 @@
           <nav aria-label="Hauptnavigation">
             <ul class="header-nav" role="list">
               <li role="listitem">
-                <a href="index.html">Home</a>
+                <a href="/en/index.html">Home</a>
               </li>
               <li role="listitem">
                 <a href="services.html">Services</a>
-                <button class="header-btn" aria-label="Open navigation menu">
+                <button class="header-btn">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="800px"
@@ -168,13 +180,13 @@
               </li>
 
               <li role="listitem">
-                <a href="about-us.html" class="active" aria-current="page"
+                <a href="/en/about-us.html" class="active" aria-current="page"
                   >About Us</a
                 >
               </li>
               <!-- <li role="listitem"> -->
               <!-- <a href="#">Karriere</a> -->
-              <!-- <button class="header-btn" aria-label="Open navigation menu">
+              <!-- <button class="header-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="800px"
@@ -206,8 +218,8 @@
           <div class="language-switcher">
             <button id="language-btn" onclick="toggleDropdown()">
               <img
-                src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg"
-                alt="English"
+                src="https://flagcdn.com/w40/gb.png"
+                alt="EN"
                 class="flag"
                 id="selected-flag"
               />
@@ -230,11 +242,11 @@
               <div
                 class="option"
                 data-lang="DE"
-                onclick="changeLanguage('de', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg')"
+                onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')"
               >
                 <img
-                  src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg"
-                  alt="Germany"
+                  src="https://flagcdn.com/w40/de.png"
+                  alt="DE"
                   class="flag"
                 />
                 DE
@@ -243,11 +255,11 @@
               <div
                 class="option"
                 data-lang="EN"
-                onclick="changeLanguage('en', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg')"
+                onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')"
               >
                 <img
-                  src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg"
-                  alt="English"
+                  src="https://flagcdn.com/w40/gb.png"
+                  alt="EN"
                   class="flag"
                 />
                 EN
@@ -291,7 +303,7 @@
                 data-aos-duration="600"
                 aria-label="Zum Contact Usformular scrollen"
               >
-                The team introduces itself
+                Who We Are
 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -313,7 +325,7 @@
           <ul class="intro__social" aria-label="Social Media Links">
             <li data-aos="fade-left" data-aos-duration="600">
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/digitalsharedservices/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Besuchen Sie unsere Instagram-Seite"
@@ -329,7 +341,7 @@
             </li>
             <li data-aos="fade-left" data-aos-duration="900">
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/digital-shared-services/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Besuchen Sie unsere LinkedIn-Seite"
@@ -372,13 +384,14 @@
                 data-aos-duration="500"
               >
                 <p>
-                  Digital Shared Service GmbH is a brand-first, full-service
-                  digital agency based in Dresden, Germany, Specializing in
-                  digital marketing strategy, creative design, content
-                  development, and digital technology solutions.. Founded with a
-                  focus on delivering results-driven solutions for brands,
-                  Digital Shared Service GmbH brings together a team of experts
-                  with diverse strengths to create a powerful, unified force.
+                  We, <strong>the Digital Shared Service GmbH</strong>, are a
+                  brand-focused full-service digital agency based in Dresden,
+                  Germany. We create tailored marketing strategies, design
+                  creative visuals, develop compelling content, and implement
+                  modern digital solutions. Our goal: to make brands visible and
+                  strengthen them sustainably – transparent, collaborative, and
+                  at a fair price. From the first idea to final delivery, you
+                  have a reliable partner by your side
                 </p>
               </div>
 
@@ -389,16 +402,15 @@
                 data-aos-duration="800"
               >
                 <p>
-                  We believe in true collaboration—working closely with our
-                  clients to understand their unique needs and goals. Our
-                  experienced marketing team takes care of all the complex
-                  tasks, ensuring smooth and effective execution at every stage.
-                  Every project we undertake begins with in-depth brand
-                  research, and all our efforts are designed to complement and
-                  strengthen the brand identity. With a constant drive for
-                  innovation and a passion for creative storytelling, we are
-                  always looking ahead, exploring new ideas and pushing
-                  boundaries.
+                  We work closely with you – listening, asking the right
+                  questions, and developing solutions that truly fit your goals.
+                  Our experienced team takes care of every step to ensure
+                  projects run smoothly and effectively. Every project begins
+                  with a detailed look at your brand. All our actions are aimed
+                  at enhancing and further developing your identity. With a
+                  passion for new ideas and creative storytelling, we always
+                  look ahead and explore new opportunities when they make sense
+                  for your success
                 </p>
               </div>
             </div>
@@ -419,14 +431,13 @@
                 data-aos="fade-right"
                 data-aos-delay="200"
               >
-                Expertise
+                Our Mission
               </h3>
               <p data-aos="fade-up" data-aos-delay="300">
-                Your brand is your company’s most valuable asset – let our team
-                of experts support you with a tailored strategy. Our experienced
-                team works within clear, efficient processes to help you
-                overcome internal challenges. We turn insights into impactful
-                strategies and create consistent, meaningful brand experiences.
+                We make businesses digitally visible and strengthen their brand
+                identity – with clear strategy, creative ideas, and personal
+                support. Our aim is to develop solutions together with you that
+                work, are sustainable, and are delivered at a fair price.
               </p>
               <!-- <p data-aos="fade-up" data-aos-delay="400">
                 Ihren digitalen Auftritt, Ihre digitale Position, den Stand
@@ -465,59 +476,35 @@
             data-aos="fade-up"
             data-aos-duration="300"
           >
-            Who we are
+            Our Team
           </h2>
           <div class="team">
-            <div
-              class="team__item text-center"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <img
-                src="../assets/img/team/olaf-beyer.webp"
-                alt="team"
-                width="100%"
-                height="100%"
-                loading="lazy"
-              />
+            <!-- <div class="team__item text-center" data-aos="fade-up" data-aos-delay="100">
+            <img src="../assets/img/team/olaf-beyer.webp" alt="team" width="100%" height="100%" loading="lazy" />
 
-              <div class="team__name">Olaf Beyer</div>
-              <div class="team__position">Managing Director</div>
+            <div class="team__name">Olaf Beyer</div>
+            <div class="team__position">Managing Director</div>
 
-              <ul class="team__social">
-                <li>
-                  <a href="mailto:olaf.beyer@digital-shared-services.com">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 -960 960 960"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M146.67-160q-27 0-46.84-19.83Q80-199.67 80-226.67v-506.66q0-27 19.83-46.84Q119.67-800 146.67-800h666.66q27 0 46.84 19.83Q880-760.33 880-733.33v506.66q0 27-19.83 46.84Q840.33-160 813.33-160H146.67ZM480-454.67 146.67-670v443.33h666.66V-670L480-454.67Zm0-66.66 330.67-212H150l330 212ZM146.67-670v-63.33V-226.67-670Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/olaf-beyer-a941321a/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- <div class="team__item text-center" data-aos="fade-up" data-aos-delay="200">
+            <ul class="team__social">
+              <li>
+                <a href="mailto:olaf.beyer@digital-shared-services.com">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+                    <path
+                      d="M146.67-160q-27 0-46.84-19.83Q80-199.67 80-226.67v-506.66q0-27 19.83-46.84Q119.67-800 146.67-800h666.66q27 0 46.84 19.83Q880-760.33 880-733.33v506.66q0 27-19.83 46.84Q840.33-160 813.33-160H146.67ZM480-454.67 146.67-670v443.33h666.66V-670L480-454.67Zm0-66.66 330.67-212H150l330 212ZM146.67-670v-63.33V-226.67-670Z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/digital-shared-services//in/olaf-beyer-a941321a/" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                    <path
+                      d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="team__item text-center" data-aos="fade-up" data-aos-delay="200">
             <img src="../assets/img/team/nurgül-beyer.webp" alt="team" width="100%" height="100%" loading="lazy" />
 
             <div class="team__name">Nurgül Beyer</div>
@@ -534,9 +521,9 @@
                   </svg>
                 </a>
               </li>
-              <li>
+               <li>
                   <a
-                    href="https://www.linkedin.com/in/patrick-manteuffel-099675350"
+                    href="https://www.linkedin.com/company/digital-shared-services//in/patrick-manteuffel-099675350"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -550,7 +537,7 @@
                       />
                     </svg>
                   </a>
-                </li>
+                </li> 
             </ul>
           </div> -->
             <div
@@ -567,7 +554,7 @@
               />
 
               <div class="team__name">Patrick Manteuffel</div>
-              <div class="team__position">Freelance Head of Sales</div>
+              <div class="team__position">Managing Director</div>
 
               <ul class="team__social">
                 <li>
@@ -587,7 +574,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/patrick-manteuffel-099675350"
+                    href="https://www.linkedin.com/company/digital-shared-services//in/patrick-manteuffel-099675350"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -618,7 +605,7 @@
               />
 
               <div class="team__name">Biman Das</div>
-              <div class="team__position">Freelance Chief Strategy Officer</div>
+              <div class="team__position">Head of Strategy</div>
 
               <ul class="team__social">
                 <li>
@@ -636,7 +623,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/biman-das-22799b118/"
+                    href="https://www.linkedin.com/company/digital-shared-services//in/biman-das-22799b118/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -1010,7 +997,7 @@
               data-aos="fade-up"
               data-aos-duration="300"
             >
-              Our values
+              Our Values
             </h3>
 
             <p
@@ -1018,11 +1005,10 @@
               data-aos="fade-up"
               data-aos-duration="600"
             >
-              We ourselves attach great importance to our corporate culture, in
-              which the team and the workplace are a retreat for the your own,
-              professional and personal development. Our goal: To foster a
-              highly motivated team that grows together through the challenges
-              our customers face.
+              We value a company culture where our team can grow both
+              professionally and personally. Our goal is to create a motivated
+              environment where we work together to meet our clients’
+              challenges.
             </p>
 
             <div class="value__list">
@@ -1042,9 +1028,8 @@
                 <h5 class="font-24 font-regular">Empathy</h5>
 
                 <p>
-                  If you don't do anything for others, you don't do anything for
-                  yourself. After We live this credo every day and all stand for
-                  each other one.
+                  Helping others is helping yourself – we live by this principle
+                  every day and support one another.
                 </p>
               </div>
               <div
@@ -1063,9 +1048,8 @@
                 <h5 class="font-24 font-regular">Positivity</h5>
 
                 <p>
-                  Through general positivity, we give each other a sense of
-                  strong support and help each other when things don't go well
-                  Wants.
+                  We encourage each other and provide strong support, especially
+                  when things aren’t going well.
                 </p>
               </div>
               <div
@@ -1081,12 +1065,12 @@
                   loading="lazy"
                 />
 
-                <h5 class="font-24 font-regular">Self-realization</h5>
+                <h5 class="font-24 font-regular">Self-Development</h5>
 
                 <p>
-                  In personal appraisal interviews, we try to achieve the goals
-                  and understand the motivation of our employees in order to
-                  personally and professionally.
+                  Through regular conversations, we learn about our team
+                  members’ goals and motivations and help them grow both
+                  professionally and personally.
                 </p>
               </div>
             </div>
@@ -1110,8 +1094,12 @@
                 Our Office
               </h3>
               <p data-aos="fade-up" data-aos-delay="300">
-                Our office is located on Wallgäßchen, nestled along the
-                beautiful Customs Port (Zollhafen) in Dresden.
+                Our office is located at Großenhainer Straße 179, right by
+                Hubertusplatz in Dresden. Here, we work in a modern and open
+                environment that fosters creativity and collaboration. Bright
+                spaces, a friendly atmosphere, and short communication paths
+                ensure we feel comfortable and work efficiently – for the best
+                results for our clients.
               </p>
             </div>
             <img
@@ -1140,11 +1128,14 @@
               <nav aria-labelledby="footer-navigation">
                 <ul class="footer__nav-list" role="list">
                   <li role="listitem">
-                    <a href="index.html">Home</a>
+                    <a href="/en/index.html">Home</a>
                   </li>
                   <li role="listitem"><a href="services.html">Services</a></li>
                   <li role="listitem">
-                    <a href="about-us.html" class="active" aria-current="page"
+                    <a
+                      href="/en/about-us.html"
+                      class="active"
+                      aria-current="page"
                       >About Us</a
                     >
                   </li>
@@ -1183,7 +1174,7 @@
                   <span itemprop="addressLocality">Dresden</span>
                 </div>
 
-                <a href="index.html" aria-label="Zurück zur Startseite">
+                <a href="/en/index.html" aria-label="Zurück zur Startseite">
                   <img
                     src="../assets/img/logo/logo.webp"
                     alt="Digital Shared Services GmbH Logo"
@@ -1205,228 +1196,119 @@
       </div>
     </footer>
 
-    <section class="cookie-modal-wrapper">
-      <div class="cookie-modal-overlay">
-        <div class="cookie-modal-container">
-          <div class="cookie-modal-header">
-            <div class="cookie-modal-title-wrapper">
-              <div class="cookie-modal-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
+    <section class="cookie-card-wrapper">
+      <div class="cookie-card">
+        <div class="title font-24">
+          <div class="title-text">🍪 Privacy Preferences</div>
+
+          <button class="close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32px"
+              height="32px"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <g id="Menu / Close_SM">
+                <path
+                  id="Vector"
+                  d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16"
+                  stroke="#000000"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                >
-                  <path
-                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
-                  ></path>
-                </svg>
-              </div>
-              <h2 class="cookie-modal-title">Privacy Preferences</h2>
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+
+        <div class="description-wrapper">
+          <p class="description">
+            We require your consent before you can continue visiting our
+            website. If you are under 16 and would like to consent to optional
+            services, you must ask your legal guardians for permission. We use
+            cookies and other technologies on our website. Some of them are
+            essential, while others help us improve this website and your
+            experience. Personal data may be processed (e.g., IP addresses), for
+            example for personalized ads and content, or to measure ads and
+            content performance. For more information on how we use your data,
+            please see our
+            <a href="privacy-policy.html">Privacy Policy</a>. There is no
+            obligation to consent to data processing to use this site. You can
+            withdraw or adjust your choices at any time under settings. Please
+            note that due to individual settings, not all website functions may
+            be available.
+          </p>
+          <br />
+          <hr />
+          <p class="description">
+            Some services process personal data in the USA. By consenting to the
+            use of these services, you also consent to the processing of your
+            data in the USA in accordance with Art. 49 (1) lit. a GDPR. The ECJ
+            considers the USA a country with inadequate data protection under EU
+            standards. For example, there is a risk that US authorities may
+            process personal data in surveillance programs without legal
+            recourse for Europeans.
+          </p>
+
+          <div class="checkbox-wrapper">
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                name="Essential"
+                id="essential"
+                checked
+                disabled
+              />
+              <label for="essential">Essential</label>
             </div>
-            <button class="cookie-modal-close-btn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M18 6 6 18"></path>
-                <path d="m6 6 12 12"></path>
-              </svg>
-              <span class="visually-hidden">Close</span>
-            </button>
+            <div class="checkbox-item">
+              <input type="checkbox" name="all" id="all" />
+              <label for="all">External Media</label>
+            </div>
           </div>
 
-          <div class="cookie-modal-content">
-            <div class="cookie-modal-description">
-              <p class="cookie-modal-text">
-                We require your consent before you can continue visiting our
-                website. If you are under 16 and would like to consent to
-                optional services, you must ask your legal guardians for
-                permission. We use cookies and other technologies on our
-                website. Some of them are essential, while others help us
-                improve this website and your experience. Personal data may be
-                processed (e.g., IP addresses), for example for personalized ads
-                and content, or to measure ads and content performance. For more
-                information on how we use your data, please see our Privacy
-                Policy. There is no obligation to consent to data processing to
-                use this site. You can withdraw or adjust your choices at any
-                time under settings. Please note that due to individual
-                settings, not all website functions may be available.
-              </p>
-              <div class="cookie-modal-notice">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"
-                  ></path>
-                  <path d="M8.5 8.5v.01"></path>
-                  <path d="M16 15.5v.01"></path>
-                  <path d="M12 12v.01"></path>
-                  <path d="M11 17v.01"></path>
-                  <path d="M7 14v.01"></path>
-                </svg>
-                <div class="cookie-notice-content">
-                  <p class="cookie-notice-title">Data Processing Notice</p>
-                  <p class="cookie-notice-text">
-                    Some services process personal data in the USA. By
-                    consenting to the use of these services, you also consent to
-                    the processing of your data in the USA in accordance with
-                    Art. 49 (1) lit. a GDPR. The ECJ considers the USA a country
-                    with inadequate data protection under EU standards. For
-                    example, there is a risk that US authorities may process
-                    personal data in surveillance programs without legal
-                    recourse for Europeans.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="cookie-modal-divider"></div>
-
-            <div class="cookie-categories">
-              <h3 class="cookie-categories-title">Cookie Categories</h3>
-              <div class="cookie-categories-list">
-                <div class="cookie-category-item cookie-category-essential">
-                  <div class="cookie-category-content">
-                    <input
-                      type="checkbox"
-                      name="essential"
-                      class="cookie-category-checkbox"
-                      id="essential"
-                      checked
-                      disabled
-                    />
-                    <div class="cookie-category-info">
-                      <label for="essential" class="cookie-category-name"
-                        >Essential Cookies</label
-                      >
-                      <p class="cookie-category-description">
-                        Required for basic website functionality
-                      </p>
-                    </div>
-                  </div>
-                  <span class="cookie-category-tag cookie-category-required"
-                    >Required</span
-                  >
-                </div>
-
-                <div class="cookie-category-item">
-                  <div class="cookie-category-content">
-                    <input
-                      type="checkbox"
-                      name="external-media"
-                      class="cookie-category-checkbox"
-                      id="external-media"
-                    />
-                    <div class="cookie-category-info">
-                      <label for="external-media" class="cookie-category-name"
-                        >External Media</label
-                      >
-                      <p class="cookie-category-description">
-                        Content from external platforms like YouTube, Vimeo
-                      </p>
-                    </div>
-                  </div>
-                  <span class="cookie-category-tag">Optional</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="cookie-modal-divider"></div>
-
-            <div class="cookie-modal-actions">
-              <button class="cookie-action-btn cookie-action-primary">
-                Save Preferences
-              </button>
-              <button class="cookie-action-btn cookie-action-secondary">
-                Essential Only
-              </button>
-              <button class="cookie-action-btn cookie-action-secondary">
-                Accept All
-              </button>
-            </div>
-
-            <p class="cookie-modal-footer">
-              Learn more in our
-              <a href="privacy-policy.html" class="cookie-modal-link"
-                >Privacy Policy</a
-              >
-            </p>
-          </div>
+          <ul class="btn-list">
+            <li>
+              <button class="accept">Save Consent</button>
+            </li>
+            <li>
+              <button class="accept">Accept Only Essential Cookies</button>
+            </li>
+            <!-- <li><button class="savePreferences">Individual Privacy Preferences</button></li> -->
+          </ul>
+        </div>
+        <div class="actions">
+          <div></div>
+          <button class="accept">Accept All</button>
         </div>
       </div>
     </section>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      src="https://assets.calendly.com/assets/external/widget.js"
-      type="text/javascript"
-      async
-    ></script>
-    <script type="text/javascript">
-      window.onload = function () {
-        Calendly.initBadgeWidget({
-          url: "https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1",
-          text: "Zeitplan Zeitfenster",
-          color: "#0069ff",
-          textColor: "#ffffff",
-          branding: true,
-        });
-      };
-    </script>
-
-    <script
-      src="https://assets.calendly.com/assets/external/widget.js"
-      type="text/javascript"
-      async
-    ></script>
-    <script type="text/javascript">
-      window.onload = function () {
-        Calendly.initBadgeWidget({
-          url: "https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1",
-          text: "Zeitplan Zeitfenster",
-          color: "#0069ff",
-          textColor: "#ffffff",
-          branding: true,
-        });
-      };
-    </script>
-
     <script src="../assets/js/custom.min.js"></script>
-    <!-- Google tag (gtag.js) -->
+    <!-- Calendly Badge-Widget Beginn -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
     <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-PMXCTMNE2B"
     ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-PMXCTMNE2B");
+    <script type="text/javascript">
+      window.onload = function () {
+        Calendly.initBadgeWidget({
+          url: "https://calendly.com/patrick-manteuffel-digital-shared-services/30min",
+          text: "Book a meeting now!",
+          color: "#ff0202",
+          textColor: "#ffffff",
+          branding: true,
+        });
+      };
     </script>
+    <!-- Calendly Badge-Widget Ende -->
   </body>
 </html>

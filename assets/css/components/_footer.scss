@@ -1,12 +1,6 @@
 .footer {
-    // background-color: var(--color-dark-blue);
-    background-image: linear-gradient(#32506a5b 0.5px, transparent 0.5px),
-        linear-gradient(to right, #32506a5b 0.5px, transparent 0.5px);
-    background-color: #1e293b;
-    background-size: 135px 135px;
-    background-position: calc((100vw - 1224px) / 2) top;
+    background-color: var(--color-gray);
     color: var(--color-white);
-    transition: all 0.3s ease;
 
     &__info {
         display: flex;
@@ -25,7 +19,7 @@
 
         &-address {
             margin-bottom: 16px;
-            color: var(--color-white);
+            color: var(--color-gray-light-2);
         }
 
         img {
@@ -35,7 +29,7 @@
 
     &__bottom {
         padding-top: 32px;
-        color: var(--color-white);
+        color: var(--color-gray-light-2);
     }
 
     &__top {
@@ -54,7 +48,7 @@
             align-items: flex-start;
             justify-content: space-between;
             padding-bottom: 60px;
-            border-bottom: 1px solid var(--color-white);
+            border-bottom: 1px solid var(--color-gray-light);
 
             @media screen and (max-width: 991px) {
                 flex-direction: column;
@@ -72,7 +66,6 @@
 
                 @media screen and (max-width: 767px) {
                     gap: 10px;
-                    width: 100%;
                     margin-bottom: 24px;
                 }
             }
@@ -89,17 +82,15 @@
                 }
 
                 li {
-                    color: var(--color-white);
+                    color: var(--color-gray-light-2);
                     transition: color 0.3s ease;
 
                     &:hover {
                         color: var(--color-white);
-                        text-decoration: underline;
                     }
                 }
                 .active {
                     color: var(--color-white);
-                    text-decoration: underline;
                 }
             }
         }

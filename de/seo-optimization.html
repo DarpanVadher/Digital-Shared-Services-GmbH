@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Favicon & Manifest -->
   <link rel="icon" type="image/png" href="../assets/img/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
   <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
-  <meta name="robots" content="index, follow" />
 
-  <title>SEO Optimization | Digitale Shared Services GmbH</title>
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
 
-  <!-- START : Meta Tags -->
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://digital-shared-services.com/de/seo-optimization.html" />
+  <link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/seo-optimization.html" />
+  <link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/seo-optimization.html" />
+
+  <!-- Title -->
+  <title>SEO-Optimierung | Digital Shared Services GmbH</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Effektive SEO-Optimierung für mehr Sichtbarkeit: Onpage-Optimierung, technische SEO, Content-Strategie und Backlink-Aufbau – für nachhaltigen Erfolg." />
+
+  <!-- Open Graph / Twitter -->
   <meta property="og:locale" content="de_DE" />
   <meta property="og:type" content="website" />
-  <meta name="description"
-    content="Digital Shared Service GmbH ist eine Full-Service-Digitalagentur aus Dresden, spezialisiert auf Marketingstrategien, kreatives Design, Content-Entwicklung und digitale Technologien. Wir bieten markenorientierte, erfolgsbasierte Lösungen." />
-  <meta property="og:title" content="Digitale Shared Services GmbH" />
-  <meta property="og:description"
-    content="Digital Shared Service GmbH ist eine Full-Service-Digitalagentur aus Dresden, spezialisiert auf Marketingstrategien, kreatives Design, Content-Entwicklung und digitale Technologien. Wir bieten markenorientierte, erfolgsbasierte Lösungen." />
-  <meta property="og:url" content="https://digital-shared-services.com/de/privacy-policy.html" />
-  <meta property="og:site_name" content="SEO Optimization | Digitale Shared Services GmbH" />
-  <meta property="og:image"
-    content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg" />
-  <meta name="twitter:image"
-    content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg" />
-  <link rel="canonical" href="https://digital-shared-services.com/de/privacy-policy.html" />
-  <!-- END : Meta Tags -->
+  <meta property="og:title" content="SEO-Optimierung | Digital Shared Services GmbH" />
+  <meta property="og:description" content="Effektive SEO-Optimierung für mehr Sichtbarkeit: Onpage-Optimierung, technische SEO, Content-Strategie und Backlink-Aufbau – für nachhaltigen Erfolg." />
+  <meta property="og:url" content="https://digital-shared-services.com/de/seo-optimization.html" />
+  <meta property="og:site_name" content="Digital Shared Services GmbH" />
+  <meta property="og:image" content="https://digital-shared-services.com/assets/img/og/og-default.jpg" />
 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SEO-Optimierung | Digital Shared Services GmbH" />
+  <meta name="twitter:description" content="Effektive SEO-Optimierung für mehr Sichtbarkeit: Onpage-Optimierung, technische SEO, Content-Strategie und Backlink-Aufbau – für nachhaltigen Erfolg." />
+  <meta name="twitter:image" content="https://digital-shared-services.com/assets/img/og/og-default.jpg" />
+
+  <!-- Stylesheets -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.min.css" />
 </head>
 
 <body>
   <header class="header" role="banner">
     <div class="header-inner" data-aos="fade-down" data-aos-duration="500">
-      <a href="index.html" class="header-logo" aria-label="Digitale Shared Services GmbH Startseite">
+      <a href="/de/index.html" class="header-logo" aria-label="Digitale Shared Services GmbH Startseite">
         <img src="../assets/img/logo/logo.webp" alt="Digitale Shared Services GmbH Logo" width="457" height="124"
           loading="lazy" decoding="async" />
       </a>
@@ -48,11 +56,11 @@
         <nav aria-label="Hauptnavigation">
           <ul class="header-nav" role="list">
             <li role="listitem">
-              <a href="index.html">Home</a>
+              <a href="/de/index.html">Home</a>
             </li>
             <li role="listitem">
               <a href="services.html" class="active" aria-current="page">Dienstleistungen</a>
-              <button class="header-btn" aria-label="Open navigation menu">
+              <button class="header-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24"
                   fill="currentColor">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -120,7 +128,7 @@
             </li>
             <!-- <li role="listitem"> -->
             <!-- <a href="#">Karriere</a> -->
-            <!-- <button class="header-btn" aria-label="Open navigation menu">
+            <!-- <button class="header-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="800px"
@@ -152,8 +160,7 @@
         </nav>
         <div class="language-switcher">
           <button id="language-btn" onclick="toggleDropdown()">
-            <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="Germany" class="flag"
-              id="selected-flag" />
+            <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" id="selected-flag" />
             <span id="selected-lang">DE</span>
             <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               viewBox="0 0 16 16">
@@ -162,15 +169,13 @@
             </svg>
           </button>
           <div id="language-dropdown" class="dropdown hidden">
-            <div class="option" data-lang="DE"
-              onclick="changeLanguage('de', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="Germany" class="flag" />
+            <div class="option" data-lang="DE" onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')">
+              <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" />
               DE
               <span class="selected-dot active" id="dot-DE"></span>
             </div>
-            <div class="option" data-lang="EN"
-              onclick="changeLanguage('en', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="English" class="flag" />
+            <div class="option" data-lang="EN" onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')">
+              <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" />
               EN
               <span class="selected-dot" id="dot-EN"></span>
             </div>
@@ -200,11 +205,11 @@
         <div class="container">
           <div class="intro__inner">
             <h1 class="font-85 font-light text-uppercase intro__title" data-aos="fade-up" data-aos-duration="300">
-              SEO-OPTIMIERUNG
+              Such&shy;maschinen&shy;optimierung (SEO)
             </h1>
 
             <a href="#dms" class="intro__link" data-aos="fade-up" data-aos-duration="600">
-              Digitaler Marketingservice
+              Unsere SEO-Leistungen
               <svg xmlns="http://www.w3.org/2000/svg" width="16.167" height="21.498" aria-hidden="true"
                 focusable="false">
                 <g fill="none" stroke="#32506a" stroke-width="2">
@@ -219,13 +224,13 @@
 
         <ul class="intro__social" aria-label="Social media links">
           <li data-aos="fade-left" data-aos-duration="600">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/digitalsharedservices/" target="_blank" rel="noopener noreferrer"
               aria-label="Visit our Instagram page">
               <img src="../assets/img/svg/instagram.svg" alt="Instagram" height="32" width="32" loading="lazy" />
             </a>
           </li>
           <li data-aos="fade-left" data-aos-duration="900">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/company/digital-shared-services/" target="_blank" rel="noopener noreferrer"
               aria-label="Visit our LinkedIn page">
               <img src="../assets/img/svg/linkedin.svg" alt="LinkedIn" height="32" width="32" loading="lazy" />
             </a>
@@ -251,23 +256,22 @@
             <div class="expertise__item expertise__item--large" role="listitem" data-aos="fade-up"
               data-aos-duration="500">
               <p>
-                Ihre Website ist online, aber ist sie auch sichtbar? Wenn sie
-                nicht auf der ersten Seite steht, ist sie unsichtbar. Ihre
-                Website ist unsichtbar, bis SEO sie zum Strahlen bringt. Wir
-                helfen Unternehmen dabei, mit Strategien und nicht mit
-                Abkürzungen in die Google-Rankings zu kommen.
+                Ihre Website ist online – aber ist sie auch sichtbar?
+                Ohne professionelle Suchmaschinenoptimierung bleibt sie für Ihre Zielgruppe unsichtbar.
+                Wir bringen Struktur und Strategie in Ihre Optimierung,
+                damit Sie nachhaltig in den Google-Rankings vorankommen – ganz ohne Abkürzungen.
               </p>
             </div>
 
             <div class="expertise__item expertise__item--large" role="listitem" data-aos="fade-up"
               data-aos-duration="800">
               <p>
-                Wir kümmern uns um alles, was hinter den Kulissen geschieht,
-                von den Schlüsselwörtern bis zum Code. Unsere SEO-Services
-                helfen Ihrem Unternehmen, aufzufallen, sich abzuheben und mehr
-                Klicks zu erhalten. Optimieren Sie Ihr Google My Business und
-                sorgen Sie dafür, dass Menschen Ihr Unternehmen finden, wenn
-                sie Ihr Angebot benötigen!
+                Wir kümmern uns um alles, was hinter den Kulissen wirkt:
+                von Keywords und Content bis hin zu Technik und Code.
+                Unsere Leistungen helfen Ihnen, aufzufallen, sich klar zu positionieren
+                und mehr qualifizierte Klicks zu gewinnen.
+                Ihr Google-Unternehmensprofil optimieren wir gleich mit,
+                damit Sie gefunden werden, wenn Ihre Leistung gefragt ist.
               </p>
             </div>
           </div>
@@ -285,11 +289,10 @@
               </h2>
 
               <p data-aos="fade-up" data-aos-delay="200">
-                Für uns ist Suchmaschinenoptimierung kein Haken auf einer
-                Liste – sondern ein individueller Weg zu messbarem Erfolg.
-                Jede Optimierung erfolgt mit Strategie und Ziel – Tag für Tag,
-                Wort für Wort. Wir setzen ausschließlich auf nachhaltige und
-                seriöse Maßnahmen, die das Vertrauen in Ihre Website stärken.
+                Suchmaschinenoptimierung ist für uns kein Haken auf einer Liste,
+                sondern ein individueller Weg zu messbaren Ergebnissen.
+                Jede Maßnahme folgt einer klaren Strategie – Tag für Tag, Wort für Wort.
+                Wir setzen auf nachhaltige, seriöse Optimierung, die Vertrauen schafft.
               </p>
 
               <ul class="exp__list" role="list">
@@ -301,7 +304,7 @@
                 <li data-aos="fade-up" data-aos-delay="400">
                   <img src="../assets/img/svg/technical-seo-services-i.svg" alt="Herz-Symbol für Leidenschaft"
                     width="30" height="30" />
-                  Technisches SEO – Ladezeiten, Indexierung & Performance
+                  Technische Optimierung – Ladezeiten, Indexierung &amp; Performance
                 </li>
                 <li data-aos="fade-up" data-aos-delay="500">
                   <img src="../assets/img/svg/link-building-and-off-page-seo-i.svg"
@@ -330,22 +333,20 @@
         <div class="container" data-aos="fade-up" data-aos-duration="500">
           <h2 class="detail__title font-30 text-uppercase font-regular mb-30" data-aos="fade-up"
             data-aos-duration="400">
-            Unsere Leistungen im Bereich SEO-Optimierung
+            Unsere Leistungen im Bereich Suchmaschinenoptimierung
           </h2>
 
           <div class="detail__inner">
             <div class="detail__item" data-aos="fade-up" data-aos-duration="400">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="500">
                 <h3 class="font-24 font-regular mb-20">
-                  On-Page-SEO-Optimierung
+                  On-Page-Optimierung
                 </h3>
                 <p>
-                  Wir machen Ihre Seiten zu Googles Favoriten! Ihre Website
-                  sollte Google genau sagen, was Sie tun. Wir optimieren Ihre
-                  Inhalte, Titel, Überschriften, Meta-Tags, Bilder und die
-                  Seitenstruktur. Wir sorgen dafür, dass Google Ihre Seite
-                  versteht, sie höher einstuft und den Besuchern ein
-                  angenehmeres Erlebnis bietet.
+                  Wir machen Ihre Seiten zu klaren Favoriten:
+                  Inhalte, Titel, Überschriften, Meta-Tags, Bilder und interne Verlinkung
+                  werden so aufgebaut, dass Google versteht, wofür Sie stehen –
+                  und Besucher schnell finden, was sie suchen.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="500">
@@ -357,16 +358,14 @@
             <div class="detail__item" data-aos="fade-up" data-aos-duration="500">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="600">
                 <h3 class="font-24 font-regular mb-20">
-                  Technische SEO-Dienstleistungen
+                  Technische Optimierung
                 </h3>
                 <p>
-                  Effizienz ist der Schlüssel, und Struktur ist entscheidend.
-                  Wir beheben die technischen Probleme und sorgen dafür, dass
-                  sich Ihr Traffic vervielfacht. Wir optimieren alles, von der
-                  Website-Geschwindigkeit und der mobilen Leistung bis hin zur
-                  Crawlability und Sicherheit. Verbessern Sie das
-                  Nutzererlebnis und steigern Sie Ihre Rankings mit unseren
-                  nahtlosen Strategien!
+                  Effizienz und Struktur sind die Basis.
+                  Wir verbessern Ladezeiten und Core Web Vitals,
+                  sorgen für saubere Indexierung (Sitemaps, Robots, Canonicals),
+                  erhöhen die Crawlability und achten auf Sicherheit.
+                  Ergebnis: bessere Nutzererfahrung und stabile Rankings.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="600">
@@ -378,14 +377,12 @@
             <div class="detail__item" data-aos="fade-up" data-aos-duration="600">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="700">
                 <h3 class="font-24 font-regular mb-20">
-                  Linkaufbau und Off-Page SEO
+                  Linkaufbau &amp; Off-Page-Optimierung
                 </h3>
                 <p>
-                  Suchmaschinen vertrauen auf Seiten, die andere empfehlen!
-                  Wir bauen hochwertige Backlinks auf, indem wir strategisch
-                  vorgehen und so Ihre Glaubwürdigkeit, Domain-Autorität und
-                  Ihr Ranking steigern. Mit unserem Ansatz erhält Ihre Website
-                  die nötige Autorität, um sich abzuheben.
+                  Suchmaschinen vertrauen Seiten, denen andere Quellen vertrauen.
+                  Wir setzen auf hochwertigen, themenrelevanten Linkaufbau
+                  und digitale PR, um Autorität und Sichtbarkeit nachhaltig zu stärken.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -397,15 +394,13 @@
             <div class="detail__item" data-aos="fade-up" data-aos-duration="600">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="700">
                 <h3 class="font-24 font-regular mb-20">
-                  Lokale Suchmaschinen-Optimierung
+                  Lokale Suchmaschinenoptimierung
                 </h3>
                 <p>
-                  Wird Ihr Unternehmen angezeigt, wenn Sie „in meiner Nähe“ in
-                  eine Suchmaschine eingeben? Durch die Optimierung Ihres
-                  Google-Geschäftsprofils können wir Ihnen das garantieren.
-                  Wir optimieren Ihre Präsenz für die Suche nach „in meiner
-                  Nähe“ und für lokale Einträge, egal ob Sie eine Klinik oder
-                  ein Einzelhandelsgeschäft besitzen!
+                  Bei Suchen „in meiner Nähe“ vorne mit dabei:
+                  Wir optimieren Ihr Google-Unternehmensprofil,
+                  sorgen für NAP-Konsistenz in Verzeichnissen
+                  und unterstützen beim Einholen aussagekräftiger Bewertungen.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -417,15 +412,13 @@
             <div class="detail__item" data-aos="fade-up" data-aos-duration="600">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="700">
                 <h3 class="font-24 font-regular mb-20">
-                  SEO-Audit und Wettbewerber-Recherche
+                  SEO-Audit &amp; Wettbewerbsanalyse
                 </h3>
                 <p>
-                  Unser gründliches SEO-Audit wird Probleme aufdecken und
-                  Ihnen Möglichkeiten aufzeigen. Wir prüfen die
-                  technologischen Lücken, untersuchen die Techniken Ihrer
-                  Mitbewerber und bewerten Ihren derzeitigen SEO-Status.
-                  Finden Sie heraus, was Sie aufhält und was ihnen hilft,
-                  voranzukommen!
+                  Ein gründlicher Check deckt Potenziale auf.
+                  Wir analysieren Technik, Inhalte und Backlinks,
+                  vergleichen Ihre Position mit dem Wettbewerb
+                  und leiten klare Prioritäten für schnelle Wirkung ab.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -438,11 +431,9 @@
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="700">
                 <h3 class="font-24 font-regular mb-20">Keyword-Recherche</h3>
                 <p>
-                  Suchmaschinenoptimierung (SEO) beginnt mit dem Erlernen der
-                  Suchbegriffe Ihrer Kunden und endet, wenn Sie ihnen die
-                  Lösung anbieten. Anstatt nur Schlüsselwörter auszuwählen,
-                  berücksichtigen wir bei der Entwicklung von Taktiken die
-                  Absicht des Kunden, den Suchverkehr und den Wettbewerb.
+                  Wir identifizieren Suchbegriffe entlang der Customer Journey,
+                  berücksichtigen Suchintention, Volumen, Wettbewerb
+                  und SERP-Formate – und bauen daraus eine tragfähige Content-Strategie.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -515,19 +506,17 @@
               </div>
 
               <p class="mb-30" data-aos="fade-up" data-aos-duration="500">
-                Aber werden sie Sie auch finden können?
-                Suchmaschinenoptimierung ist heute ein Muss, denn mehr als 90
-                % aller Online-Reisen beginnen mit einer Suche! Mit unserer
-                Hilfe werden Sie nicht nur präsent sein, sondern auch die
-                beste Platzierung erreichen.
+                Die meisten Online-Reisen beginnen mit einer Suche.
+                Mit einer klaren SEO-Strategie sorgen wir dafür,
+                dass Sie nicht nur präsent sind, sondern auch ankommen.
                 <br /><br />
 
-                Machen Sie Ihre Website noch heute Google-tauglich!
+                Machen Sie Ihre Website jetzt suchmaschinenfit.
               </p>
 
               <div data-aos="fade-up" data-aos-duration="600">
                 <a href="contact-us.html#form" class="btn text-uppercase" data-aos="zoom-in" data-aos-duration="700">
-                  <span> Loslegen</span>
+                  <span> Jetzt anfragen </span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"
                     focusable="false">
                     <path
@@ -617,7 +606,7 @@
             <nav aria-labelledby="footer-navigation">
               <ul class="footer__nav-list" role="list">
                 <li role="listitem">
-                  <a href="index.html" class="active" aria-current="page">Home</a>
+                  <a href="/de/index.html" class="active" aria-current="page">Home</a>
                 </li>
                 <li role="listitem">
                   <a href="services.html">Dienstleistungen</a>
@@ -649,7 +638,7 @@
                 <span itemprop="addressLocality">Dresden</span>
               </div>
 
-              <a href="index.html" aria-label="Zurück zur Startseite">
+              <a href="/de/index.html" aria-label="Zurück zur Startseite">
                 <img src="../assets/img/logo/logo.webp" alt="Digitale Shared Services GmbH Logo" width="200" height="54"
                   loading="lazy" decoding="async" itemprop="logo" />
               </a>
@@ -659,166 +648,98 @@
 
         <div class="footer__bottom text-center">
           <p>
-            © 2025 Digitale Shared Services GmbH | Alle Rechte vorbehalten
+            © 2025 Digital Shared Services GmbH | Alle Rechte vorbehalten
           </p>
         </div>
       </div>
     </div>
   </footer>
 
-  <section class="cookie-modal-wrapper">
-    <div class="cookie-modal-overlay">
-      <div class="cookie-modal-container">
-        <div class="cookie-modal-header">
-          <div class="cookie-modal-title-wrapper">
-            <div class="cookie-modal-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                </path>
-              </svg>
-            </div>
-            <h2 class="cookie-modal-title">Privatsphäre Präferenzen</h2>
+  <section class="cookie-card-wrapper">
+    <div class="cookie-card">
+      <div class="title font-24">
+        <div class="title-text">🍪 Datenschutz-präferenz</div>
+
+        <button class="close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="none">
+            <g id="Menu / Close_SM">
+              <path id="Vector" d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke="#000000" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <div class="description-wrapper">
+        <p class="description">
+          Wir benötigen Ihre Einwilligung, bevor Sie unsere Website weiter
+          besuchen können. Wenn Sie unter 16 Jahre alt sind und Ihre
+          Einwilligung zu optionalen Services geben möchten, müssen Sie Ihre
+          Erziehungsberechtigten um Erlaubnis bitten. Wir verwenden Cookies
+          und andere Technologien auf unserer Website. Einige von ihnen sind
+          essenziell, während andere uns helfen, diese Website und Ihre
+          Erfahrung zu verbessern. Personenbezogene Daten können verarbeitet
+          werden (z. B. IP-Adressen), z. B. für personalisierte Anzeigen und
+          Inhalte oder die Messung von Anzeigen und Inhalten. Weitere
+          Informationen über die Verwendung Ihrer Daten finden Sie in unserer
+          Datenschutzerklärung. Es besteht keine Verpflichtung, in die
+          Verarbeitung Ihrer Daten einzuwilligen, um dieses Angebot zu nutzen.
+          Sie können Ihre Auswahl jederzeit unter Einstellungen widerrufen
+          oder anpassen. Bitte beachten Sie, dass aufgrund individueller
+          Einstellungen möglicherweise nicht alle Funktionen der Website
+          verfügbar sind.
+          <a href="privacy-policy.html">policies</a>.
+        </p>
+        <br />
+        <hr />
+        <p class="description">
+          Einige Services verarbeiten personenbezogene Daten in den USA. Mit
+          Ihrer Einwilligung zur Nutzung dieser Services willigen Sie auch in
+          die Verarbeitung Ihrer Daten in den USA gemäß Art. 49 (1) lit. a
+          GDPR ein. Der EuGH stuft die USA als ein Land mit unzureichendem
+          Datenschutz nach EU-Standards ein. Es besteht beispielsweise die
+          Gefahr, dass US-Behörden personenbezogene Daten in
+          Überwachungsprogrammen verarbeiten, ohne dass für Europäerinnen und
+          Europäer eine Klagemöglichkeit besteht.
+        </p>
+
+        <div class="checkbox-wrapper">
+          <div class="checkbox-item">
+            <input type="checkbox" name="Essenziell" id="essenziell" checked disabled />
+            <label for="essenziell">Essenziell</label>
           </div>
-          <button class="cookie-modal-close-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 6 6 18"></path>
-              <path d="m6 6 12 12"></path>
-            </svg>
-            <span class="visually-hidden">Close</span>
-          </button>
+          <div class="checkbox-item">
+            <input type="checkbox" name="all" id="all" />
+            <label for="all">Externe Medien</label>
+          </div>
         </div>
 
-        <div class="cookie-modal-content">
-          <div class="cookie-modal-description">
-            <p class="cookie-modal-text">
-              Wir benötigen Ihre Einwilligung, bevor Sie unsere Website weiter
-              besuchen können. Wenn Sie unter 16 Jahre alt sind und Ihre
-              Einwilligung zu optionalen Services geben möchten, müssen Sie
-              Ihre Erziehungsberechtigten um Erlaubnis bitten. Wir verwenden
-              Cookies und andere Technologien auf unserer Website. Einige von
-              ihnen sind essenziell, während andere uns helfen, diese Website
-              und Ihre Erfahrung zu verbessern. Personenbezogene Daten können
-              verarbeitet werden (z. B. IP-Adressen), z. B. für
-              personalisierte Anzeigen und Inhalte oder die Messung von
-              Anzeigen und Inhalten. Weitere Informationen über die Verwendung
-              Ihrer Daten finden Sie in unserer Datenschutzerklärung. Es
-              besteht keine Verpflichtung, in die Verarbeitung Ihrer Daten
-              einzuwilligen, um dieses Angebot zu nutzen. Sie können Ihre
-              Auswahl jederzeit unter Einstellungen widerrufen oder anpassen.
-              Bitte beachten Sie, dass aufgrund individueller Einstellungen
-              möglicherweise nicht alle Funktionen der Website verfügbar sind.
-              policies.
-            </p>
-            <div class="cookie-modal-notice">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
-                <path d="M8.5 8.5v.01"></path>
-                <path d="M16 15.5v.01"></path>
-                <path d="M12 12v.01"></path>
-                <path d="M11 17v.01"></path>
-                <path d="M7 14v.01"></path>
-              </svg>
-              <div class="cookie-notice-content">
-                <p class="cookie-notice-title">Datenverarbeitung notice</p>
-                <p class="cookie-notice-text">
-                  Einige Services verarbeiten personenbezogene Daten in den
-                  USA. Mit Ihrer Einwilligung zur Nutzung dieser Services
-                  willigen Sie auch in die Verarbeitung Ihrer Daten in den USA
-                  gemäß Art. 49 (1) lit. a GDPR ein. Der EuGH stuft die USA
-                  als ein Land mit unzureichendem Datenschutz nach
-                  EU-Standards ein. Es besteht beispielsweise die Gefahr, dass
-                  US-Behörden personenbezogene Daten in Überwachungsprogrammen
-                  verarbeiten, ohne dass für Europäerinnen und Europäer eine
-                  Klagemöglichkeit besteht.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cookie-modal-divider"></div>
-
-          <div class="cookie-categories">
-            <h3 class="cookie-categories-title">Cookie-Kategorien</h3>
-            <div class="cookie-categories-list">
-              <div class="cookie-category-item cookie-category-essential">
-                <div class="cookie-category-content">
-                  <input type="checkbox" name="essential" class="cookie-category-checkbox" id="essential" checked
-                    disabled />
-                  <div class="cookie-category-info">
-                    <label for="essential" class="cookie-category-name">Wesentliche Cookies</label>
-                    <p class="cookie-category-description">
-                      Erforderlich für die grundlegenden Website-Funktionen
-                    </p>
-                  </div>
-                </div>
-                <span class="cookie-category-tag cookie-category-required">Erforderlich</span>
-              </div>
-
-              <div class="cookie-category-item">
-                <div class="cookie-category-content">
-                  <input type="checkbox" name="external-media" class="cookie-category-checkbox" id="external-media" />
-                  <div class="cookie-category-info">
-                    <label for="external-media" class="cookie-category-name">Externe Medien</label>
-                    <p class="cookie-category-description">
-                      Inhalte von externen Plattformen wie YouTube, Vimeo
-                    </p>
-                  </div>
-                </div>
-                <span class="cookie-category-tag">Optional</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="cookie-modal-divider"></div>
-
-          <div class="cookie-modal-actions">
-            <button class="cookie-action-btn cookie-action-primary">
-              Speichern Präferenzen
+        <ul class="btn-list">
+          <li>
+            <button class="accept">Einwilligung speichern</button>
+          </li>
+          <li>
+            <button class="accept">
+              Nur essenzielle Cookies akzeptieren
             </button>
-            <button class="cookie-action-btn cookie-action-secondary">
-              Einfach unverzichtbar
-            </button>
-            <button class="cookie-action-btn cookie-action-secondary">
-              Akzeptiere alles
-            </button>
-          </div>
-
-          <p class="cookie-modal-footer">
-            Erfahren Sie mehr in unserer
-            <a href="privacy-policy.html" class="cookie-modal-link">Datenschutzrichtlinie</a>
-          </p>
-        </div>
+          </li>
+          <!-- <li><button class="savePreferences">Individuelle Datenschutz-Präferenzen</button></li> -->
+        </ul>
+      </div>
+      <div class="actions">
+        <div></div>
+        <button class="accept">Alle akzeptieren</button>
       </div>
     </div>
   </section>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script
-    type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1', text: 'Zeitplan Zeitfenster', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-
-
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script
-    type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1', text: 'Zeitplan Zeitfenster', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-
-
   <script src="../assets/js/custom.min.js"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMXCTMNE2B"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-PMXCTMNE2B");
-  </script>
+  <!-- Calendly Badge-Widget Beginn -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min', text: 'Jetzt Termin buchen!', color: '#ff0000', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly Badge-Widget Ende -->
 </body>
 
 </html>

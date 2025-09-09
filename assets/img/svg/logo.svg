@@ -1,0 +1,32 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 457 124" width="457" height="124">
+	<title>Final Gmbh Logo</title>
+	<defs>
+		<radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(58.573,3.981,-3.981,58.573,54.931,53.557)">
+			<stop offset="0" stop-color="#6990b4"/>
+			<stop offset=".935" stop-color="#2f485f"/>
+		</radialGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: url(#g1) } 
+		.t1 { font-size: 18px;text-transform: uppercase;fill: #5c96bb;font-weight: 700;font-style: italic;font-family: "Montserrat-BoldItalic", "Montserrat" } 
+		.t2 { font-size: 18px;fill: #26465f;font-weight: 700;font-style: italic;font-family: "Montserrat-BoldItalic", "Montserrat" } 
+	</style>
+	<g id="Layer 1">
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="s0" d="m101.3 110.3c-15.9 13.9-39.9 15.7-58.5 6.1-22.7-11.6-24.3-39.6-10.9-59.2 5.4-8.1 13-14.6 21.7-19.1l-3.8-6.6 29.9 2.9-11.6 29.1-3.8-6.7c-1.9 0.4-11.5 2.4-17.3 11.3-5 7.6-6 18.4-0.7 26.7 5.8 9.2 16.4 10.6 20 11.1 12.8 1.6 22.6-5 25.7-7.1 12.9-9 20.2-25.7 19.2-40-2.4-33.7-39.7-56.1-71.1-43.7-45 17.3-47.8 78.7-5.7 101.4-24.7-11.3-38.5-40.8-31.5-67.2 8-32.7 43.7-52.8 75.9-43.1 23 6.9 41.8 27.3 44.5 51.6 2.1 19.9-6.9 39.6-22 52.5z"/>
+			<g id="&lt;Group&gt;">
+				<text id="Digital Shared
+" style="transform: matrix(2,0,0,2,297.406,56.215)" >
+					<tspan x="-79" y="0" class="t1">DIGITAL SHARED
+</tspan>
+				</text>
+				<text id="SERVICES GmbH
+" style="transform: matrix(2,0,0,2,297.406,88.993)" >
+					<tspan x="-77.4" y="0" class="t2">SERVICES GmbH
+</tspan>
+				</text>
+			</g>
+		</g>
+	</g>
+</svg>

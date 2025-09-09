@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Favicon & Manifest -->
   <link rel="icon" type="image/png" href="../assets/img/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
   <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
-  <meta name="robots" content="index, follow" />
-  <link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/" />
-  <link rel="canonical" href="https://digital-shared-services.com/en/" />
 
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://digital-shared-services.com/en/index.html" />
+  <link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/index.html" />
+  <link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/index.html" />
+  <link rel="alternate" hreflang="x-default" href="https://digital-shared-services.com/" />
+
+  <!-- Title -->
   <title>Home | Digital Shared Services GmbH</title>
 
-  <!-- START : Meta Tags -->
+  <!-- Meta Description -->
+  <meta name="description" content="Digital Shared Services GmbH — full-service digital agency from Dresden. Websites, SEO, social media & branding. Brand-focused, measurable, on point." />
+
+  <!-- Open Graph / Twitter -->
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
-  <meta name="description"
-    content="Digital Shared Service GmbH is a full-service digital agency in Dresden, Germany, specializing in marketing strategy, creative design, content development, and digital technology. We deliver results-driven solutions tailored to your brand.." />
-  <meta property="og:title" content="Digital Shared Services GmbH" />
-  <meta property="og:description"
-    content="Digital Shared Service GmbH is a full-service digital agency in Dresden, Germany, specializing in marketing strategy, creative design, content development, and digital technology. We deliver results-driven solutions tailored to your brand." />
+  <meta property="og:title" content="Home | Digital Shared Services GmbH" />
+  <meta property="og:description" content="Digital Shared Services GmbH — full-service digital agency from Dresden. Websites, SEO, social media & branding. Brand-focused, measurable, on point." />
   <meta property="og:url" content="https://digital-shared-services.com/en/" />
-  <meta property="og:site_name" content="home | Digital Shared Services GmbH" />
-  <meta property="og:image"
-    content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg" />
-  <meta name="twitter:image"
-    content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg" />
-  <!-- END : Meta Tags -->
+  <meta property="og:site_name" content="Digital Shared Services GmbH" />
+  <meta property="og:image" content="https://digital-shared-services.com/assets/img/og/og-default.jpg" />
 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Home | Digital Shared Services GmbH" />
+  <meta name="twitter:description" content="Digital Shared Services GmbH — full-service digital agency from Dresden. Websites, SEO, social media & branding. Brand-focused, measurable, on point." />
+  <meta name="twitter:image" content="https://digital-shared-services.com/assets/img/og/og-default.jpg" />
 
+  <!-- Stylesheets -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.min.css" />
 </head>
 
@@ -43,7 +50,7 @@
 
   <header class="header" role="banner">
     <div class="header-inner" data-aos="fade-down" data-aos-duration="500">
-      <a href="index.html" class="header-logo" aria-label="Digital Shared Services GmbH Startseite">
+      <a href="/en/index.html" class="header-logo" aria-label="Digital Shared Services GmbH Startseite">
         <img src="../assets/img/logo/logo.webp" alt="Digital Shared Services GmbH Logo" width="457" height="124"
           loading="lazy" decoding="async" />
       </a>
@@ -52,11 +59,11 @@
         <nav aria-label="Hauptnavigation">
           <ul class="header-nav" role="list">
             <li role="listitem">
-              <a href="index.html" class="active" aria-current="page">Home</a>
+              <a href="/en/index.html" class="active" aria-current="page">Home</a>
             </li>
             <li role="listitem">
               <a href="services.html">Services</a>
-              <button class="header-btn" aria-label="Open navigation menu">
+              <button class="header-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24"
                   fill="currentColor">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -120,7 +127,7 @@
             <li role="listitem"><a href="about-us.html">About Us</a></li>
             <!-- <li role="listitem"> -->
             <!-- <a href="#">Karriere</a> -->
-            <!-- <button class="header-btn" aria-label="Open navigation menu">
+            <!-- <button class="header-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="800px"
@@ -151,8 +158,7 @@
 
         <div class="language-switcher">
           <button id="language-btn" onclick="toggleDropdown()">
-            <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="English" class="flag"
-              id="selected-flag" />
+            <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" id="selected-flag" />
             <span id="selected-lang">EN</span>
             <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               viewBox="0 0 16 16">
@@ -161,15 +167,13 @@
             </svg>
           </button>
           <div id="language-dropdown" class="dropdown hidden">
-            <div class="option" data-lang="DE"
-              onclick="changeLanguage('de', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="Germany" class="flag" />
+            <div class="option" data-lang="DE" onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')">
+              <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" />
               DE
               <span class="selected-dot" id="dot-DE"></span>
             </div>
-            <div class="option" data-lang="EN"
-              onclick="changeLanguage('en', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="English" class="flag" />
+            <div class="option" data-lang="EN" onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')">
+              <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" />
               EN
               <span class="selected-dot active" id="dot-EN"></span>
             </div>
@@ -196,11 +200,13 @@
         <div class="hero__inner hero__inner--left">
           <div class="hero__content">
             <h1 id="hero-title" class="font-36 font-regular hero__title" data-aos="fade-up" tabindex="-1">
-              From Search to Social, Get Your Brand, Amplified
+              GET FOUND<br>
+              BUILD TRUST<br>
+              MAKE AN IMPACT<br>
             </h1>
             <p id="hero-desc" class="font-24 hero__desc" data-aos="fade-up" data-aos-duration="300">
-              Clicks are simple, Conversions necessitate expertise - we bring
-              both. Get in touch and skyrocket your sales!
+              Whether it's your website, Google, or social media – we help your business stand out online.<br>
+              Modern, visible, and straight to the point.
             </p>
           </div>
 
@@ -208,16 +214,16 @@
           <nav aria-label="Social Media">
             <ul class="hero__social" role="list">
               <li data-aos="fade-left" data-aos-duration="600">
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer nofollow"
-                  aria-label="Instagram (öffnet in neuem Tab)">
+                <a href="https://www.instagram.com/digitalsharedservices/" target="_blank" rel="noopener noreferrer nofollow"
+                  aria-label="Digital Shared Services auf Instagram (öffnet in neuem Tab)">
                   <img src="../assets/img/svg/instagram.svg" alt="" height="32" width="32" loading="lazy"
                     decoding="async" aria-hidden="true" />
                   <span class="sr-only">Instagram</span>
                 </a>
               </li>
               <li data-aos="fade-left" data-aos-duration="900">
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer nofollow"
-                  aria-label="LinkedIn (öffnet in neuem Tab)">
+                <a href="https://www.linkedin.com/company/digital-shared-services/" target="_blank" rel="noopener noreferrer nofollow"
+                  aria-label="Digital Shared Services auf LinkedIn (öffnet in neuem Tab)">
                   <img src="../assets/img/svg/linkedin.svg" alt="" height="32" width="32" loading="lazy"
                     decoding="async" aria-hidden="true" />
                   <span class="sr-only">LinkedIn</span>
@@ -279,7 +285,7 @@
       <div class="container-normal">
         <h2 id="services-title" class="font-30 font-regular services__title" data-aos="fade-up" data-aos-duration="300"
           tabindex="-1">
-          Scale Smarter, Grow Faster with Our Step-by-step Process
+          Scale with purpose, grow with confidence
         </h2>
 
         <div class="services__list services__list--secondary" role="list">
@@ -287,17 +293,14 @@
             <div class="services__item-content">
               <h3 class="font-34 font-regular services__item-title" data-aos="fade-up" data-aos-duration="200"
                 id="service-goals">
-                Building a Digital Strategy and Brand Recognition
+                Building a Digital Strategy and Brand Awareness
               </h3>
               <div class="services__item-text" data-aos="fade-up" data-aos-duration="400"
                 aria-labelledby="service-goals">
                 <p>
-                  Plan for the future. Plan bigger! We develop digital brand
-                  strategies that complement your company's character, target
-                  audience, and competitive advantages. Whether you're
-                  starting from scratch or giving an existing brand a
-                  facelift, we'll chart your brand's path across channels
-                  using data, not gut feelings.
+                  Plan for the future – and think bigger. We develop digital brand strategies that align perfectly with your identity, audience, and competitive advantages.
+                  Whether you’re starting from scratch or giving an existing brand a fresh boost, we map out the path that will truly move you forward.
+                  Our strategies are built on solid data, not guesswork, ensuring your brand appears consistent, credible, and visible across every channel.
                 </p>
               </div>
               <!-- <div data-aos="fade-up" data-aos-duration="600">
@@ -385,16 +388,16 @@
             <div class="services__item-content">
               <h3 class="font-34 font-regular services__item-title" data-aos="fade-up" data-aos-duration="200"
                 id="service-sales">
-                Online Presence and Search Engine Presence
+                Online Presence and Search Engine Visibility
               </h3>
               <div class="services__item-text" data-aos="fade-up" data-aos-duration="400"
                 aria-labelledby="service-sales">
                 <p>
-                  Show up. Stand out. Stay top-of-mind With our SEO
-                  Optimisation tactics and Online Visibility Enhancement
-                  services, you can get complete control over search engines,
-                  achieve top rankings for relevant keywords, and attract
-                  highly-converting organic visitors.
+                  Be present. Stand out. Stay remembered.
+                  With our SEO strategies and online visibility improvements,
+                  you can strategically boost your search engine rankings.
+                  Achieve top positions for relevant keywords
+                  and attract qualified visitors who truly match your offering.
                 </p>
               </div>
               <!-- <div data-aos="fade-up" data-aos-duration="600">
@@ -657,10 +660,10 @@
         <div class="container ptb-90">
           <div class="cta__content" data-aos="fade-up" data-aos-duration="300">
             <h2 id="cta-title" class="font-24 text-center cta__title" tabindex="-1">
-              We create impressions, communicate, and have an impact. Our goal
-              is to assist you in making a website, recruiting campaign, or
-              online persona that is human-like, up-to-date, and consistent
-              with your brand. And our clients speak for us!
+              We create lasting impressions and communicate your message clearly.
+              Our goal is to support you in developing a website,
+              a recruitment campaign, or an online presence
+              that is authentic, up to date, and aligned with your brand.
             </h2>
           </div>
 
@@ -696,7 +699,7 @@
           <header class="expertise__header" data-aos="fade-up" data-aos-duration="300">
             <h2 id="expertise-title" class="font-34 text-center font-regular text-uppercase expertise__title"
               tabindex="-1">
-              Stand Out. Ask to be found. Get Chosen.
+              Be visible. Get found. Build trust.
             </h2>
             <!-- <p
                 id="expertise-subtitle"
@@ -713,17 +716,19 @@
             <div class="expertise__item expertise__item--large" role="listitem" data-aos="fade-up"
               data-aos-duration="500">
               <p class="expertise__intro">
-                People's attention is money. And our job is to keep you in
-                high demand at all times.
+                We make sure your brand comes into focus at the right moment
+                and wins over potential customers.
+                This way, your business stays in mind – even after the first contact.
               </p>
             </div>
 
             <div class="expertise__item expertise__item--large" role="listitem" data-aos="fade-up"
               data-aos-duration="800">
               <p class="expertise__intro">
-                We help you increase your ranks and control search intent
-                through technical SEO and keyword-rich content. Because, if no
-                one can discover an excellent deal, what's the use?
+                We help you improve your search rankings
+                and shape your content to match your audience’s needs.
+                Because even the best offer only succeeds
+                when people can see it.
               </p>
             </div>
 
@@ -732,17 +737,17 @@
               <div class="expertise__icon">
                 <img src="../assets/img/svg/enhancing_seo_optimisation.svg" alt="" width="50" height="50" loading="lazy"
                   decoding="async" aria-hidden="true" />
-                <span class="sr-only">Enhancing SEO Optimisation</span>
+                <span class="sr-only">Service: Search Engine Optimisation – Better visibility in search engines</span>
               </div>
               <h3 class="font-18 expertise__item-title">
-                Enhancing SEO Optimisation
+                Search Engine Optimisation
               </h3>
               <p class="expertise__item-desc">
-                Boost visibility and get higher search engine ranks with
-                steady organic traffic with our customised SEO techniques. By
-                addressing technological issues and optimising content, we
-                guarantee that your brand will be discovered by the target
-                audience exactly when you need it.
+                More visibility, higher rankings – with our tailored
+                search engine optimisation strategies.
+                We optimise content, remove technical barriers,
+                and make sure your audience finds you exactly when
+                they are looking for your services.
               </p>
             </div>
 
@@ -750,17 +755,16 @@
               <div class="expertise__icon">
                 <img src="../assets/img/svg/performance-marketing.svg" alt="" width="50" height="50" loading="lazy"
                   decoding="async" aria-hidden="true" />
-                <span class="sr-only">Performance Marketing</span>
+                <span class="sr-only">Service: Performance Marketing – Efficient campaigns for measurable results</span>
               </div>
               <h3 class="font-18 expertise__item-title">
                 Performance Marketing
               </h3>
               <p class="expertise__item-desc">
-                Our performance marketing solutions, which integrate data with
-                strategy and creativity, drive scalable results. We believe
-                that every euro you spend should go a long way, so we center
-                our efforts on acquiring customers, optimising conversions,
-                and continuously improving campaigns.
+                Data, strategy, and creativity – for scalable results.
+                Every euro invested should pay off,
+                so we focus on customer acquisition,
+                higher conversion rates, and ongoing campaign improvement.
               </p>
             </div>
 
@@ -768,16 +772,16 @@
               <div class="expertise__icon">
                 <img src="../assets/img/svg/webdesign.svg" alt="" width="50" height="50" loading="lazy" decoding="async"
                   aria-hidden="true" />
-                <span class="sr-only">Web Design and Development</span>
+                <span class="sr-only">Service: Web Design and Development – User-friendly and accessible websites</span>
               </div>
               <h3 class="font-18 expertise__item-title">
-                Web Design and Development
+                Web Design &amp; Development
               </h3>
               <p class="expertise__item-desc">
-                We create aesthetically pleasing and highly effective websites
-                with responsive design. Our sites are search engine
-                optimization (SEO) ready, easy to use, and quick to load so
-                that people will remember your brand and return.
+                We create attractive, fast, and user-friendly websites
+                that work perfectly on all devices.
+                We ensure search engine optimisation and – if required –
+                accessibility, so your site is available to everyone.
               </p>
             </div>
 
@@ -785,17 +789,16 @@
               <div class="expertise__icon">
                 <img src="../assets/img/test/display-settings.svg" alt="" width="50" height="50" loading="lazy"
                   decoding="async" aria-hidden="true" />
-                <span class="sr-only">Social Media Marketing</span>
+                <span class="sr-only">Service: Social Media Marketing – Reach and community building</span>
               </div>
               <h3 class="font-18 expertise__item-title">
                 Social Media Marketing
               </h3>
               <p class="expertise__item-desc">
-                Improve your visibility online by using social media to
-                disseminate personalised, attention-grabbing content. We use
-                data-driven social media techniques to help you connect with
-                followers, create communities, and turn those interactions
-                into loyal brand advocates.
+                More reach through content that stands out.
+                With targeted social media strategies, we help you
+                gain followers, build communities,
+                and turn them into loyal brand ambassadors.
               </p>
             </div>
           </div>
@@ -820,15 +823,16 @@
 
             <div class="vision__content ptb-90" data-aos="fade-left" data-aos-duration="500">
               <h3 id="vision-title" class="font-34 font-regular vision__title" tabindex="-1">
-                Crafted with Purpose, Designed to Make an Impact
+                Clearly planned, cleanly delivered.
               </h3>
               <p class="font-18 font-bold vision__text">
-                Brands of all sizes deserve agency-level growth without the
-                guesswork—that was our guiding principle when we launched
-                Digital Shared Services GmbH. Our vital goal is to make
-                digital marketing more cognitive, scalable, and humanistic.
-                Our ability to not just deliver but also revolutionise is why
-                businesses trust us.
+                Since founding Digital Shared Services GmbH, our principle has been
+                less guesswork, more clarity.
+                We build digital marketing that is understandable, scalable,
+                and human.
+                Rather than big claims, we rely on clear processes,
+                transparent decisions, and results you can measure.
+                That way, you always know what we’re doing — and why.
               </p>
             </div>
           </div>
@@ -849,7 +853,7 @@
             <nav aria-labelledby="footer-navigation">
               <ul class="footer__nav-list" role="list">
                 <li role="listitem">
-                  <a href="index.html" class="active" aria-current="page">Home</a>
+                  <a href="/en/index.html" class="active" aria-current="page">Home</a>
                 </li>
                 <li role="listitem"><a href="services.html">Services</a></li>
                 <li role="listitem"><a href="about-us.html">About Us</a></li>
@@ -878,7 +882,7 @@
                 <span itemprop="postalCode">01129</span>
                 <span itemprop="addressLocality">Dresden</span>
               </div>
-              <a href="index.html" aria-label="Zurück zur Startseite">
+              <a href="/en/index.html" aria-label="Zurück zur Startseite">
                 <img src="../assets/img/logo/logo.webp" alt="Digital Shared Services GmbH Logo" width="200" height="54"
                   loading="lazy" decoding="async" itemprop="logo" />
               </a>
@@ -893,84 +897,12 @@
     </div>
   </footer>
 
-  <!-- <div class="tech-modal-overlay" style="display: none;">
-    <div class="tech-modal-container">
-      <button class="tech-modal-close-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="tech-modal-close-icon">
-          <path d="M18 6 6 18"></path>
-          <path d="m6 6 12 12"></path>
-        </svg>
-      </button>
-      <div class="tech-modal-grid">
-        <div class="tech-modal-features">
-          <div class="tech-features-grid">
-            <div class="tech-feature-card">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="tech-feature-icon tech-icon-web">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-              </svg>
-              <span class="tech-feature-label">Web Dev</span>
-            </div>
-            <div class="tech-feature-card">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="tech-feature-icon tech-icon-mobile">
-                <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
-                <path d="M12 18h.01"></path>
-              </svg>
-              <span class="tech-feature-label">Mobile Apps</span>
-            </div>
-            <div class="tech-feature-card">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="tech-feature-icon tech-icon-globe">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                <path d="M2 12h20"></path>
-              </svg>
-              <span class="tech-feature-label">Cloud Solutions</span>
-            </div>
-            <div class="tech-feature-card">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="tech-feature-icon tech-icon-database">
-                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
-                <path d="M3 12A9 3 0 0 0 21 12"></path>
-              </svg>
-              <span class="tech-feature-label">Database</span>
-            </div>
-          </div>
-        </div>
-        <div class="tech-modal-content">
-          <div class="tech-offer-header">
-            <h2 class="tech-offer-title">Transform Your Ideas!</h2>
-            <div class="tech-discount-amount">20% OFF</div>
-            <p class="tech-offer-description">Get your custom software solution at a special price</p>
-          </div>
-          <form class="tech-form">
-            <div class="tech-input-container">
-              <input class="tech-email-input" placeholder="What is your email?" required type="email" value="">
-              <button class="tech-send-btn" type="submit">SEND</button>
-            </div>
-            <button class="tech-cta-btn" type="submit">Get 20% Off!</button>
-          </form>
-          <button class="tech-decline-btn">I'm not interested :(</button>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- <section class="cookie-card-wrapper">
+  <section class="cookie-card-wrapper">
     <div class="cookie-card">
       <div class="title font-24">
         <div class="title-text">🍪 Privacy Preferences</div>
 
-        <button class="close" aria-label="Close cookie banner" title="Close cookie banner">
+        <button class="close">
           <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="none">
             <g id="Menu / Close_SM">
               <path id="Vector" d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke="#000000" stroke-width="2"
@@ -1027,179 +959,23 @@
           <li>
             <button class="accept">Accept Only Essential Cookies</button>
           </li>
+          <!-- <li><button class="savePreferences">Individual Privacy Preferences</button></li> -->
         </ul>
       </div>
       <div class="actions">
+        <div></div>
         <button class="accept">Accept All</button>
-      </div>
-    </div>
-  </section> -->
-
-  <section class="cookie-modal-wrapper">
-    <div class="cookie-modal-overlay">
-      <div class="cookie-modal-container">
-        <div class="cookie-modal-header">
-          <div class="cookie-modal-title-wrapper">
-            <div class="cookie-modal-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                </path>
-              </svg>
-            </div>
-            <h2 class="cookie-modal-title">Privacy Preferences</h2>
-          </div>
-          <button class="cookie-modal-close-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 6 6 18"></path>
-              <path d="m6 6 12 12"></path>
-            </svg>
-            <span class="visually-hidden">Close</span>
-          </button>
-        </div>
-
-        <div class="cookie-modal-content">
-          <div class="cookie-modal-description">
-            <p class="cookie-modal-text">
-              We require your consent before you can continue visiting our
-              website. If you are under 16 and would like to consent to
-              optional services, you must ask your legal guardians for
-              permission. We use cookies and other technologies on our
-              website. Some of them are essential, while others help us
-              improve this website and your experience. Personal data may be
-              processed (e.g., IP addresses), for example for personalized ads
-              and content, or to measure ads and content performance. For more
-              information on how we use your data, please see our Privacy
-              Policy. There is no obligation to consent to data processing to
-              use this site. You can withdraw or adjust your choices at any
-              time under settings. Please note that due to individual
-              settings, not all website functions may be available.
-            </p>
-            <div class="cookie-modal-notice">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
-                <path d="M8.5 8.5v.01"></path>
-                <path d="M16 15.5v.01"></path>
-                <path d="M12 12v.01"></path>
-                <path d="M11 17v.01"></path>
-                <path d="M7 14v.01"></path>
-              </svg>
-              <div class="cookie-notice-content">
-                <p class="cookie-notice-title">Data Processing Notice</p>
-                <p class="cookie-notice-text">
-                  Some services process personal data in the USA. By
-                  consenting to the use of these services, you also consent to
-                  the processing of your data in the USA in accordance with
-                  Art. 49 (1) lit. a GDPR. The ECJ considers the USA a country
-                  with inadequate data protection under EU standards. For
-                  example, there is a risk that US authorities may process
-                  personal data in surveillance programs without legal
-                  recourse for Europeans.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cookie-modal-divider"></div>
-
-          <div class="cookie-categories">
-            <h3 class="cookie-categories-title">Cookie Categories</h3>
-            <div class="cookie-categories-list">
-              <div class="cookie-category-item cookie-category-essential">
-                <div class="cookie-category-content">
-                  <input type="checkbox" name="essential" class="cookie-category-checkbox" id="essential" checked
-                    disabled />
-                  <div class="cookie-category-info">
-                    <label for="essential" class="cookie-category-name">Essential Cookies</label>
-                    <p class="cookie-category-description">
-                      Required for basic website functionality
-                    </p>
-                  </div>
-                </div>
-                <span class="cookie-category-tag cookie-category-required">Required</span>
-              </div>
-
-              <div class="cookie-category-item">
-                <div class="cookie-category-content">
-                  <input type="checkbox" name="external-media" class="cookie-category-checkbox" id="external-media" />
-                  <div class="cookie-category-info">
-                    <label for="external-media" class="cookie-category-name">External Media</label>
-                    <p class="cookie-category-description">
-                      Content from external platforms like YouTube, Vimeo
-                    </p>
-                  </div>
-                </div>
-                <span class="cookie-category-tag">Optional</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="cookie-modal-divider"></div>
-
-          <div class="cookie-modal-actions">
-            <button class="cookie-action-btn cookie-action-primary">
-              Save Preferences
-            </button>
-            <button class="cookie-action-btn cookie-action-secondary">
-              Essential Only
-            </button>
-            <button class="cookie-action-btn cookie-action-secondary">
-              Accept All
-            </button>
-          </div>
-
-          <p class="cookie-modal-footer">
-            Learn more in our
-            <a href="privacy-policy.html" class="cookie-modal-link">Privacy Policy</a>
-          </p>
-        </div>
       </div>
     </div>
   </section>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script type="text/javascript">
-    window.onload = function () {
-      Calendly.initBadgeWidget({
-        url: "https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1",
-        text: "Zeitplan Zeitfenster",
-        color: "#0069ff",
-        textColor: "#ffffff",
-        branding: true,
-      });
-    };
-  </script>
-
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script type="text/javascript">
-    window.onload = function () {
-      Calendly.initBadgeWidget({
-        url: "https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1",
-        text: "Zeitplan Zeitfenster",
-        color: "#0069ff",
-        textColor: "#ffffff",
-        branding: true,
-      });
-    };
-  </script>
-
   <script src="../assets/js/custom.min.js"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMXCTMNE2B"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-PMXCTMNE2B");
-  </script>
+  <!-- Calendly Badge-Widget Beginn -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min', text: 'Book a meeting now!', color: '#ff0202', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly Badge-Widget Ende -->
 </body>
 
 </html>

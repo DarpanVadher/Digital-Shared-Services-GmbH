@@ -327,308 +327,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* CONTACT US FORM START */
 
-// const form = document.getElementById("contact-form");
-// const successMessage = document.getElementById("success-message");
+const form = document.getElementById("contact-form");
+const successMessage = document.getElementById("success-message");
 
-// form.addEventListener("submit", async function (e) {
-//   e.preventDefault();
-
-//   const formData = new FormData(form);
-//   const action = form.getAttribute("action");
-
-//   try {
-//     const response = await fetch(action, {
-//       method: "POST",
-//       body: formData,
-//       headers: {
-//         Accept: "application/json",
-//       },
-//     });
-
-//     if (response.ok) {
-//       form.reset();
-//       successMessage.style.display = "block";
-//     } else {
-//       alert("Something went wrong. Please try again later.");
-//     }
-//   } catch (error) {
-//     alert("Failed to send message.");
-//   }
-// });
-/* CONTACT US FORM END */
-
-// ########################################################################
-// Cookie consent
-// ########################################################################
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Get DOM elements
-  const cookieModal = document.querySelector(".cookie-modal-wrapper");
-  const closeBtn = document.querySelector(".cookie-modal-close-btn");
-  const savePrefsBtn = document.querySelector(".cookie-action-primary");
-  const essentialOnlyBtn = document.querySelectorAll(
-    ".cookie-action-secondary"
-  )[0];
-  const acceptAllBtn = document.querySelectorAll(".cookie-action-secondary")[1];
-  const cookieCheckboxes = document.querySelectorAll(
-    ".cookie-category-checkbox:not([disabled])"
-  );
-
-  // Check if user has already made a choice
-  const userChoice = localStorage.getItem("cookieConsent");
-  if (userChoice) {
-    hideModal();
-  }
-
-  // Close button functionality
-  closeBtn.addEventListener("click", hideModal);
-
-  // Save Preferences button
-  savePrefsBtn.addEventListener("click", function () {
-    const consent = getCurrentSelections();
-    localStorage.setItem("cookieConsent", JSON.stringify(consent));
-    hideModal();
-  });
-
-  // Essential Only button
-  essentialOnlyBtn.addEventListener("click", function () {
-    cookieCheckboxes.forEach((checkbox) => {
-      checkbox.checked = false;
-    });
-    const consent = { essential: true, externalMedia: false };
-    localStorage.setItem("cookieConsent", JSON.stringify(consent));
-    hideModal();
-  });
-
-  // Accept All button
-  acceptAllBtn.addEventListener("click", function () {
-    cookieCheckboxes.forEach((checkbox) => {
-      checkbox.checked = true;
-    });
-    const consent = { essential: true, externalMedia: true };
-    localStorage.setItem("cookieConsent", JSON.stringify(consent));
-    hideModal();
-  });
-
-  // ESC key to close modal
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && cookieModal.style.display !== "none") {
-      hideModal();
-    }
-  });
-
-  // Helper function to hide modal
-  function hideModal() {
-    cookieModal.style.display = "none";
-  }
-
-  // Helper function to get current checkbox selections
-  function getCurrentSelections() {
-    return {
-      essential: true, // Always true as it's required
-      externalMedia: document.getElementById("external-media").checked,
-    };
-  }
-
-  // Optional: Close when clicking outside the modal
-  cookieModal.addEventListener("click", function (e) {
-    if (e.target === cookieModal) {
-      hideModal();
-    }
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const modalOverlay = document.querySelector(".tech-modal-overlay");
-  const modalContainer = document.querySelector(".tech-modal-container");
-  const closeBtn = document.querySelector(".tech-modal-close-btn");
-  const declineBtn = document.querySelector(".tech-decline-btn");
-
-  // Function to show modal with animation
-  function showModal() {
-    modalOverlay.style.display = "flex";
-
-    // Trigger reflow to enable animation
-    void modalOverlay.offsetWidth;
-
-    modalOverlay.style.opacity = "1";
-    modalContainer.style.transform = "scale(1)";
-    modalContainer.style.opacity = "1";
-  }
-
-  // Function to close modal with animation
-  function closeModal() {
-    modalOverlay.style.opacity = "0";
-    modalContainer.style.transform = "scale(0.95)";
-    modalContainer.style.opacity = "0";
-
-    // Remove modal after animation completes
-    setTimeout(() => {
-      modalOverlay.style.display = "none";
-    }, 300);
-  }
-
-  // Show modal after 5 seconds
-  setTimeout(showModal, 5000);
-
-  // Close when X button is clicked
-  closeBtn.addEventListener("click", closeModal);
-
-  // Close when decline button is clicked
-  declineBtn.addEventListener("click", closeModal);
-
-  // Close when clicking outside the modal
-  modalOverlay.addEventListener("click", function (e) {
-    if (e.target === modalOverlay) {
-      closeModal();
-    }
-  });
-
-  // Prevent clicks inside modal from closing it
-  modalContainer.addEventListener("click", function (e) {
-    e.stopPropagation();
-  });
-
-  // Handle form submission
-  const form = document.querySelector(".tech-form");
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const emailInput = document.querySelector(".tech-email-input");
-      const email = emailInput.value.trim();
-
-      if (email) {
-        // Here you would typically send the email to your server
-        console.log("Submitted email:", email);
-        alert("Thank you for your interest! We'll be in touch soon.");
-        closeModal();
-      } else {
-        alert("Please enter a valid email address.");
-      }
-    });
-  }
-});
-
-// ####################################
-// phone number js
-// ####################################
-
-const phoneInputField = document.querySelector("#phone");
-
-const iti = window.intlTelInput(phoneInputField, {
-  separateDialCode: true,
-  initialCountry: "de", // default India
-  preferredCountries: ["in", "us", "gb", "ae"],
-  utilsScript:
-    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/25.3.1/js/utils.js",
-});
-
-// Optional: To append full international number to payload
-// document
-//   .getElementById("contact-form")
-//   .addEventListener("submit", function (e) {
-//     const rawVal = phoneInputField.value.trim();
-
-//     if (!rawVal) {
-//       e.preventDefault();
-//       alert("Phone number is required.");
-//       return;
-//     }
-
-//     // Optional: Clean formatting
-//     phoneInputField.value = rawVal.replace(/[\s\-()]/g, "");
-
-//     // Get the selected country data
-//     const selectedCountryData = iti.getSelectedCountryData();
-
-//     console.log("Selected Country Data:", selectedCountryData);
-
-//     // Get the country code
-//     const countryCode = selectedCountryData.dialCode;
-
-//     // Validate with intl-tel-input
-//     if (!iti.isValidNumber()) {
-//       e.preventDefault();
-//       console.log("Validation Error Code:", iti.getValidationError());
-//       alert("Please enter a valid phone number.");
-//       return;
-//     }
-
-//     const fullPhoneInput = document.createElement("input");
-//     fullPhoneInput.type = "hidden";
-//     fullPhoneInput.name = "fullPhone";
-//     fullPhoneInput.value = iti.getNumber(); // e.g., +49123456789
-
-//     this.appendChild(fullPhoneInput);
-//   });
-
-// ####################################
-// Send Mail For Contact Us Page
-// ####################################
-
-const termsCheckbox = document.getElementById("terms");
-const submitButton = document.querySelector(
-  "#contact-form button[type='submit']"
-);
-
-console.log("termsCheckbox.value", termsCheckbox.value);
-
-// Initial state
-submitButton.disabled = !termsCheckbox.checked;
-
-// Listen for changes on the checkbox
-termsCheckbox.addEventListener("change", function () {
-  console.log("termsCheckbox.checked", this.checked);
-  submitButton.disabled = !this.checked;
-});
-
-// ####################################
-// Send Mail For Contact Us Page
-// ####################################
-
-// Get the form element
-const submitForm = document.getElementById("contact-form");
-
-submitForm.addEventListener("submit", async function (e) {
+form.addEventListener("submit", async function (e) {
   e.preventDefault();
-  const formData = new FormData(submitForm);
 
-  // Get the selected country data
-  const selectedCountryData = iti.getSelectedCountryData();
+  const formData = new FormData(form);
+  const action = form.getAttribute("action");
 
-  console.log("Selected Country Data:", selectedCountryData);
-
-  // Get the country code
-  const countryCode = selectedCountryData.dialCode;
-
-  const payload = Object.fromEntries(formData.entries());
-
-  payload["countryCode"] = countryCode;
-
-  console.log("formData", payload);
   try {
-    const res = await fetch(
-      "https://digital-shared-services.com/api/send-mail/contact",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(payload),
-      }
-    );
+    const response = await fetch(action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
 
-    const data = await res.json().catch(() => ({}));
-
-    if (!res.ok) {
-      throw new Error(data.message || `Request failed (${res.status})`);
+    if (response.ok) {
+      form.reset();
+      successMessage.style.display = "block";
+    } else {
+      alert("Something went wrong. Please try again later.");
     }
-
-    submitForm.reset();
-    document.getElementById("success-message").style.display = "block";
-    submitButton.disabled = !termsCheckbox.checked;
   } catch (error) {
-    console.error("Error sending email:", error);
+    alert("Failed to send message.");
   }
 });
+/* CONTACT US FORM END */

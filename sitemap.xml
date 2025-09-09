@@ -1,171 +1,199 @@
-<?xml version="1.0" ?>
-<urlset xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-    <loc>https://digital-shared-services.com/en/index.html</loc>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/index.html"/>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/index.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage: German and English index pages -->
   <url>
     <loc>https://digital-shared-services.com/de/index.html</loc>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/index.html"/>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/index.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digital-shared-services.com/"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://digital-shared-services.com/en/services.html</loc>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/services.html"/>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/services.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://digital-shared-services.com/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://digital-shared-services.com/"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>1.00</priority>
   </url>
+
+  <!-- About Us -->
   <url>
-    <loc>https://digital-shared-services.com/de/services.html</loc>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/services.html"/>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/services.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://digital-shared-services.com/en/web-development.html</loc>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/web-development.html"/>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/web-development.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://digital-shared-services.com/de/web-development.html</loc>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/web-development.html"/>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/web-development.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://digital-shared-services.com/en/seo-optimization.html</loc>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/seo-optimization.html"/>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/seo-optimization.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://digital-shared-services.com/de/seo-optimization.html</loc>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/seo-optimization.html"/>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/seo-optimization.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://digital-shared-services.com/en/social-media-advertising.html</loc>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/social-media-advertising.html"/>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/social-media-advertising.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://digital-shared-services.com/de/social-media-advertising.html</loc>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/social-media-advertising.html"/>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/social-media-advertising.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://digital-shared-services.com/en/content-marketing.html</loc>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/content-marketing.html"/>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/content-marketing.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://digital-shared-services.com/de/content-marketing.html</loc>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/content-marketing.html"/>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/content-marketing.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://digital-shared-services.com/en/ppc-advertising.html</loc>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/ppc-advertising.html"/>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/ppc-advertising.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://digital-shared-services.com/de/ppc-advertising.html</loc>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/ppc-advertising.html"/>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/ppc-advertising.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://digital-shared-services.com/en/analytics-and-performance.html</loc>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/analytics-and-performance.html"/>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/analytics-and-performance.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://digital-shared-services.com/de/analytics-and-performance.html</loc>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/analytics-and-performance.html"/>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/analytics-and-performance.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
+    <loc>https://digital-shared-services.com/de/about-us.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/about-us.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/about-us.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://digital-shared-services.com/en/about-us.html</loc>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/about-us.html"/>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/about-us.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/about-us.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/about-us.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://digital-shared-services.com/de/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/services.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://digital-shared-services.com/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/services.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Web Development -->
+  <url>
+    <loc>https://digital-shared-services.com/de/web-development.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/web-development.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/web-development.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://digital-shared-services.com/de/about-us.html</loc>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/about-us.html"/>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/about-us.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
+    <loc>https://digital-shared-services.com/en/web-development.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/web-development.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/web-development.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- SEO Optimization -->
+  <url>
+    <loc>https://digital-shared-services.com/de/seo-optimization.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/seo-optimization.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/seo-optimization.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://digital-shared-services.com/en/seo-optimization.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/seo-optimization.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/seo-optimization.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Social Media Advertising -->
+  <url>
+    <loc>https://digital-shared-services.com/de/social-media-advertising.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/social-media-advertising.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/social-media-advertising.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://digital-shared-services.com/en/social-media-advertising.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/social-media-advertising.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/social-media-advertising.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Content Marketing -->
+  <url>
+    <loc>https://digital-shared-services.com/de/content-marketing.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/content-marketing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/content-marketing.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://digital-shared-services.com/en/content-marketing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/content-marketing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/content-marketing.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- PPC Advertising -->
+  <url>
+    <loc>https://digital-shared-services.com/de/ppc-advertising.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/ppc-advertising.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/ppc-advertising.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://digital-shared-services.com/en/ppc-advertising.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/ppc-advertising.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/ppc-advertising.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Analytics & Performance -->
+  <url>
+    <loc>https://digital-shared-services.com/de/analytics-and-performance.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/analytics-and-performance.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/analytics-and-performance.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://digital-shared-services.com/en/analytics-and-performance.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/analytics-and-performance.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/analytics-and-performance.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://digital-shared-services.com/de/contact-us.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/contact-us.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/contact-us.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://digital-shared-services.com/en/contact-us.html</loc>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/contact-us.html"/>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/contact-us.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/contact-us.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/contact-us.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
+
+  <!-- Privacy Policy -->
   <url>
-    <loc>https://digital-shared-services.com/de/contact-us.html</loc>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/contact-us.html"/>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/contact-us.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://digital-shared-services.com/de/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/privacy-policy.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
   </url>
   <url>
     <loc>https://digital-shared-services.com/en/privacy-policy.html</loc>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/privacy-policy.html"/>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/privacy-policy.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/privacy-policy.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
   </url>
+
+  <!-- Legal Notice (Impressum) -->
   <url>
-    <loc>https://digital-shared-services.com/de/privacy-policy.html</loc>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/privacy-policy.html"/>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/privacy-policy.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://digital-shared-services.com/de/impressum.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/impressum.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
   </url>
   <url>
     <loc>https://digital-shared-services.com/en/impressum.html</loc>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/impressum.html"/>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/impressum.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/impressum.html"/>
+    <lastmod>2025-08-18T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
   </url>
-  <url>
-    <loc>https://digital-shared-services.com/de/impressum.html</loc>
-    <html:link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/impressum.html"/>
-    <html:link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/impressum.html"/>
-    <lastmod>2025-06-21T05:51:38+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
+
 </urlset>

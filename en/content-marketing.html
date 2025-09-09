@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Favicon & Manifest -->
   <link rel="icon" type="image/png" href="../assets/img/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
   <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
-  <meta name="robots" content="noindex, nofollow">
 
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://digital-shared-services.com/en/content-marketing.html" />
+  <link rel="alternate" hreflang="en" href="https://digital-shared-services.com/en/content-marketing.html" />
+  <link rel="alternate" hreflang="de" href="https://digital-shared-services.com/de/content-marketing.html" />
+
+  <!-- Title -->
   <title>Content Marketing | Digital Shared Services GmbH</title>
 
-  <!-- START : Meta Tags -->
+  <!-- Meta Description -->
+  <meta name="description" content="Content marketing that informs and converts: strategy, editorial planning, SEO-optimized content, blogs, case studies, whitepapers & social copy — all from one source." />
+
+  <!-- Open Graph / Twitter -->
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
-  <meta name="description"
-    content="Digital Shared Service GmbH is a full-service digital agency in Dresden, Germany, specializing in marketing strategy, creative design, content development, and digital technology. We deliver results-driven solutions tailored to your brand.." />
-  <meta property="og:title" content="Digital Shared Services GmbH" />
-  <meta property="og:description"
-    content="Digital Shared Service GmbH is a full-service digital agency in Dresden, Germany, specializing in marketing strategy, creative design, content development, and digital technology. We deliver results-driven solutions tailored to your brand." />
+  <meta property="og:title" content="Content Marketing | Digital Shared Services GmbH" />
+  <meta property="og:description" content="Content marketing that informs and converts: strategy, editorial planning, SEO-optimized content, blogs, case studies, whitepapers & social copy — all from one source." />
   <meta property="og:url" content="https://digital-shared-services.com/en/content-marketing.html" />
-  <meta property="og:site_name" content="Content Marketing | Digital Shared Services GmbH" />
-  <meta property="og:image"
-    content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg" />
-  <meta name="twitter:image"
-    content="https://inter-shared-service.de/wp-content/uploads/2024/02/shutterstock_44905840.jpg" />
-  <link rel="canonical" href="https://digital-shared-services.com/en/content-marketing.html" />
-  <!-- END : Meta Tags -->
+  <meta property="og:site_name" content="Digital Shared Services GmbH" />
+  <meta property="og:image" content="https://digital-shared-services.com/assets/img/og/og-default.jpg" />
 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Content Marketing | Digital Shared Services GmbH" />
+  <meta name="twitter:description" content="Content marketing that informs and converts: strategy, editorial planning, SEO-optimized content, blogs, case studies, whitepapers & social copy — all from one source." />
+  <meta name="twitter:image" content="https://digital-shared-services.com/assets/img/og/og-default.jpg" />
+
+  <!-- Stylesheets -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.min.css" />
 </head>
 
 <body>
   <header class="header" role="banner">
     <div class="header-inner" data-aos="fade-down" data-aos-duration="500">
-      <a href="index.html" class="header-logo" aria-label="Digital Shared Services GmbH Startseite">
+      <a href="/en/index.html" class="header-logo" aria-label="Digital Shared Services GmbH Startseite">
         <img src="../assets/img/logo/logo.webp" alt="Digital Shared Services GmbH Logo" width="457" height="124"
           loading="lazy" decoding="async" />
       </a>
@@ -48,11 +56,11 @@
         <nav aria-label="Hauptnavigation">
           <ul class="header-nav" role="list">
             <li role="listitem">
-              <a href="index.html">Home</a>
+              <a href="/en/index.html">Home</a>
             </li>
             <li role="listitem">
               <a href="services.html" class="active" aria-current="page">Services</a>
-              <button class="header-btn" aria-label="Open navigation menu">
+              <button class="header-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24"
                   fill="currentColor">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -116,7 +124,7 @@
             <li role="listitem"><a href="about-us.html">About Us</a></li>
             <!-- <li role="listitem"> -->
             <!-- <a href="#">Karriere</a> -->
-            <!-- <button class="header-btn" aria-label="Open navigation menu">
+            <!-- <button class="header-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="800px"
@@ -147,8 +155,7 @@
 
         <div class="language-switcher">
           <button id="language-btn" onclick="toggleDropdown()">
-            <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="English" class="flag"
-              id="selected-flag" />
+            <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" id="selected-flag" />
             <span id="selected-lang">EN</span>
             <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               viewBox="0 0 16 16">
@@ -157,15 +164,13 @@
             </svg>
           </button>
           <div id="language-dropdown" class="dropdown hidden">
-            <div class="option" data-lang="DE"
-              onclick="changeLanguage('de', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/de.svg" alt="Germany" class="flag" />
+            <div class="option" data-lang="DE" onclick="changeLanguage('de', 'https://flagcdn.com/w40/de.png')">
+              <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag" />
               DE
               <span class="selected-dot" id="dot-DE"></span>
             </div>
-            <div class="option" data-lang="EN"
-              onclick="changeLanguage('en', 'https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg')">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/1x1/gb.svg" alt="English" class="flag" />
+            <div class="option" data-lang="EN" onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')">
+              <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag" />
               EN
               <span class="selected-dot active" id="dot-EN"></span>
             </div>
@@ -201,7 +206,7 @@
             </h1>
 
             <a href="#dms" class="intro__link" data-aos="fade-up" data-aos-duration="600">
-              Digital Marketing Service
+              Our Digital Marketing
               <svg xmlns="http://www.w3.org/2000/svg" width="16.167" height="21.498" aria-hidden="true"
                 focusable="false">
                 <g fill="none" stroke="#32506a" stroke-width="2">
@@ -216,13 +221,13 @@
 
         <ul class="intro__social" aria-label="Social media links">
           <li data-aos="fade-left" data-aos-duration="600">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/digitalsharedservices/" target="_blank" rel="noopener noreferrer"
               aria-label="Visit our Instagram page">
               <img src="../assets/img/svg/instagram.svg" alt="Instagram" height="32" width="32" loading="lazy" />
             </a>
           </li>
           <li data-aos="fade-left" data-aos-duration="900">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/company/digital-shared-services/" target="_blank" rel="noopener noreferrer"
               aria-label="Visit our LinkedIn page">
               <img src="../assets/img/svg/linkedin.svg" alt="LinkedIn" height="32" width="32" loading="lazy" />
             </a>
@@ -248,22 +253,27 @@
             <div class="expertise__item expertise__item--large" role="listitem" data-aos="fade-up"
               data-aos-duration="500">
               <p>
-                In a world flooded with content, standing out is essential! We
-                create content that stops the scroll, sparks action, and stays
-                with your audience. We create SEO-smart, audience-first
-                content that speaks louder, ranks higher, and drives real
-                action.
+                In a world full of content, it’s more important than ever  
+                to stand out from the crowd.  
+                We create content that grabs attention,  
+                sparks interest, and stays in your audience’s mind.  
+                With well-thought-out, search-friendly texts  
+                that focus on your audience’s needs,  
+                we deliver more visibility and measurable results.  
               </p>
             </div>
 
             <div class="expertise__item expertise__item--large" role="listitem" data-aos="fade-up"
               data-aos-duration="800">
               <p>
-                Content is your brand’s voice, not just words. At the heart of
-                every scroll, search, and click is a human looking for
-                meaning. We craft narratives that build trust, spark
-                curiosity, and quietly convince. We’re building relationships,
-                driving growth, and creating lasting impact.
+                Content is the voice of your brand –  
+                more than just words.  
+                Behind every click, search, and scroll  
+                is a person looking for answers.  
+                We tell stories that build trust,  
+                spark curiosity, and quietly convince.  
+                This is how we create relationships  
+                that grow and bring long-term success.  
               </p>
             </div>
           </div>
@@ -281,33 +291,35 @@
               </h2>
 
               <p data-aos="fade-up" data-aos-delay="200">
-                We don’t just write content; we create a roadmap. We start
-                with a solid strategy that aligns with your brand, audience,
-                and goals. Every word is crafted to engage, inspire, and
-                convert. It’s time to transform your content into your most
-                powerful marketing tool.
+                We don’t just write texts – we create a clear plan.  
+                It all starts with a strategy tailored to your brand,  
+                your audience, and your goals.  
+                Every word is chosen with purpose – to inform, inspire,  
+                and encourage action.  
+                That’s how your content becomes one of your strongest  
+                marketing tools.  
               </p>
 
               <ul class="exp__list" role="list">
                 <li data-aos="fade-up" data-aos-delay="300">
                   <img src="../assets/img/svg/strategy-first-always.svg" alt="Symbol für digitale Kommunikation"
                     width="30" height="30" />
-                  Strategy First, Always
+                  Clear strategy from the start
                 </li>
                 <li data-aos="fade-up" data-aos-delay="400">
                   <img src="../assets/img/svg/seo-that-speaks-human.svg" alt="Herz-Symbol für Leidenschaft" width="30"
                     height="30" />
-                  SEO That Speaks Human
+                  Content that works
                 </li>
                 <li data-aos="fade-up" data-aos-delay="500">
                   <img src="../assets/img/svg/results-you-can-measure.svg" alt="Kompass-Symbol für Orientierung"
                     width="30" height="30" />
-                  Results You Can Measure
+                  Making results measurable
                 </li>
                 <li data-aos="fade-up" data-aos-delay="600">
                   <img src="../assets/img/svg/end-to-end-expertise.svg" alt="Krone-Symbol für Exzellenz" width="30"
                     height="30" />
-                  End-to-End Expertise
+                  EEverything from one source
                 </li>
               </ul>
             </div>
@@ -326,7 +338,7 @@
         <div class="container" data-aos="fade-up" data-aos-duration="500">
           <h2 class="detail__title font-30 text-uppercase font-regular mb-30" data-aos="fade-up"
             data-aos-duration="400">
-            Our services in Content Marketing
+            Our Services in Content Marketing
           </h2>
           <!-- <p data-aos="fade-up" data-aos-delay="200" class="mb-30">
               We offer websites that load quickly and don't make users wait.
@@ -342,13 +354,13 @@
           <div class="detail__inner">
             <div class="detail__item" data-aos="fade-up" data-aos-duration="400">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="500">
-                <h3 class="font-24 font-regular mb-20">SEO Blog Writing</h3>
+                <h3 class="font-24 font-regular mb-20">SEO Blog Posts</h3>
                 <p>
-                  Word count isn't everything in blogging; what matters are
-                  results! We create thought-leadership content that increases
-                  domain authority and organic traffic, not merely produce
-                  articles. Let's make your blog your primary source of
-                  inbound traffic.
+                  When blogging, it’s not the word count that matters – it’s the results.  
+                  We create high-quality, topic-focused articles  
+                  that improve your visibility and reach.  
+                  Our goal is to make your blog one of the main sources  
+                  of new leads and inquiries.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="500">
@@ -360,14 +372,14 @@
             <div class="detail__item" data-aos="fade-up" data-aos-duration="500">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="600">
                 <h3 class="font-24 font-regular mb-20">
-                  Newsletter & Email Marketing Campaigns
+                  Newsletter & Email Marketing
                 </h3>
                 <p>
-                  Ditch the boring old blasting. Custom and convincing email
-                  marketing is what you need! We specialize in creating
-                  personalized email flows targeted to optimize open rates,
-                  engagement, and conversions. So, let your emails not just
-                  land but also perform!
+                  Say goodbye to boring mass emails.  
+                  We design personalized campaigns  
+                  that speak to your audience and inspire action –  
+                  with higher open rates, more engagement,  
+                  and measurable results.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="600">
@@ -382,11 +394,10 @@
                   Website & Landing Page Copywriting
                 </h3>
                 <p>
-                  Your website speaks before you do! From powerful headlines
-                  to strong calls-to-action, we guide your visitors toward the
-                  next step. Every headline hooks, and every sentence is
-                  rooted in strategy. Let’s make every word a step toward more
-                  conversions.
+                  Your website speaks before you do.  
+                  From strong headlines to clear calls-to-action,  
+                  we guide visitors to the next step.  
+                  Every sentence is purposeful and supports your goals.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -398,14 +409,13 @@
             <div class="detail__item" data-aos="fade-up" data-aos-duration="600">
               <div class="detail__item-text" data-aos="fade-right" data-aos-duration="700">
                 <h3 class="font-24 font-regular mb-20">
-                  Press Release & Article Writing
+                  Press Releases & Articles
                 </h3>
                 <p>
-                  Got big news or thought leadership to share? Your story
-                  deserves the spotlight, and we make sure it happens. From
-                  Headline to CTA, we deliver stories that catch eyes and
-                  travel far. We ensure your message stands out and reaches
-                  the right audience with every word.
+                  Have news to share or want to showcase your expertise?  
+                  We bring your message into the public eye – clearly, professionally,  
+                  and with reach. From headline to call-to-action,  
+                  we create texts that get noticed and have an impact.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -420,11 +430,10 @@
                   Content Strategy & Planning
                 </h3>
                 <p>
-                  Great content begins with clarity, intention, and a
-                  rock-solid plan. Every step from editorial calendars to
-                  content pillars is mapped to move the needle. With the right
-                  strategy in place, your content becomes impossible to
-                  ignore. Let’s turn planning into progress.
+                  Good content starts with a plan.  
+                  We develop editorial schedules and topic structures  
+                  that support your goals and make your brand stand out.  
+                  That’s how planning turns into real progress.
                 </p>
               </div>
               <div class="detail__item-image" data-aos="zoom-in" data-aos-duration="700">
@@ -533,13 +542,14 @@
               </div>
 
               <p class="mb-30" data-aos="fade-up" data-aos-duration="500">
-                We create content that captures attention and sparks action.
-                Our team is here to turn your vision into compelling stories
-                that drive real results. Ready to make your brand impossible
-                to ignore?
+                We create content that grabs attention  
+                and drives action.  
+                Our team turns your ideas into compelling stories  
+                that deliver real results.  
+                Ready to make your brand stand out?  
                 <br /><br />
 
-                Reach out now and let’s get started!
+                Get in touch now and let’s get started!
               </p>
 
               <div data-aos="fade-up" data-aos-duration="600">
@@ -634,7 +644,7 @@
             <nav aria-labelledby="footer-navigation">
               <ul class="footer__nav-list" role="list">
                 <li role="listitem">
-                  <a href="index.html" class="active" aria-current="page">Home</a>
+                  <a href="/en/index.html" class="active" aria-current="page">Home</a>
                 </li>
                 <li role="listitem"><a href="services.html">Services</a></li>
                 <li role="listitem"><a href="about-us.html">About Us</a></li>
@@ -664,7 +674,7 @@
                 <span itemprop="addressLocality">Dresden</span>
               </div>
 
-              <a href="index.html" aria-label="Zurück zur Startseite">
+              <a href="/en/index.html" aria-label="Zurück zur Startseite">
                 <img src="../assets/img/logo/logo.webp" alt="Digital Shared Services GmbH Logo" width="200" height="54"
                   loading="lazy" decoding="async" itemprop="logo" />
               </a>
@@ -679,133 +689,85 @@
     </div>
   </footer>
 
-  <section class="cookie-modal-wrapper">
-    <div class="cookie-modal-overlay">
-      <div class="cookie-modal-container">
-        <div class="cookie-modal-header">
-          <div class="cookie-modal-title-wrapper">
-            <div class="cookie-modal-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                </path>
-              </svg>
-            </div>
-            <h2 class="cookie-modal-title">Privacy Preferences</h2>
+  <section class="cookie-card-wrapper">
+    <div class="cookie-card">
+      <div class="title font-24">
+        <div class="title-text">🍪 Privacy Preferences</div>
+
+        <button class="close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="none">
+            <g id="Menu / Close_SM">
+              <path id="Vector" d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke="#000000" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <div class="description-wrapper">
+        <p class="description">
+          We require your consent before you can continue visiting our
+          website. If you are under 16 and would like to consent to optional
+          services, you must ask your legal guardians for permission. We use
+          cookies and other technologies on our website. Some of them are
+          essential, while others help us improve this website and your
+          experience. Personal data may be processed (e.g., IP addresses), for
+          example for personalized ads and content, or to measure ads and
+          content performance. For more information on how we use your data,
+          please see our
+          <a href="privacy-policy.html">Privacy Policy</a>. There is no
+          obligation to consent to data processing to use this site. You can
+          withdraw or adjust your choices at any time under settings. Please
+          note that due to individual settings, not all website functions may
+          be available.
+        </p>
+        <br />
+        <hr />
+        <p class="description">
+          Some services process personal data in the USA. By consenting to the
+          use of these services, you also consent to the processing of your
+          data in the USA in accordance with Art. 49 (1) lit. a GDPR. The ECJ
+          considers the USA a country with inadequate data protection under EU
+          standards. For example, there is a risk that US authorities may
+          process personal data in surveillance programs without legal
+          recourse for Europeans.
+        </p>
+
+        <div class="checkbox-wrapper">
+          <div class="checkbox-item">
+            <input type="checkbox" name="Essential" id="essential" checked disabled />
+            <label for="essential">Essential</label>
           </div>
-          <button class="cookie-modal-close-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 6 6 18"></path>
-              <path d="m6 6 12 12"></path>
-            </svg>
-            <span class="visually-hidden">Close</span>
-          </button>
+          <div class="checkbox-item">
+            <input type="checkbox" name="all" id="all" />
+            <label for="all">External Media</label>
+          </div>
         </div>
 
-        <div class="cookie-modal-content">
-          <div class="cookie-modal-description">
-            <p class="cookie-modal-text">
-              We require your consent before you can continue visiting our website. If you are under 16 and would like
-              to consent to optional services, you must ask your legal guardians for permission. We use cookies and
-              other technologies on our website. Some of them are essential, while others help us improve this website
-              and your experience. Personal data may be processed (e.g., IP addresses), for example for personalized ads
-              and content, or to measure ads and content performance. For more information on how we use your data,
-              please see our Privacy Policy. There is no obligation to consent to data processing to use this site. You
-              can withdraw or adjust your choices at any time under settings. Please note that due to individual
-              settings, not all website functions may be available.
-            </p>
-            <div class="cookie-modal-notice">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
-                <path d="M8.5 8.5v.01"></path>
-                <path d="M16 15.5v.01"></path>
-                <path d="M12 12v.01"></path>
-                <path d="M11 17v.01"></path>
-                <path d="M7 14v.01"></path>
-              </svg>
-              <div class="cookie-notice-content">
-                <p class="cookie-notice-title">Data Processing Notice</p>
-                <p class="cookie-notice-text">
-                  Some services process personal data in the USA. By consenting to the use of these services, you also
-                  consent to the processing of your data in the USA in accordance with Art. 49 (1) lit. a GDPR. The ECJ
-                  considers the USA a country with inadequate data protection under EU standards. For example, there is
-                  a risk that US authorities may process personal data in surveillance programs without legal recourse
-                  for Europeans.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cookie-modal-divider"></div>
-
-          <div class="cookie-categories">
-            <h3 class="cookie-categories-title">Cookie Categories</h3>
-            <div class="cookie-categories-list">
-              <div class="cookie-category-item cookie-category-essential">
-                <div class="cookie-category-content">
-                  <input type="checkbox" name="essential" class="cookie-category-checkbox" id="essential" checked
-                    disabled>
-                  <div class="cookie-category-info">
-                    <label for="essential" class="cookie-category-name">Essential Cookies</label>
-                    <p class="cookie-category-description">Required for basic website functionality</p>
-                  </div>
-                </div>
-                <span class="cookie-category-tag cookie-category-required">Required</span>
-              </div>
-
-              <div class="cookie-category-item">
-                <div class="cookie-category-content">
-                  <input type="checkbox" name="external-media" class="cookie-category-checkbox" id="external-media">
-                  <div class="cookie-category-info">
-                    <label for="external-media" class="cookie-category-name">External Media</label>
-                    <p class="cookie-category-description">Content from external platforms like YouTube, Vimeo</p>
-                  </div>
-                </div>
-                <span class="cookie-category-tag">Optional</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="cookie-modal-divider"></div>
-
-          <div class="cookie-modal-actions">
-            <button class="cookie-action-btn cookie-action-primary">Save Preferences</button>
-            <button class="cookie-action-btn cookie-action-secondary">Essential Only</button>
-            <button class="cookie-action-btn cookie-action-secondary">Accept All</button>
-          </div>
-
-          <p class="cookie-modal-footer">
-            Learn more in our <a href="privacy-policy.html" class="cookie-modal-link">Privacy Policy</a>
-          </p>
-        </div>
+        <ul class="btn-list">
+          <li>
+            <button class="accept">Save Consent</button>
+          </li>
+          <li>
+            <button class="accept">Accept Only Essential Cookies</button>
+          </li>
+          <!-- <li><button class="savePreferences">Individual Privacy Preferences</button></li> -->
+        </ul>
+      </div>
+      <div class="actions">
+        <div></div>
+        <button class="accept">Accept All</button>
       </div>
     </div>
   </section>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script
-    type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1', text: 'Zeitplan Zeitfenster', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-
-
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script
-    type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min?hide_gdpr_banner=1', text: 'Zeitplan Zeitfenster', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-
-
   <script src="../assets/js/custom.min.js"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMXCTMNE2B"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-PMXCTMNE2B');
-  </script>
+  <!-- Calendly Badge-Widget Beginn -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/patrick-manteuffel-digital-shared-services/30min', text: 'Book a meeting now!', color: '#ff0202', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly Badge-Widget Ende -->
 </body>
 
 </html>
